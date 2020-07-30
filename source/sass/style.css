@@ -1,0 +1,115 @@
+:root {
+    --basic-text-color: #484848;
+    --basic-background-color: #ffffff;
+
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+
+body {
+    font-family: 'Fira Sans', 'Arial', sans-serif;
+    min-width: 1366px;
+    min-height: 100%;
+    font-size: 17px;
+    line-height: 24px;
+    color: var(--basic-text-color);
+    font-weight: normal;
+    background-color: var(--basic-background-color);
+    padding: 0;
+    margin: 0;
+}
+
+
+.visually-hidden {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1386px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* header */
+
+.main-menu {
+    display: flex;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    color: var(--basic-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;  
+    list-style: none;
+    margin-top: 48px;
+}
+
+
+.main-items {  
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main-items--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 7px;
+    margin-right: 265px;
+}
+
+
+.call {
+    margin-right: 0;
+    margin-left: 120px;
+    
+}
+
+.call a {
+    border-bottom: 2px dashed var(--basic-text-color);
+}
+
+.heading {
+    background-image: url(../img/index-bg-h1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 170%;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+    margin: 0 auto;
+    padding: 0;
+}
