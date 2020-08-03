@@ -50,6 +50,10 @@
     "node": "8.15"
   },
   "dependencies": {
-    "del": "^4.1.1"
+    "chokidar": "^3.4.1",
+    "del": "^4.1.1",
+    "resolve-url": "^0.2.1",
+    "resolve-url-loader": "^3.1.1",
+    "urix": "^0.1.0"
   }
 }

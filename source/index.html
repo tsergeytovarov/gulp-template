@@ -4,11 +4,16 @@
 <head>
     <meta charset="utf-8">
     <title>Израиль</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+        type="text/javascript"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="sass/normalize.css" rel="stylesheet">
     <link href="sass/style.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -28,14 +33,68 @@
         </div>
     </header>
     <main>
-        <section >
+        <section class="promo">
             <div class="container">
-                <h1 class="heading">Израиль</h1>
-
-
+                <h1 class="main-heading">Израиль</h1>
+                <img class="girl" src="img/index-photo-girl.png" alt="girl" width="381" height="609">
+                <p class="promo-tagline">Учёба, путешествие и карьера для еврейской молодёжи</p>
             </div>
         </section>
-        
+        <section class="about">
+            <div class="about-items">
+                <h2 class="other-heading">О программе</h2>
+                <p class="description">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут.
+                      Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле.<br>В течение освоения
+                    программ предусмотрен грант от 4200 до 8400$.</p>
+                <div class="photo_about">
+                    <img src="img/photo_about.png" alt="photo_about" width="870" height="460">
+                </div>
+            </div>
+        </section>
+        <section class="programs">
+            <div class="container">
+                <h2 class="other-heading programs-heading">Программы</h2>
+                <div class="programs-wrapper">
+                    <div class="program-list">
+                        <ul class="program-list--items">
+                            <li class="program-list--decorator culture">Общие</li>
+                            <li class="program-list--decorator study program-active">Академические</li>
+                            <li class="program-list--decorator business">Стажировки</li>
+                            <li class="program-list--decorator volonteur">Волонтерство</li>
+                            <li class="program-list--decorator religion">Религиозные</li>
+                        </ul>
+                    </div>
+                    <div class="program-about">
+                        <h3 class="program-name">Академические</h3>
+                        <p class="program-description">Провести семестр или год за рубежом, знакомясь с различными
+                            культурами и идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль —
+                            это не только центр религиозного мира, это также академический центр, живая лаборатория идей
+                            и творческого исследования.<br><br>Может быть, Вы заинтересованы в изучении социологии,
+                            мира,
+                            юриспруденции, биологии, сравнительной религии, законодательного и делового
+                            администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной
+                            университетской среде.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="i-want-go">
+            <div class="container">
+                <div class="i-want-go--wrapper">
+                    <img class="backpack" src="img/i-want-go-backpack.png" alt="backpack" width="150" height="260">
+                    <h3 class="other-heading">Хочу поехать!</h3>
+                    <p class="i-want-go--contact">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
+                    <label for="call">
+                        <input class="phone-form" type="tel" name="phone" id="call" placeholder="телефон" rows="3">
+                    </label>
+                    <button class="callback" type="submit">перезвоните мне</button>
+                    <img class="i-want-go-girl-flag" src="img/i-want-go-girl-flag-bg.png" alt="i-want-go-girl-flag" width="818" height="594">
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
     <footer>
