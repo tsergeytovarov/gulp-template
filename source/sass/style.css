@@ -1,7 +1,7 @@
 :root {
     --basic-text-color: #484848;
     --basic-background-color: #ffffff;
-    --other-heading-font: 'Montserrat', sans-serif;
+    --other-heading-font: 'Montserrat', 'Arial', sans-serif;
 
 
 }
@@ -79,7 +79,7 @@ a {
     padding: 0;
 }
 
-.main-items--item {
+.main-items__item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,7 +229,7 @@ a {
     
 }
 
-.program-list--items {
+.program-list__items {
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -239,10 +239,21 @@ a {
     padding: 0;
 }
 
-.program-list--decorator {
+.program-list__decorator {
     position: relative;
     padding-top: 10px;
     height: 72px;
+}
+
+.culture,
+.study,
+.business,
+.volonteur,
+.religion {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+
 }
 
 .culture::before {
@@ -255,6 +266,16 @@ a {
     background-image: url(../img/programs-list-ico-star.svg);
     background-repeat: no-repeat;
 }
+
+
+.study::after {
+    background-image: url(../img/programs-list-ico-checked.svg);
+    background-repeat: no-repeat;
+    background-position: -70px 0px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
 .study::before {
     content: "";
     position: absolute;
@@ -299,7 +320,7 @@ a {
     background-repeat: no-repeat;
 }
 
-.program-list--decorator:last-child {
+.program-list__decorator:last-child {
     padding-bottom: 0;
 }
 
@@ -331,19 +352,11 @@ a {
     margin: 0;
 }
 
-.program-active {
-    
-    background-image: url(../img/programs-list-ico-checked.svg);
-    background-repeat: no-repeat;
-    background-position: -70px 0px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
 /* i want to go */
 
 .i-want-go {
     position: relative;
+    margin-bottom: 318px;
 
     /* background-image: url(../img/i-want-go-girl-flag-bg.png);
     background-repeat: no-repeat;
@@ -359,12 +372,12 @@ a {
     top: -29%;
 }
 
-.i-want-go--wrapper {
+.i-want-go__wrapper {
     width: 477px;
     margin-left: 210px;
 }
 
-.i-want-go--contact {
+.i-want-go__contact {
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
@@ -418,3 +431,188 @@ a {
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
     z-index: 1;
 }
+
+/* how-to-go */
+
+.how-to-go__wrapper{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.how-to-go__img {
+/*  */
+}
+
+.how-to-go__items {
+    padding-left: 118px;
+    width: 600px;
+}
+
+.how-to-go__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 170%;
+    opacity: 0.87;
+    margin: 0;
+    padding-bottom: 32px;
+} 
+
+.how-to-go__need {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 170%;
+}
+
+.how-to-go__list {
+    margin: 0;
+    padding-top: 31px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 44px;
+    list-style: none;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%;
+    opacity: 0.87;
+}
+
+.how-to-go__list__point {
+    padding-bottom: 50px;
+}
+
+.how-to-go__list__point:last-child{
+    padding-bottom: 0;
+}
+
+.how-to-go__money {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%;
+    opacity: 0.5;
+   
+    padding-top: 20px;
+    margin: 0;
+    width: 520px;
+}
+
+/* life-in-israel */
+
+.life-in-israel__wrapper {
+    margin-bottom: 150px;
+}
+
+.life-in-israel__description {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.life-in-israel__header {
+    text-align: center;
+}
+
+.life-in-israel__leisure {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 170%;
+    text-align: right;
+    opacity: 0.87;
+    width: 720px;
+    margin: 0 auto;
+}
+
+.life-in-israel__items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.life-in-israel__tour {
+
+}
+
+.life-in-israel__items--about {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    margin: 0;
+}
+
+/* masaisrael */
+
+.masaisrael {
+    margin-bottom: 150px;
+}
+
+.masaisrael-wrapper {
+    position: relative;
+    background-image: url(../img/masaisrael.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 583px;
+}
+
+.masaisrael-content {
+    position: absolute;
+    left: 50%;
+    top: 139px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 403px;
+    height: 160px;
+    margin: 0;
+}
+
+.masaisrael-heading {
+    text-align: end;
+}
+
+.masaisrael-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 170%;
+    color: #FFFFFF;
+    opacity: 0.87;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    margin: 0;
+}
+
+.masaisrael-btn {
+    position: absolute;
+    left: 58%;
+    top: 59%;
+    border: none;
+    background: linear-gradient(142.39deg, #FFC341 20.46%, #FFD701 65.31%);
+    border-radius: 80px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    font-variant: small-caps;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.masaisrael-btn__ico {   
+    position: absolute;
+    top: 18px;
+    left: 44px;
+}
+

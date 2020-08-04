@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="sass/normalize.css" rel="stylesheet">
     <link href="sass/style.css" rel="stylesheet">
 </head>
@@ -19,13 +20,13 @@
         <div class="container">
             <nav class="main-menu">
                 <ul class="main-items">
-                    <li class="main-items--item">
+                    <li class="main-items__item">
                         <a href="tel:+78122757575">+ (972) 2 – 621 – 6581</a>
                     </li>
-                    <li class="main-items--item">
+                    <li class="main-items__item">
                         <img src="img/index-masa-logo.jpg" alt="Israel Journey">
                     </li>
-                    <li class="main-items--item call">
+                    <li class="main-items__item call">
                         <a href="catalog.html">Заказать звонок</a>
                     </li>
                 </ul>
@@ -44,7 +45,7 @@
             <div class="about-items">
                 <h2 class="other-heading">О программе</h2>
                 <p class="description">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут.
-                      Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле.<br>В течение освоения
+                    Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле.<br>В течение освоения
                     программ предусмотрен грант от 4200 до 8400$.</p>
                 <div class="photo_about">
                     <img src="img/photo_about.png" alt="photo_about" width="870" height="460">
@@ -56,12 +57,32 @@
                 <h2 class="other-heading programs-heading">Программы</h2>
                 <div class="programs-wrapper">
                     <div class="program-list">
-                        <ul class="program-list--items">
-                            <li class="program-list--decorator culture">Общие</li>
-                            <li class="program-list--decorator study program-active">Академические</li>
-                            <li class="program-list--decorator business">Стажировки</li>
-                            <li class="program-list--decorator volonteur">Волонтерство</li>
-                            <li class="program-list--decorator religion">Религиозные</li>
+                        <ul class="program-list__items">
+                            <li class="program-list__decorator">
+                                <button class="culture" type="button">
+                                    Общие
+                                </button>
+                            </li>
+                            <li class="program-list__decorator">
+                                <button class="study" type="button">
+                                    Академические
+                                </button>
+                            </li>
+                            <li class="program-list__decorator">
+                                <button class="business" type="button">
+                                    Стажировки
+                                </button>
+                            </li>
+                            <li class="program-list__decorator">
+                                <button class="volonteur" type="button">
+                                    Волонтерство
+                                </button>
+                            </li>
+                            <li class="program-list__decorator">
+                                <button class="religion" type="button">
+                                    Религиозные
+                                </button>
+                            </li>
                         </ul>
                     </div>
                     <div class="program-about">
@@ -80,19 +101,107 @@
         </section>
         <section class="i-want-go">
             <div class="container">
-                <div class="i-want-go--wrapper">
+                <div class="i-want-go__wrapper">
                     <img class="backpack" src="img/i-want-go-backpack.png" alt="backpack" width="150" height="260">
-                    <h3 class="other-heading">Хочу поехать!</h3>
-                    <p class="i-want-go--contact">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
+                    <h2 class="other-heading">Хочу поехать!</h2>
+                    <p class="i-want-go__contact">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и
+                        ответим на все вопросы!</p>
                     <label for="call">
                         <input class="phone-form" type="tel" name="phone" id="call" placeholder="телефон" rows="3">
                     </label>
                     <button class="callback" type="submit">перезвоните мне</button>
-                    <img class="i-want-go-girl-flag" src="img/i-want-go-girl-flag-bg.png" alt="i-want-go-girl-flag" width="818" height="594">
+                    <img class="i-want-go-girl-flag" src="img/i-want-go-girl-flag-bg.png" alt="i-want-go-girl-flag"
+                        width="818" height="594">
                 </div>
-
             </div>
+        </section>
+        <section class="how-to-go">
+            <div class="container">
+                <div class="how-to-go__wrapper">
+                    <div class="how-to-go__img">
+                        <img src="img/img_how-to-go.png" alt="howtogo" width="581" height="707">
+                    </div>
+                    <div class="how-to-go__items">
+                        <h2 class="other-heading">Как поехать</h2>
+                        <p class="how-to-go__description">Чтобы узнать подробнее о программе, свяжитесь с координатором
+                            в вашем городе. Вы получите
+                            актуальные
+                            сведения о доступных программах и городах, в которых можете пройти программу.</p>
+                        <span class="how-to-go__need">Чтобы иметь возможность получить грант на обучение<br>от 4200 до
+                            8400$, вы должны:</span>
+                        <ol class="how-to-go__list">
+                            <li class="how-to-go__list__point">Быть в возрасте от 16 до 30 лет</li>
+                            <li class="how-to-go__list__point">Иметь оконченное среднее образование</li>
+                            <li class="how-to-go__list__point">Иметь документально подтверждённые еврейские корни и
+                                пройти консульскую проверку</li>
+                            <li class="how-to-go__list__point">За последние 2 года быть не больше 3х месяцев подряд
+                                непрерывно в Израиле.</li>
+                        </ol>
+                        <p class="how-to-go__money">Если вы не подходите по этим правилам, вы всё равно можете принять
+                            участие в программе
+                            «Маса»,
+                            оплатив её полную стоимость.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="life-in-israel">
+            <div class="container">
+                <div class="life-in-israel__wrapper">
+                    <div class="life-in-israel__description">
+                        <h3 class="other-heading life-in-israel__header">Жизнь в израиле</h3>
+                        <p class="life-in-israel__leisure">Помимо учёбы, в рамках программы у вас будет возможность
+                            путешествовать по стране и познакомиться с богатой культурно-исторической жизнью Израиля и
+                            его жителей.</p>
+                    </div>
+                    <div class="life-in-israel__items">
+                        <img src="img/life-in-israel-tour.png" alt="Экскурсии" width="482" height="732">
+                        <img src="img/life-in-israel-Hebrew.png" alt="иврит" width="211" height="318">
+                        <img src="img/life-in-israel-study.png" alt="Обучение" width="411" height="318">
+                        <img src="img/life-in-israel-creation.png" alt="проекты" width="411" height="318">
+                        <img src="img/life-in-israel-develop.png" alt="Развитие" width="214" height="318">
 
+                        <!-- <div class="life-in-israel__tour">
+                            <img src="img/life-in-israel-tour.png" alt="Экскурсии" width="482" height="732">
+                            <p class="life-in-israel__items--about">Экскурсии по Израилю<br>и знакомство с его историей
+                            </p>
+                        </div>
+                        <div>
+                            <img src="img/life-in-israel-Hebrew.png" alt="иврит" width="211" height="318">
+                            <p class="life-in-israel__items--about">Изучение иврита</p>
+                        </div>
+                        <div>
+                            <img src="img/life-in-israel-study.png" alt="Обучение" width="411" height="318">
+                            <p class="life-in-israel__items--about">Обучение современным навыкам и профессиям</p>
+                        </div>
+                        <div>
+                            <img src="img/life-in-israel-creation.png" alt="проекты" width="411" height="318">
+                            <p class="life-in-israel__items--about">Совместные творческие проекты<br>с израильской
+                                молодёжью
+                            </p>
+                        </div>
+                        <div>
+                            <img src="img/life-in-israel-develop.png" alt="Развитие" width="214" height="318"> 
+                            <p class="life-in-israel__items--about">Развитие<br>лидерства</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="masaisrael">
+            <div class="container">
+                <div class="masaisrael-wrapper">
+                    <div class="masaisrael-content">
+                        <h3 class="other-heading masaisrael-heading">#masaisrael</h3>
+                        <p class="masaisrael-description">Познакомьтесь с программой от первого лица! Многие участники
+                            ведут блоги и фотодневники о жизни, учёбе и путешествиях в Израиле.</p>
+                    </div>
+                    <button class="masaisrael-btn">
+                        <img class="masaisrael-btn__ico" src="img/masaisrael-btn-img.svg" alt="insta" width="24"
+                            height="24">
+                        смотреть фото</button>
+                </div>
+            </div>
         </section>
 
     </main>
