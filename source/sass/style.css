@@ -100,34 +100,25 @@ a {
 }
 
 .promo {
+    position: relative;
     background-image: url(../img/index-bg-h1.png);
-    background-position-x: center;
-    background-position-y: -84px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 117%;
+}
+
+.promo-wrapper {
+    background-image: url(../img/promo-mouse.png), url(../img/index-photo-girl.png), url(../img/israel-headding.png);
+    background-position: 50% 80%, 52% 38%, 50% 26%;
     background-repeat: no-repeat;
     width: 100%;
     height: 810px;
-
 }
-
-.main-heading {
-    
-    font-family: 'Raleway', 'Arial', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 200px;
-    line-height: 170%;
-    letter-spacing: 0.055em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #000000;
-    margin: 0 auto;
-    padding-top: 78px;
-}
-
 
 .promo-tagline {
-    position: relative;
-    top: 36px;
+    position: absolute;
+    left: 41%;
+    top: 56%;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -253,7 +244,6 @@ a {
     border: none;
     background-color: inherit;
     cursor: pointer;
-
 }
 
 .culture::before {
@@ -388,7 +378,7 @@ a {
     padding-bottom: 67px;
 }
 
-.i-want-go-girl-flag {
+.i-want-go__girlFlag {
     position: absolute;
     top: -82%;
     left: 43%;
@@ -408,6 +398,10 @@ a {
     font-size: 17px;
     line-height: 20px;
     letter-spacing: 2px;
+}
+
+.phone-form:focus {
+    outline: none;
 }
 
 .callback {
@@ -430,21 +424,36 @@ a {
     color: #FFFFFF;
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
     z-index: 1;
+    cursor: pointer;
+}
+
+.callback:active, 
+.callback:focus {
+    outline: none;
 }
 
 /* how-to-go */
 
-.how-to-go__wrapper{
+.how-to-go {
+    position: relative;
+}
+
+.how-to-go__wrapper {
     display: flex;
-    margin-bottom: 100px;
+    justify-content: space-around;
+    margin-bottom: 208px;
+    margin-left: 400px;
 }
 
 .how-to-go__img {
-/*  */
+    position: absolute;
+    left: 15%;
+    top: -5%;
 }
 
 .how-to-go__items {
-    padding-left: 118px;
+    position: relative;
+    padding-left: 48px;
     width: 600px;
 }
 
@@ -456,17 +465,21 @@ a {
     opacity: 0.87;
     margin: 0;
     padding-bottom: 32px;
+    padding-left: 69px;
 } 
 
 .how-to-go__need {
+    display: block;
     font-weight: 500;
     font-size: 17px;
     line-height: 170%;
+    padding-left: 20px;
+    padding-left: 68px;
 }
 
 .how-to-go__list {
     margin: 0;
-    padding-top: 31px;
+    padding-top: 18px;
     padding-right: 0px;
     padding-bottom: 20px;
     padding-left: 44px;
@@ -477,10 +490,31 @@ a {
     font-size: 15px;
     line-height: 140%;
     opacity: 0.87;
+
+    counter-reset: my;
 }
 
 .how-to-go__list__point {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+.how-to-go__list__point::before {
+    counter-increment: my;
+    content: counter(my);
+    color: #FFC341;
+    background: #FFFFFF;
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 23px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    line-height: 40px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
 }
 
 .how-to-go__list__point:last-child{
@@ -493,10 +527,22 @@ a {
     font-size: 15px;
     line-height: 140%;
     opacity: 0.5;
-   
-    padding-top: 20px;
+    padding-left: 85px;
+    padding-top: 9px;
     margin: 0;
-    width: 520px;
+    width: 600px;
+}
+
+.how-to-go__money::before {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 4px;
+    background-color: #ffc341;
+    left: 95px;
+    margin-top: 17px;
+    transform: rotate(90deg);
+
 }
 
 /* life-in-israel */
