@@ -473,16 +473,21 @@ a {
     font-weight: 500;
     font-size: 17px;
     line-height: 170%;
-    padding-left: 20px;
     padding-left: 68px;
+    width: 520px;
 }
 
 .how-to-go__list {
-    margin: 0;
-    padding-top: 18px;
+    position: relative;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 33px;
+
+    padding-top: 33px;
     padding-right: 0px;
     padding-bottom: 20px;
-    padding-left: 44px;
+    padding-left: 79px;
     list-style: none;
 
     font-style: normal;
@@ -499,16 +504,13 @@ a {
 }
 
 .how-to-go__list__point::before {
+    position: absolute;
+    left: 10px;
     counter-increment: my;
     content: counter(my);
     color: #FFC341;
     background: #FFFFFF;
-    display: inline-block;
     text-align: center;
-    margin-top: 5px;
-    margin-right: 23px;
-    margin-bottom: 2px;
-    margin-left: 10px;
     line-height: 40px;
     width: 36px;
     height: 36px;
@@ -547,7 +549,14 @@ a {
 
 /* life-in-israel */
 
+.life-in-israel {
+    position: relative;    
+}
+
 .life-in-israel__wrapper {
+    background: url(../img/life-in-israel_Bg.png), url(../img/life-in-israel-watch.png);
+    background-repeat: no-repeat;
+    background-position: 50% 11%, 100% 66%;
     margin-bottom: 150px;
 }
 
@@ -575,10 +584,43 @@ a {
 .life-in-israel__items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .life-in-israel__tour {
+    background: url(../img/life-in-israel-tour.png);
+    background-repeat: no-repeat;
+    width: 482px;
+    height: 732px;
+}
 
+.life-in-israel__hebrew {
+    background: url(../img/life-in-israel-Hebrew.png);
+    background-repeat: no-repeat;
+    width: 211px;
+    height: 318px;
+}
+
+.life-in-israel__study {
+    background: url(../img/life-in-israel-study.png);
+    background-repeat: no-repeat;
+    width: 411px;
+    height: 318px;
+}
+
+.life-in-israel__creation {
+    background: url(../img/life-in-israel-creation.png);
+    background-repeat: no-repeat;
+    width: 411px;
+    height: 318px;
+}
+
+.life-in-israel__develop {
+    background: url(../img/life-in-israel-develop.png);
+    background-repeat: no-repeat;
+    width: 214px;
+    height: 318px;
 }
 
 .life-in-israel__items--about {
@@ -745,12 +787,10 @@ a {
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
-
+    border-top: 1px solid #dadada;
+    padding-top: 20px;
 }
 
-.logo-footer {
-
-}
 
 .copyright {
     margin: 0;
