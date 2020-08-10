@@ -506,6 +506,7 @@ a {
 .how-to-go__list__point::before {
     position: absolute;
     left: 10px;
+    margin-top: -10px;
     counter-increment: my;
     content: counter(my);
     color: #FFC341;
@@ -586,6 +587,16 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    position: relative;
+}
+
+.qwerty {
+    display: flex;
+    flex-wrap: wrap;
+    width: 666px;
+    margin-top: 113px;
+    margin-left: 20px;
+    position: relative;
 }
 
 .life-in-israel__tour {
@@ -593,6 +604,13 @@ a {
     background-repeat: no-repeat;
     width: 482px;
     height: 732px;
+    margin-top: 50px;
+}
+
+.life-in-israel__tour .life-in-israel__items--about {
+    position: absolute;
+    left: 144px;
+    bottom: 38px;
 }
 
 .life-in-israel__hebrew {
@@ -600,6 +618,13 @@ a {
     background-repeat: no-repeat;
     width: 211px;
     height: 318px;
+    margin-right: 30px;
+}
+
+.life-in-israel__hebrew .life-in-israel__items--about {
+    position: absolute;
+    left: 45px;
+    top: 235px;
 }
 
 .life-in-israel__study {
@@ -607,6 +632,13 @@ a {
     background-repeat: no-repeat;
     width: 411px;
     height: 318px;
+    margin-bottom: 30px;
+}
+
+.life-in-israel__study .life-in-israel__items--about {
+    position: absolute;
+    right: 132px;
+    top: 235px;
 }
 
 .life-in-israel__creation {
@@ -614,6 +646,13 @@ a {
     background-repeat: no-repeat;
     width: 411px;
     height: 318px;
+    margin-right: 30px;
+}
+
+.life-in-israel__creation .life-in-israel__items--about {
+    position: absolute;
+    bottom: 34px;
+    left: 32px;
 }
 
 .life-in-israel__develop {
@@ -621,6 +660,12 @@ a {
     background-repeat: no-repeat;
     width: 214px;
     height: 318px;
+}
+
+.life-in-israel__develop .life-in-israel__items--about {
+    position: absolute;
+    bottom: 34px;
+    right: 88px;
 }
 
 .life-in-israel__items--about {
@@ -708,12 +753,86 @@ a {
 
 .questions {
     margin-bottom: 150px;
+    background: url(../img/questions-watercolor_Bg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 16%;
+    
 }
 
 .questions-wrapper {
-
+    position: relative;
+    background: url(../img/questions-bag.png), url(../img/questions-img.png);;
+    background-repeat: no-repeat;
+    background-position: 0% 100%, right 50%;
+    min-height: 803px;
 }
 
+.questions-heading {
+    margin-left: 110px;
+}
+
+.questions-list {
+    list-style: none;
+    list-style-position: outside;
+    margin-left: 120px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;  
+    counter-reset: my; 
+}
+
+.questions-list__items {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+    width: 560px;
+    min-height: 72px;
+    padding-top: 15px;
+    padding-left: 20px;
+    border-bottom-color: #dadada;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    
+}
+
+.questions-list__items::before {
+    position: absolute;
+    left: 111px;
+    margin-top: -15px;
+    counter-increment: my;
+    content: counter(my);
+    color: #FFC341;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 170%;
+}
+
+.questions-list__items--ans {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%;
+    opacity: 0.74;
+    width: 480px;
+    margin-top: 31px;
+    margin-right: 0px;
+    margin-bottom: 32px;
+    margin-left: -31px;
+}
+
+
+.questions-btn {
+    position: absolute;
+    border: none;
+    outline: none;
+    left: 612px;
+    margin-top: 15px;
+    background: inherit;
+    cursor: pointer;
+}
 
 /* comments */
 

@@ -161,19 +161,21 @@
                             <p class="life-in-israel__items--about">Экскурсии по Израилю<br>и знакомство с его историей
                             </p>
                         </div>
-                        <div class="life-in-israel__hebrew">
-                            <p class="life-in-israel__items--about">Изучение<br>иврита</p>
-                        </div>
-                        <div class="life-in-israel__study">
-                            <p class="life-in-israel__items--about">Обучение современным<br>навыкам и профессиям</p>
-                        </div>
-                        <div class="life-in-israel__creation">
-                            <p class="life-in-israel__items--about">Совместные творческие проекты<br>с израильской
-                                молодёжью
-                            </p>
-                        </div>
-                        <div class="life-in-israel__develop">
-                            <p class="life-in-israel__items--about">Развитие<br>лидерства</p>
+                        <div class="qwerty">
+                            <div class="life-in-israel__hebrew">
+                                <p class="life-in-israel__items--about">Изучение<br>иврита</p>
+                            </div>
+                            <div class="life-in-israel__study">
+                                <p class="life-in-israel__items--about">Обучение современным<br>навыкам и профессиям</p>
+                            </div>
+                            <div class="life-in-israel__creation">
+                                <p class="life-in-israel__items--about">Совместные творческие проекты<br>с израильской
+                                    молодёжью
+                                </p>
+                            </div>
+                            <div class="life-in-israel__develop">
+                                <p class="life-in-israel__items--about">Развитие<br>лидерства</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -197,31 +199,44 @@
         <section class="questions">
             <div class="container">
                 <div class="questions-wrapper">
-                    <h2 class="other-heading">Частые вопросы</h2>
-                    <ol>
-                        <li>Кто организатор? Какие сроки у программы?
+                    <h2 class="other-heading questions-heading">Частые вопросы</h2>
+                    <ol class="questions-list">
+                        <button class="questions-btn" type="button"><img src="img/questions-btn-V.svg"
+                                alt="раскрыть"></button>
+                        <li class="questions-list__items">Кто организатор? Какие сроки у программы?
                             <p></p>
                         </li>
-                        <li>
+                        <button class="questions-btn" type="button"><img src="img/questions-btn-V.svg"
+                                alt="раскрыть"></button>
+                        <li class="questions-list__items">
                             Что такое грант на обучение?
                             <p></p>
                         </li>
-                        <li>
+                        <button class="questions-btn" type="button"><img src="img/questions-btn-V.svg"
+                                alt="раскрыть"></button>
+                        <li class="questions-list__items">
                             Как определяется стоимость программы?
-                            <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве
+                            <p class="questions-list__items--ans">Полная стоимость определяется организаторами в
+                                зависимости от направления. В большинстве
                                 случаев грант «Маса» не покрывает полную стоимость программы, и поэтому
                                 предусматривается определённая доля личного участия.</p>
                         </li>
-                        <li>
+                        <button class="questions-btn" type="button"><img src="img/questions-btn-V.svg"
+                                alt="раскрыть"></button>
+                        <li class="questions-list__items">
                             Что такое грант на обучение?
                             <p></p>
                         </li>
-                        <li>
-                            Признаётся ли учеба в рамках проекта для дальнейшего обучения?
+                        <button class="questions-btn" type="button"><img src="img/questions-btn-V.svg"
+                                alt="раскрыть"></button>
+                        <li class="questions-list__items">
+                            Признаётся ли учеба в рамках проекта для<br>дальнейшего обучения?
                             <p></p>
                         </li>
-                        <li>
-                            Как выглдядит полный процесс регистрациина программу «Маса»?
+                        <button class="questions-btn" type="button"><img src="img/questions-btn-V.svg"
+                                alt="раскрыть"></button>
+                        <li class="questions-list__items">
+                            Как выглдядит полный процесс регистрации<br>на программу «Маса»?
                             <p></p>
                         </li>
                     </ol>
@@ -292,13 +307,13 @@
                     <p>Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
                     <p>Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт спам от
                         нас!</p>
-                        <label for="">
-                            <input type="text" name="" id="" placeholder="имя" rows="3">
-                        </label>
-                        <label for="">
-                            <input type="tel" name="" id="" placeholder="+7 (923) 41" rows="3">
-                        </label>
-                        <button  type="submit">перезвоните мне</button>
+                    <label for="">
+                        <input type="text" name="" id="" placeholder="имя" rows="3">
+                    </label>
+                    <label for="">
+                        <input type="tel" name="" id="" placeholder="+7 (923) 41" rows="3">
+                    </label>
+                    <button type="submit">перезвоните мне</button>
                 </div>
                 <button></button>
             </div>
@@ -325,4 +340,27 @@
             </div>
         </div>
     </footer>
+    <section>
+        <div>
+            <button>закрыть</button>
+            <h3>Заказать звонок</h3>
+            <p>Оставьте ваши контактные данные, мы свяжемся<br>с вами в течение рабочего дня и обязательно поможем найти
+                ответ на ваш вопрос!</p>
+            <form>
+                <div>
+                    <label for="">
+                        <input type="text" placeholder="имя" required>
+                    </label>
+                    <label for="">
+                        <input type="tel" placeholder="телефон" required>
+                    </label>
+                </div>
+                <button>перезвоните мне</button>
+                <label for="">
+                    <input type="checkbox" required>
+                    Нажимая на кнопку, вы даёте согласие на обработку персональных данных
+                </label>
+            </form>
+        </div>
+    </section>
 </body>
