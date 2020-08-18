@@ -103,7 +103,6 @@ a {
     position: relative;
     margin-bottom: 4px;
     background-image: url(../img/israel-headding.png);
-    background-color: #ECEAE8;
     background-repeat: no-repeat;
     background-position: 50% 20%;
     z-index: -1;
@@ -117,13 +116,18 @@ a {
     background-position: 50% 84%;
     width: 100%;
     height: 810px;
-
 } 
+
+.promo-wrapper svg {
+    position: absolute;
+    left: 48%;
+    top: 68%;
+}
 
 .promo-tagline {
     position: absolute;
-    left: 41%;
-    top: 56%;
+    left: 42%;
+    top: 57%;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -206,7 +210,7 @@ a {
 .programs {
     background-image: url(../img/programs-background.png);
     background-repeat: no-repeat;
-    background-position: 78% -69%;
+    background-position: 74% -76%;
     margin-bottom: 204px;
 }
 
@@ -332,7 +336,6 @@ a {
     color: #ffffff;
     font-style: normal;
     font-weight: 500;
-    text-transform: uppercase;
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
 }
 
@@ -369,19 +372,14 @@ a {
 
 .i-want-go {
     position: relative;
-    margin-bottom: 318px;
-
-    /* background-image: url(../img/i-want-go-girl-flag-bg.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    height: 818px; */
+    margin-bottom: 222px;
 }
 
 
 .backpack {
     position: absolute;
     transform: rotate(2deg);
-    left: 14%;
+    left: 17%;
     top: -29%;
 }
 
@@ -403,8 +401,8 @@ a {
 
 .i-want-go__girlFlag {
     position: absolute;
-    top: -80%;
-    left: 43%;
+    top: -79%;
+    left: 44%;
 }
 
 .phone-form {
@@ -414,7 +412,6 @@ a {
     padding-left: 39px;
     border: 2px solid #E3E3E3;
     border-radius: 80px;
-    /* text-transform: uppercase; */
     font-variant: small-caps;
     opacity: 0.5;
     font-weight: 500;
@@ -430,7 +427,7 @@ a {
 .callback {
     position: absolute;
     top: 77%;
-    left: 39%;
+    left: 40%;
     background: linear-gradient(140.64deg, #FFC341 20.46%, #FFD701 65.31%);
     border: none;
     border-radius: 80px;
@@ -461,7 +458,9 @@ a {
     position: relative;
     background-image: url(../img/how-to-stamp.png), url(../img/how_to_Bg.png);
     background-repeat: no-repeat;
-    background-position: 84% 48%, 50% 38%;
+    background-position: 80% 43%, 50% 43%;
+    height: 900px;
+    margin-bottom: 33px;
 }
 
 .how-to-go__heading {
@@ -471,20 +470,24 @@ a {
 .how-to-go__wrapper {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 208px;
-    margin-left: 400px;
+    padding-left: 400px;
+    background-image: url(../img/img_how-to-go.png);
+    background-repeat: no-repeat;
+    background-position: 12px 64px;
+    height: 900px;
 }
 
 .how-to-go__img {
     position: absolute;
     left: 15%;
-    top: -5%;
+    top: 7%;
 }
 
 .how-to-go__items {
     position: relative;
     padding-left: 48px;
     width: 600px;
+    margin-top: 10%;
 }
 
 .how-to-go__description {
@@ -527,6 +530,10 @@ a {
     opacity: 0.87;
 
     counter-reset: my;
+
+    background-image: url(../img/how_to-go---.svg);
+    background-repeat: no-repeat;
+    background-position: 7% 50%;
 }
 
 .how-to-go__list__point {
@@ -578,20 +585,21 @@ a {
     left: 95px;
     margin-top: 17px;
     transform: rotate(90deg);
-
 }
 
 /* life-in-israel */
 
 .life-in-israel {
+    height: 888px;
     position: relative; 
-    margin-bottom: 160px;   
+    margin-bottom: 115px;   
 }
 
 .life-in-israel__wrapper {
     background: url(../img/life-in-israel_Bg.png), url(../img/life-in-israel-watch.png);
     background-repeat: no-repeat;
-    background-position: 50% 11%, 100% 66%;
+    background-position: 50% 609%, 100% 77%;
+    padding-bottom: 100px;
 }
 
 .life-in-israel__description {
@@ -643,7 +651,7 @@ a {
 .life-in-israel__tour .life-in-israel__items--about {
     position: absolute;
     left: 144px;
-    bottom: 102px;
+    bottom: 34px;
 }
 
 .life-in-israel__hebrew {
@@ -759,7 +767,7 @@ a {
 
 .masaisrael-btn {
     position: absolute;
-    left: 56%;
+    left: 55%;
     top: 56%;
     border: none;
     background: linear-gradient(142.39deg, #FFC341 20.46%, #FFD701 65.31%);
@@ -790,7 +798,7 @@ a {
 /* questions */
 
 .questions {
-    margin-bottom: 120px;
+    margin-bottom: -57px;
     background: url(../img/questions-watercolor_Bg.png);
     background-repeat: no-repeat;
     background-position: 50% 16%;
@@ -801,8 +809,8 @@ a {
     position: relative;
     background: url(../img/questions-bag.png), url(../img/questions-img.png);;
     background-repeat: no-repeat;
-    background-position: 0% 100%, right 50%;
-    min-height: 803px;
+    background-position: 0% 100%, right 0%;
+    min-height: 985px;
 }
 
 .questions-heading {
@@ -811,7 +819,6 @@ a {
 
 .questions-list {
     list-style: none;
-    list-style-position: outside;
     margin-left: 120px;
     margin-top: 18px;
     margin-right: 0;
@@ -828,14 +835,12 @@ a {
     line-height: 150%;
     width: 560px;
     min-height: 72px;
-    padding-left: 20px;
-    border-bottom-color: #dadada;
+    padding-left: 20px;  
+    list-style: none;
+    /* border-bottom-color: #dadada;
     border-bottom-style: solid;
-    border-bottom-width: 2px;   
-}
-
-.questions-list__items:not(:first-child) {
-    padding-top: 24px;
+    border-bottom-width: 1px;   
+    padding-top: 20px; */
 }
 
 .questions-list__items::before {
@@ -851,6 +856,65 @@ a {
     line-height: 170%;
 }
 
+
+.questions-list__item--wrapper {
+    height: auto;
+}
+
+.questions-list__items--str { /*input*/
+    display: none;
+}
+
+.questions-list__items--str + .questions-list__items--qst::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 478px;
+    top: 0;
+    background-image: url(../img/questions-btn-V.svg);
+    background-repeat: no-repeat;
+}
+
+.questions-list__items--str:checked + .questions-list__items--qst::before {
+    display: none;
+}
+
+.questions-list__items--str:checked + .questions-list__items--qst::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 478px;
+    top: 0;
+    background-image: url(../img/questions-btn-V-dwn.svg);
+    background-repeat: no-repeat;
+}
+
+.questions-list__items--qst { /*label*/
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+    width: 560px;
+    cursor: pointer;
+    display: block;
+    user-select: none;
+    margin-bottom: 24px;
+}
+
+.questions-list__items--cont { /*article*/
+    overflow: hidden;
+    height: 0px;
+    margin-bottom: 24px;
+}
+
+.questions-list__items--str:checked ~ .questions-list__items--cont {
+    height: auto;
+    
+}
+
 .questions-list__items--ans {
     font-style: normal;
     font-weight: normal;
@@ -858,10 +922,10 @@ a {
     line-height: 140%;
     opacity: 0.74;
     width: 480px;
-    margin-top: 31px;
-    margin-right: 0px;
-    margin-bottom: 32px;
-    margin-left: -31px;
+    height: auto;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .questions-btn {
@@ -883,7 +947,7 @@ a {
 /* comments */
 
 .comments {
-    margin-bottom: 150px;
+    margin-bottom: 104px;
 }
 
 .comments-wrapper {
@@ -1021,18 +1085,14 @@ a {
 /* map */
 
 .map {
-    margin-bottom: 96px;
-    background-image: url(../img/Marker-map.svg), url(../img/map.jpg);
+    margin-bottom: 73px;
+    background-image: url(../img/map_Bg.png), url(../img/Marker-map.svg), url(../img/map.jpg);
     background-repeat: no-repeat;
-    background-position: 77% 34%, 78% -21%;
+    background-position: 50% 50%, 74% 39%, 74% -3%;
 }
 
-.map-wrapper {
-    background-image: url(../img/map_Bg.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;    
+.map-wrapper {    
     margin-left: 113px;
-
 }
 
 .map-heading {
@@ -1049,12 +1109,13 @@ a {
     margin: 0;
     padding-left: 20px;
     padding-bottom: 39px;
+    padding-top: 20px;
 }
 
 .map-town::before {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 19px;
     content: "";
     background-image: url(../img/map-town-marker.svg);
     background-repeat: no-repeat;
@@ -1067,12 +1128,13 @@ a {
     font-variant: small-caps;
     opacity: 0.74;
     border-bottom: 1px dashed #1FC0FC;
+    padding-left: 10px;
 }
 
 .map-town a::after {
     position: absolute;
-    left: 180px;
-    top: 5px;
+    left: 218px;
+    top: 25px;
     content: "";
     background-image: url(../img/map-town-gps.svg);
     background-repeat: no-repeat;
@@ -1081,9 +1143,20 @@ a {
 }
 
 .map-curator {
+    position: relative;
     width: 264px;
-    margin-left: 115px;
+    margin-left: 133px;
     margin-bottom: 32px;
+}
+
+.map-curator a {
+    padding-right: 7px;
+}
+
+.map-curator__photo {
+    position: absolute;
+    left: -136px;
+    top: -2px;
 }
 
 .map-curator__name {
@@ -1128,7 +1201,7 @@ a {
 
 .map-contact__wrapper {
     display: flex;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
     margin-left: 110px;
 }
 
@@ -1216,15 +1289,21 @@ a {
 
 .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;;
     margin-bottom: 30px;
     border-top: 1px solid #dadada;
     padding-top: 20px;
 }
 
+.logo-footer {
+    margin-left: 110px;
+}
 
 .copyright {
-    margin: 0;
+    margin-top: 7px;
+    margin-right: -153px;
+    margin-bottom: 6px;
+    margin-left: -108px;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -1235,4 +1314,141 @@ a {
 .social-footer {
     height: 24px;
     opacity: 0.16;
+    margin-right: 115px;
+}
+
+.social-footer a {
+    padding-left: 15px;
+}
+
+/* modal call */
+
+.modal-call {
+    position: fixed;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 100;
+}
+
+.modal-call__wrapper {
+    position: relative;
+    width: 480px;
+    height: 521px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--basic-background-color);
+    margin: 0 auto;
+    box-shadow: 0 30px 50px rgba(0,0,0,0.7);
+}
+
+.modal-call__close {
+    border: none;
+    outline: none;
+    background: transparent;
+    background-image: url(../img/modal_close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    position: absolute;
+    right: 24px;
+    top: 18px;
+    cursor: pointer;
+}
+
+.modal-call__header {
+    font-family: var(--other-heading-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #1FC0FC;
+    margin: 0;
+    padding-top: 56px;
+    padding-right: 190px;
+    padding-bottom: 16px;
+    padding-left: 48px;
+}
+
+
+.modal-call__text {
+    width: 360px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 170%;
+    opacity: 0.87;
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
+
+.modal-call__fields {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+
+.modal-call__name {
+    padding-top: 19px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    border: 2px solid #E3E3E3;
+    border-radius: 80px;
+    font-variant: small-caps;
+    opacity: 0.5;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    width: 360px;
+}
+
+.modal-call__tel {
+    padding-top: 19px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    border: 2px solid #E3E3E3;
+    border-radius: 80px;
+    font-variant: small-caps;
+    opacity: 0.5;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    width: 360px;
+}
+
+
+.modal-call__callMe--btn {
+    position: absolute;
+    top: 77%;
+    left: 40%;
+    background: linear-gradient(140.64deg, #FFC341 20.46%, #FFD701 65.31%);
+    border: none;
+    border-radius: 80px;
+    padding-top: 20px;
+    padding-right: 38px;
+    padding-bottom: 20px;
+    padding-left: 39px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.modal-call__agreement {
+
 }
