@@ -205,6 +205,7 @@ a {
     height: 96px;
 }
 
+
 /* programs */
 
 .programs {
@@ -366,6 +367,7 @@ a {
     opacity: 0.87;
     margin: 0;
     width: 560px;
+    padding-bottom: 10px;
 }
 
 /* i want to go */
@@ -396,7 +398,11 @@ a {
     opacity: 0.87;
     margin: 0;
     width: 400px;
-    padding-bottom: 67px;
+    padding-bottom: 60px;
+}
+
+.callback-wrapper {
+    position: relative;
 }
 
 .i-want-go__girlFlag {
@@ -426,8 +432,8 @@ a {
 
 .callback {
     position: absolute;
-    top: 77%;
-    left: 40%;
+    top: 0;
+    left: 55%;
     background: linear-gradient(140.64deg, #FFC341 20.46%, #FFD701 65.31%);
     border: none;
     border-radius: 80px;
@@ -459,7 +465,7 @@ a {
     background-image: url(../img/how-to-stamp.png), url(../img/how_to_Bg.png);
     background-repeat: no-repeat;
     background-position: 80% 43%, 50% 43%;
-    height: 900px;
+    min-height: 900px;
     margin-bottom: 33px;
 }
 
@@ -590,9 +596,9 @@ a {
 /* life-in-israel */
 
 .life-in-israel {
-    height: 888px;
+    min-height: 888px;
     position: relative; 
-    margin-bottom: 115px;   
+    margin-bottom: 62px;   
 }
 
 .life-in-israel__wrapper {
@@ -651,7 +657,8 @@ a {
 .life-in-israel__tour .life-in-israel__items--about {
     position: absolute;
     left: 144px;
-    bottom: 34px;
+    bottom: 31px;
+    width: 320px;
 }
 
 .life-in-israel__hebrew {
@@ -665,7 +672,8 @@ a {
 .life-in-israel__hebrew .life-in-israel__items--about {
     position: absolute;
     left: 25px;
-    top: 235px;
+    top: 237px;
+    width: 120px;
 }
 
 .life-in-israel__study {
@@ -678,8 +686,9 @@ a {
 
 .life-in-israel__study .life-in-israel__items--about {
     position: absolute;
-    right: 132px;
-    top: 235px;
+    right: 73px;
+    top: 238px;
+    width: 320px;
 }
 
 .life-in-israel__creation {
@@ -692,8 +701,9 @@ a {
 
 .life-in-israel__creation .life-in-israel__items--about {
     position: absolute;
-    bottom: 34px;
+    bottom: 30px;
     left: 32px;
+    width: 360px;
 }
 
 .life-in-israel__develop {
@@ -705,8 +715,9 @@ a {
 
 .life-in-israel__develop .life-in-israel__items--about {
     position: absolute;
-    bottom: 34px;
-    right: 88px;
+    bottom: 30px;
+    right: 81px;
+    width: 120px;
 }
 
 .life-in-israel__items--about {
@@ -718,43 +729,36 @@ a {
     color: #FFFFFF;
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
     margin: 0;
+    min-height: 50px;
 }
 
-/* masaisrael */
+/* masaisrael*/
 
 .masaisrael {
-    position: relative;
-    margin-bottom: 137px;
-}
-
-.masaisrael-wrapper {
     background-image: url(../img/masaisrael.png);
     background-repeat: no-repeat;
-    background-position: center;
-    height: 583px;
-}
-
-.masaisrael-content {
-    position: absolute;
-    left: 53%;
-    top: 121px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 403px;
-    height: 160px;
-    margin: 0;
+    background-position: 50% 50%;
+    min-height: 583px;
+    margin-bottom: 136px;
 }
 
 .masaisrael-heading {
-    text-align: end;
+    padding-left: 795px;
+    padding-top: 120px;   
+    padding-right: 274px;
+    
+}
+
+.masaisrael-wrapper {
+
 }
 
 .masaisrael-description {
-    position: absolute;
-    left: 59px;
-    top: 75px;
-    width: 398px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 168px;
+    margin-top: -3px;
+    margin-bottom: 20px;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
@@ -762,20 +766,23 @@ a {
     color: #FFFFFF;
     opacity: 0.87;
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
-    margin: 0;
+    width: 398px;
+    min-height: 87px;
 }
 
 .masaisrael-btn {
-    position: absolute;
-    left: 55%;
-    top: 56%;
+    display: block;
+    width: 230px;
+    height: 59px;
+    background: url(../img/masaisrael-btn-img.svg), linear-gradient(142.39deg, #FFC341 20.46%, #FFD701 65.31%);
+    background-repeat: no-repeat;
+    background-position: 19% 50%;
     border: none;
-    background: linear-gradient(142.39deg, #FFC341 20.46%, #FFD701 65.31%);
     border-radius: 80px;
     padding-top: 20px;
-    padding-right: 31px;
-    padding-bottom: 20px;
-    padding-left: 80px;
+    padding-right: 35px;
+    padding-bottom: 19px;
+    padding-left: 70px;
 
     font-style: normal;
     font-weight: 500;
@@ -788,12 +795,13 @@ a {
     letter-spacing: 2px;
     cursor: pointer;
     outline: none;
+
+    margin-left: auto;
+    margin-top: 47px;
+    margin-right: 340px;
+    margin-bottom: 0;
 }
-.masaisrael-btn__ico {   
-    position: absolute;
-    top: 18px;
-    left: 44px;
-}
+
 
 /* questions */
 
@@ -809,7 +817,7 @@ a {
     position: relative;
     background: url(../img/questions-bag.png), url(../img/questions-img.png);;
     background-repeat: no-repeat;
-    background-position: 0% 100%, right 0%;
+    background-position: 0% 90%, right 0%;
     min-height: 985px;
 }
 
@@ -836,17 +844,14 @@ a {
     width: 560px;
     min-height: 72px;
     padding-left: 20px;  
+    padding-bottom: 20px;
     list-style: none;
-    /* border-bottom-color: #dadada;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;   
-    padding-top: 20px; */
 }
 
 .questions-list__items::before {
     position: absolute;
     left: -9px;
-    top: -16px;
+    top: -14px;
     counter-increment: my;
     content: counter(my);
     color: #FFC341;
@@ -857,8 +862,13 @@ a {
 }
 
 
+.line {
+    border-bottom: 1px solid #dadada;
+    margin-left: -27px;
+}
+
 .questions-list__item--wrapper {
-    height: auto;
+    min-height: 72px;
 }
 
 .questions-list__items--str { /*input*/
@@ -870,8 +880,8 @@ a {
     content: "";
     width: 20px;
     height: 20px;
-    left: 478px;
-    top: 0;
+    left: 504px;
+    top: 10px;
     background-image: url(../img/questions-btn-V.svg);
     background-repeat: no-repeat;
 }
@@ -885,7 +895,7 @@ a {
     content: "";
     width: 20px;
     height: 20px;
-    left: 478px;
+    left: 504px;
     top: 0;
     background-image: url(../img/questions-btn-V-dwn.svg);
     background-repeat: no-repeat;
@@ -902,12 +912,14 @@ a {
     display: block;
     user-select: none;
     margin-bottom: 24px;
+    padding-left: 26px;
 }
 
 .questions-list__items--cont { /*article*/
     overflow: hidden;
     height: 0px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+    margin-left: -3px;
 }
 
 .questions-list__items--str:checked ~ .questions-list__items--cont {
@@ -924,7 +936,6 @@ a {
     width: 480px;
     height: auto;
     margin: 0;
-    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -954,7 +965,7 @@ a {
     background-image: url(../img/comments-town.png), url(../img/comments_bg.png);
     background-repeat: no-repeat;
     background-position: 100% 24%, 100% 250%;
-   
+    min-height: 540px;
 }
 
 .comments-heading {
@@ -966,7 +977,7 @@ a {
     position: relative;
     list-style: none;
     width: 680px;
-    height: 359px;
+    min-height: 359px;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 55px;
@@ -1214,6 +1225,7 @@ a {
     opacity: 0.87;
     width: 330px;
     margin: 0;
+    padding-top: 10px;
 }
 
 .map-contact__name {
@@ -1233,6 +1245,7 @@ a {
     font-size: 17px;
     line-height: 20px;
     opacity: 0.5;
+    outline: none;
 }
 
 .map-contact__phone {
@@ -1252,6 +1265,7 @@ a {
     font-size: 17px;
     line-height: 20px;
     opacity: 0.5;
+    outline: none;
 }
 
 .map-contact__btn{
@@ -1324,6 +1338,7 @@ a {
 /* modal call */
 
 .modal-call {
+    display: none;
     position: fixed;
     top: auto;
     right: 0;
@@ -1331,6 +1346,12 @@ a {
     left: 0;
     margin: auto;
     z-index: 100;
+}
+
+.call-me__popap {
+    top: 120px;
+    bottom: auto;
+    padding: 50px 80px;
 }
 
 .modal-call__wrapper {
@@ -1355,8 +1376,8 @@ a {
     height: 40px;
     padding: 0;
     position: absolute;
-    right: 24px;
-    top: 18px;
+    right: 20px;
+    top: 22px;
     cursor: pointer;
 }
 
@@ -1383,21 +1404,33 @@ a {
     font-size: 15px;
     line-height: 170%;
     opacity: 0.87;
-    margin: 0 auto;
-    padding-bottom: 32px;
+    margin-top: 4px;
+    margin-right: 72px;
+    margin-bottom: 32px;
+    margin-left: auto;
+}
+
+.modal-call__form {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .modal-call__fields {
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    margin-left: 48px;
+}
+
+.modal-call__field--l {
+    padding-bottom: 11px;
 }
 
 .modal-call__name {
     padding-top: 19px;
     padding-right: 0;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
     padding-left: 40px;
     border: 2px solid #E3E3E3;
     border-radius: 80px;
@@ -1413,7 +1446,7 @@ a {
 .modal-call__tel {
     padding-top: 19px;
     padding-right: 0;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     padding-left: 40px;
     border: 2px solid #E3E3E3;
     border-radius: 80px;
@@ -1426,18 +1459,15 @@ a {
     width: 360px;
 }
 
-
 .modal-call__callMe--btn {
-    position: absolute;
-    top: 77%;
-    left: 40%;
     background: linear-gradient(140.64deg, #FFC341 20.46%, #FFD701 65.31%);
     border: none;
     border-radius: 80px;
     padding-top: 20px;
-    padding-right: 38px;
+    padding-right: 60px;
     padding-bottom: 20px;
-    padding-left: 39px;
+    padding-left: 60px;
+    margin: 0 auto;
     font-weight: 500;
     font-size: 17px;
     line-height: 20px;
@@ -1445,10 +1475,191 @@ a {
     letter-spacing: 2px;
     color: #FFFFFF;
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
-    z-index: 1;
     cursor: pointer;
 }
 
 .modal-call__agreement {
+    width: 265px;
+    min-height: 40px;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-left: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    opacity: 0.74;
+}
 
+.modal-call__agreement--box {
+    display: none;
+}
+
+.modal-call__agreement--box + .modal-call__agreement::before {
+    position: absolute;
+    top: 228px;
+    left: 108px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/modal_square.svg);
+    background-repeat: no-repeat;
+}
+
+.modal-call__agreement--box:checked + .modal-call__agreement::after {
+    position: absolute;
+    top: 228px;
+    left: 108px;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-image: url(../img/modal_close.png);
+    background-repeat: no-repeat;
+}
+
+.call-me__popap--show {
+    display: block;
+}
+
+/*Заявка принята*/
+
+.call-received {
+    position: fixed;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 100;
+}
+
+.call-received__wrapper {
+    position: relative;
+    width: 480px;
+    height: 521px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--basic-background-color);
+    margin: 0 auto;
+    box-shadow: 0 30px 50px rgba(0,0,0,0.7);
+    background-image: url(../img/call_ok.png);
+    background-repeat: no-repeat;
+    background-position: 50% 26%;
+}
+
+.call-received__close {
+    border: none;
+    outline: none;
+    background: transparent;
+    background-image: url(../img/modal_close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    cursor: pointer;
+}
+
+.call-received__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 217px;
+}
+
+.call-received__header {
+    font-family: var(--other-heading-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #1FC0FC;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 16px;
+}
+
+.call-received__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 170%;
+    text-align: center;
+    opacity: 0.87;
+    width: 360px;
+    min-height: 52px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
+
+.call-received__btn {
+    background: linear-gradient(140.64deg, #FFC341 20.46%, #FFD701 65.31%);
+    border: none;
+    border-radius: 80px;
+    padding-top: 19px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    width: 264px;
+    height: 59px;
+    outline: none;
+}
+
+
+/* look */
+
+.masaisrael-btn:hover {
+    background: url(../img/masaisrael-btn-img.svg), #FFC341;
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: 19% 50%;
+}
+
+.masaisrael-btn:active {
+    background: url(../img/masaisrael-btn-img.svg), radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(109.15deg, #FFC341 -50.3%, #FFD701 63.1%);
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: 19% 50%;
+}
+
+.call-received__btn:hover,
+.modal-call__callMe--btn:hover,
+.map-contact__btn:hover,
+.callback:hover
+ {
+    background: #FFC341;
+    outline: none;
+}
+
+.call-received__btn:active,
+.modal-call__callMe--btn:active,
+.map-contact__btn:active,
+.callback:active
+{
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(109.15deg, #FFC341 -50.3%, #FFD701 63.1%);
+    outline: none;
+}
+
+
+.phone-form:focus,
+.map-contact__name:focus {
+    border: 2px solid transparent;
+    background: linear-gradient(#FFFFFF, #FFFFFF) padding-box, linear-gradient(to right, #FFC341 -50.3%, #FFD701 63.1%) border-box;
+}
+
+.phone-form:invalid,
+.map-contact__name:invalid {
+    border: 2px solid #f57676;
 }

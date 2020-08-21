@@ -1,15 +1,10 @@
-'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+var callMe = document.querySelector(".call-me");
+var callMePopap = document.querySelector(".call-me__popap");
 
-pageHeader.classList.remove('page-header--nojs');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
+callMe.addEventListener("click", function () {
+  evt.preventDefault();
+  callMePopap.classList.add("call-me__popap--show");
+  console.log('callMe')
+  
 });
