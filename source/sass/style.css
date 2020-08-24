@@ -381,7 +381,7 @@ a {
 .backpack {
     position: absolute;
     transform: rotate(2deg);
-    left: 17%;
+    left: 14%;
     top: -29%;
 }
 
@@ -398,7 +398,7 @@ a {
     opacity: 0.87;
     margin: 0;
     width: 400px;
-    padding-bottom: 60px;
+    padding-bottom: 63px;
 }
 
 .callback-wrapper {
@@ -407,8 +407,8 @@ a {
 
 .i-want-go__girlFlag {
     position: absolute;
-    top: -79%;
-    left: 44%;
+    top: -81%;
+    left: 43%;
 }
 
 .phone-form {
@@ -703,7 +703,7 @@ a {
     position: absolute;
     bottom: 30px;
     left: 32px;
-    width: 360px;
+    width: 365px;
 }
 
 .life-in-israel__develop {
@@ -1099,7 +1099,7 @@ a {
     margin-bottom: 73px;
     background-image: url(../img/map_Bg.png), url(../img/Marker-map.svg), url(../img/map.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%, 74% 39%, 74% -3%;
+    background-position: 50% 50%, 77% 40%, 78% 10%;
 }
 
 .map-wrapper {    
@@ -1351,7 +1351,6 @@ a {
 .call-me__popap {
     top: 120px;
     bottom: auto;
-    padding: 50px 80px;
 }
 
 .modal-call__wrapper {
@@ -1441,7 +1440,9 @@ a {
     line-height: 20px;
     letter-spacing: 2px;
     width: 360px;
+    outline: none;
 }
+
 
 .modal-call__tel {
     padding-top: 19px;
@@ -1457,6 +1458,7 @@ a {
     line-height: 20px;
     letter-spacing: 2px;
     width: 360px;
+    outline: none;
 }
 
 .modal-call__callMe--btn {
@@ -1476,6 +1478,7 @@ a {
     color: #FFFFFF;
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
     cursor: pointer;
+    outline: none;
 }
 
 .modal-call__agreement {
@@ -1497,7 +1500,7 @@ a {
 
 .modal-call__agreement--box + .modal-call__agreement::before {
     position: absolute;
-    top: 228px;
+    top: 232px;
     left: 108px;
     content: "";
     width: 16px;
@@ -1506,24 +1509,26 @@ a {
     background-repeat: no-repeat;
 }
 
-.modal-call__agreement--box:checked + .modal-call__agreement::after {
+/* .modal-call__agreement--box:checked + .modal-call__agreement::after {
     position: absolute;
-    top: 228px;
+    top: 232px;
     left: 108px;
     content: "";
     width: 14px;
     height: 14px;
     background-image: url(../img/modal_close.png);
     background-repeat: no-repeat;
-}
+} */
 
 .call-me__popap--show {
     display: block;
+    animation: bounce 0.6s;
 }
 
 /*Заявка принята*/
 
 .call-received {
+    display: none;
     position: fixed;
     top: auto;
     right: 0;
@@ -1637,8 +1642,8 @@ a {
 .call-received__btn:hover,
 .modal-call__callMe--btn:hover,
 .map-contact__btn:hover,
-.callback:hover
- {
+.callback:hover,
+.modal-call__callMe--btn:hover {
     background: #FFC341;
     outline: none;
 }
@@ -1646,15 +1651,17 @@ a {
 .call-received__btn:active,
 .modal-call__callMe--btn:active,
 .map-contact__btn:active,
-.callback:active
-{
+.callback:active,
+.modal-call__callMe--btn:active {
     background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(109.15deg, #FFC341 -50.3%, #FFD701 63.1%);
     outline: none;
 }
 
 
 .phone-form:focus,
-.map-contact__name:focus {
+.map-contact__name:focus,
+.modal-call__name:focus,
+.modal-call__tel:focus {
     border: 2px solid transparent;
     background: linear-gradient(#FFFFFF, #FFFFFF) padding-box, linear-gradient(to right, #FFC341 -50.3%, #FFD701 63.1%) border-box;
 }
@@ -1663,3 +1670,24 @@ a {
 .map-contact__name:invalid {
     border: 2px solid #f57676;
 }
+
+
+/* Animations */
+
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
