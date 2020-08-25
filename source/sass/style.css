@@ -104,24 +104,30 @@ a {
     margin-bottom: 4px;
     background-image: url(../img/israel-headding.png);
     background-repeat: no-repeat;
-    background-position: 50% 20%;
-    z-index: -1;
-    
+    background-position: 50% 20%;   
 }
 
 
 .promo-wrapper {
-    background-image: url(../img/israel_all.png);
+    background: url(../img/israel_all.png);
     background-repeat: no-repeat;
     background-position: 50% 84%;
     width: 100%;
     height: 810px;
 } 
 
-.promo-wrapper svg {
+.promo-wrapper_btn {
     position: absolute;
     left: 48%;
     top: 68%;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+.promo-wrapper_btn:hover {
+    cursor: pointer;
 }
 
 .promo-tagline {
@@ -190,19 +196,35 @@ a {
 
 .photo_about {
     position: relative;
-    
 }
 
-.photo_about::after {
+.photo_about_btn {
     position: absolute;
     top: 38%;
     left: 45%;
-    content: "";
-    background: url(../img/about_play_button.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    padding: 0;
     width: 96px;
     height: 96px;
+    background: transparent;
+    background-image: url(../img/about_play_button.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.photo_about_btn:hover {
+    cursor: pointer;
+    background-image: url(../img/about_play_button_hover.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.photo_about_btn:active {
+    cursor: pointer;
+    background-image: url(../img/about_play_button_active.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 
@@ -654,7 +676,7 @@ a {
     margin-top: -24px;
 }
 
-.life-in-israel__tour .life-in-israel__items--about {
+.life-in-israel__tour .life-in-israel__items_about {
     position: absolute;
     left: 144px;
     bottom: 31px;
@@ -669,7 +691,7 @@ a {
     margin-right: 30px;
 }
 
-.life-in-israel__hebrew .life-in-israel__items--about {
+.life-in-israel__hebrew .life-in-israel__items_about {
     position: absolute;
     left: 25px;
     top: 237px;
@@ -684,7 +706,7 @@ a {
     margin-bottom: 30px;
 }
 
-.life-in-israel__study .life-in-israel__items--about {
+.life-in-israel__study .life-in-israel__items_about {
     position: absolute;
     right: 73px;
     top: 238px;
@@ -699,7 +721,7 @@ a {
     margin-right: 30px;
 }
 
-.life-in-israel__creation .life-in-israel__items--about {
+.life-in-israel__creation .life-in-israel__items_about {
     position: absolute;
     bottom: 30px;
     left: 32px;
@@ -713,14 +735,14 @@ a {
     height: 318px;
 }
 
-.life-in-israel__develop .life-in-israel__items--about {
+.life-in-israel__develop .life-in-israel__items_about {
     position: absolute;
     bottom: 30px;
     right: 81px;
     width: 120px;
 }
 
-.life-in-israel__items--about {
+.life-in-israel__items_about {
     font-family: 'Raleway', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -749,9 +771,6 @@ a {
     
 }
 
-.masaisrael-wrapper {
-
-}
 
 .masaisrael-description {
     padding: 0;
@@ -806,7 +825,6 @@ a {
 /* questions */
 
 .questions {
-    margin-bottom: -57px;
     background: url(../img/questions-watercolor_Bg.png);
     background-repeat: no-repeat;
     background-position: 50% 16%;
@@ -817,8 +835,9 @@ a {
     position: relative;
     background: url(../img/questions-bag.png), url(../img/questions-img.png);;
     background-repeat: no-repeat;
-    background-position: 0% 90%, right 0%;
-    min-height: 985px;
+    background-position: 0% 99%, right 0%;
+    min-height: 909px;
+    margin-bottom: 20px;
 }
 
 .questions-heading {
@@ -1025,11 +1044,11 @@ a {
     padding-right: 5px;
 }
 
-.comments-text {
+.comments__text {
     padding-bottom: 17px;
 }
 
-.comments-program__about {
+.comments__text_about {
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
@@ -1199,7 +1218,7 @@ a {
     padding-bottom: 10px;
 }
 
-.map-curator__about {
+.map__curator_about {
     margin: 0;
     margin-bottom: 128px;
     width: 480px;
@@ -1210,14 +1229,14 @@ a {
     opacity: 0.87;
 }
 
-.map-contact__wrapper {
+.map__contact_wrapper {
     display: flex;
     margin-bottom: 6px;
     margin-left: 110px;
 }
 
 
-.map-contact__wrapper--ans {
+.map__contact_wrapper_ans {
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -1228,7 +1247,7 @@ a {
     padding-top: 10px;
 }
 
-.map-contact__name {
+.map__contact_name {
     padding-top: 19px;
     padding-right: 0;
     padding-bottom: 20px;
@@ -1248,7 +1267,7 @@ a {
     outline: none;
 }
 
-.map-contact__phone {
+.map__contact_phone {
     padding-top: 19px;
     padding-right: 0;
     padding-bottom: 20px;
@@ -1268,7 +1287,7 @@ a {
     outline: none;
 }
 
-.map-contact__btn{
+.map__contact_btn{
     border: none;
     background: linear-gradient(142.39deg, #FFC341 20.46%, #FFD701 65.31%);
     border-radius: 80px;
@@ -1288,7 +1307,7 @@ a {
     cursor: pointer;
 }
 
-.map-contact__wrapper--spam {
+.map__contact_wrapper_spam {
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -1339,7 +1358,7 @@ a {
 
 .modal-call {
     display: none;
-    position: fixed;
+    position: absolute;
     top: auto;
     right: 0;
     bottom: 0;
@@ -1509,7 +1528,7 @@ a {
     background-repeat: no-repeat;
 }
 
-/* .modal-call__agreement--box:checked + .modal-call__agreement::after {
+.modal-call__agreement--box:checked + .modal-call__agreement::after {
     position: absolute;
     top: 232px;
     left: 108px;
@@ -1518,7 +1537,7 @@ a {
     height: 14px;
     background-image: url(../img/modal_close.png);
     background-repeat: no-repeat;
-} */
+}
 
 .call-me__popap--show {
     display: block;

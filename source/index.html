@@ -21,7 +21,9 @@
                         <a href="tel:+78122757575">+ (972) 2 – 621 – 6581</a>
                     </li>
                     <li class="main-items__item">
-                        <img src="img/index-masa-logo.jpg" alt="Israel Journey">
+                        <a href="">
+                            <img src="img/index-masa-logo.jpg" alt="Israel Journey">
+                        </a>
                     </li>
                     <li class="main-items__item call">
                         <a class="call-me" href="">Заказать звонок</a>
@@ -36,6 +38,9 @@
                 <h1 class="visually-hidden">промо</h1>
                 <div class="promo-wrapper">
                     <p class="promo-tagline">Учёба, путешествие и карьера для еврейской молодёжи</p>
+
+                </div>
+                <button class="promo-wrapper_btn" type="button">
                     <svg width="76" height="132" viewBox="0 0 76 132" fill="none" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <path d="M38 76V131.5" stroke="white" />
@@ -50,7 +55,7 @@
                                 xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAaCAYAAABRqrc5AAABzklEQVQ4jd2VO2hUQRSGv70bg0QNwoIoBEQDQdLEQiEpbEWIhZBCCystFFuxSKNgI1gK1mIjWBgUgphCfFWCjURiBLVTgyTE1Rif2c9iZ8nJbLKulvnhcM/zZ+bOnf+WVDL0AEeAYaAP6AYWgDfABDCW/GWo0Y6rL2yNt+rpOBcJzqm/QvOsOqFeV++qMxnZpZzkmPozFRfVy+rObJXb1QtqNRCdaZBsU6dSckE9lQ3ndlSdT/3v1F7Uk4H5ajbQp55V92b5i2FmFPVmCr6o/aGxrN5KtQdqV7a1xjt6WAC96aBeA9Ph4DYCleR3J2tgBnie/F0FsCkFc0Atnn6Ia1kNYDY9u4qQLLKmElAOtdXqAOaFiB/AfPK/Ap/XauxoQfIbGAWeAI+Axf8hAXiZrCVabadtrEOSJlVqEyu+k08p2AF0/gNJT3pWC2AyBbuBwTYJ9gADyZ9CPazW0o0cVzv+oieo14IUnEDdot4LySvq5jWGy+p5l2X0mVppFPepHwLRfXXEuuptUCvqsHo7rLqqHjQT6kMZ0ZL6UX2lvneliM9Z1+UmtUcdUG+o31wdS+oddSjOlWz+eZWB/cABoB/YSv0GTwOPgafA9zjwB58rtSzklNU8AAAAAElFTkSuQmCC" />
                         </defs>
                     </svg>
-                </div>
+                </button>
             </div>
         </section>
         <section class="about">
@@ -63,6 +68,7 @@
                     <img src="img/photo_about.png"
                         alt="совместный проект правительства Израиля и Еврейского агентства Сохнут" width="870"
                         height="460">
+                    <button class="photo_about_btn" type="button"> </button>
                 </div>
             </div>
         </section>
@@ -126,7 +132,8 @@
                         ответим на все вопросы!</p>
                     <form class="callback-wrapper" action="https://echo.htmlacademy.ru" method="POST">
                         <label for="call">
-                            <input class="phone-form" type="tel" name="phone" id="call" placeholder="телефон">
+                            <input class="phone-form" type="tel" pattern="^[ 0-9]+$" name="phone" id="call"
+                                placeholder="телефон" required>
                         </label>
                         <button class="callback" type="submit">перезвоните мне</button>
                     </form>
@@ -174,23 +181,23 @@
                     </div>
                     <div class="life-in-israel__items">
                         <div class="life-in-israel__tour">
-                            <p class="life-in-israel__items--about">Экскурсии по Израилю и знакомство с его историей
+                            <p class="life-in-israel__items_about">Экскурсии по Израилю и знакомство с его историей
                             </p>
                         </div>
                         <div class="life-in-israel__more">
                             <div class="life-in-israel__hebrew">
-                                <p class="life-in-israel__items--about">Изучение иврита</p>
+                                <p class="life-in-israel__items_about">Изучение иврита</p>
                             </div>
                             <div class="life-in-israel__study">
-                                <p class="life-in-israel__items--about">Обучение современным навыкам и профессиям</p>
+                                <p class="life-in-israel__items_about">Обучение современным навыкам и профессиям</p>
                             </div>
                             <div class="life-in-israel__creation">
-                                <p class="life-in-israel__items--about">Совместные творческие проекты с израильской
+                                <p class="life-in-israel__items_about">Совместные творческие проекты с израильской
                                     молодёжью
                                 </p>
                             </div>
                             <div class="life-in-israel__develop">
-                                <p class="life-in-israel__items--about">Развитие лидерства</p>
+                                <p class="life-in-israel__items_about">Развитие лидерства</p>
                             </div>
                         </div>
                     </div>
@@ -296,8 +303,8 @@
                                 <p class="comments-program"><span>Программа: </span> Арт-Тель, февраль-сетнябрь 2017
                                 </p>
                             </div>
-                            <div class="comments-text">
-                                <p class="comments-program__about">Долго выбирая программу, на которую ехать - я
+                            <div class="comments__text">
+                                <p class="comments__text_about">Долго выбирая программу, на которую ехать - я
                                     определилась,
                                     взяла на 5 месяцев «иврит как
                                     культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии
@@ -305,7 +312,7 @@
                                     Олега.
                                 </p>
                                 <br>
-                                <p class="comments-program__about">
+                                <p class="comments__text_about">
                                     С первой же встречи тебе дают понять - что ты не один, у тебя есть практически
                                     круглосуточная
                                     поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание,
@@ -363,25 +370,26 @@
                             <img src="img/map-telegram.svg" alt="telegram" width="24" height="24">
                         </a>
                     </div>
-                    <p class="map-curator__about">Куратор является опытным специалистом агентства Сохнут и знает о
+                    <p class="map__curator_about">Куратор является опытным специалистом агентства Сохнут и знает о
                         проекте «Маса» всё! Свяжитесь с
                         куратором, узнайте подробнее о программах и выберите свою ! </p>
                 </div>
-                <form class="map-contact__wrapper" action="https://echo.htmlacademy.ru" method="post">
-                    <p class="map-contact__wrapper--ans">Оставьте ваши контакты, если у вас остались вопросы — мы на
+                <form class="map__contact_wrapper" action="https://echo.htmlacademy.ru" method="post">
+                    <p class="map__contact_wrapper_ans">Оставьте ваши контакты, если у вас остались вопросы — мы на
                         них ответим!</p>
 
                     <label for="call-name">
-                        <input class="map-contact__name" type="text" name="name" id="call-name" placeholder="имя">
+                        <input class="map__contact_name" type="text" name="name" id="call-name" placeholder="имя"
+                            required>
                     </label>
                     <label for="call-tel">
-                        <input class="map-contact__phone" type="tel" name="phone" id="call-tel"
-                            placeholder="+7 (923) 41">
+                        <input class="map__contact_phone" type="tel" pattern="^[ 0-9]+$" name="phone" id="call-tel"
+                            placeholder="+7 (923) 41" required>
                     </label>
-                    <button class="map-contact__btn" type="submit">перезвоните мне</button>
+                    <button class="map__contact_btn" type="submit">перезвоните мне</button>
 
                 </form>
-                <p class="map-contact__wrapper--spam">Мы не передаём данные третьим лицам. Ваши данные будут в
+                <p class="map__contact_wrapper_spam">Мы не передаём данные третьим лицам. Ваши данные будут в
                     безопасности и вам не придёт спам от
                     нас!</p>
             </div>
@@ -422,7 +430,7 @@
                             required>
                     </label>
                     <label for="modal-call--phone">
-                        <input class="modal-call__tel" id="modal-call--phone" name="tel" type="tel"
+                        <input class="modal-call__tel" id="modal-call--phone" name="tel" type="tel" pattern="^[ 0-9]+$"
                             placeholder="телефон" required>
                     </label>
                 </div>
