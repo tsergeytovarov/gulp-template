@@ -88,6 +88,9 @@ a {
     margin-right: 254px;
 }
 
+.main-items__item a:hover {
+    cursor: pointer;
+}
 
 .call {
     margin-right: 0;
@@ -101,7 +104,7 @@ a {
 
 .promo {
     position: relative;
-    margin-bottom: 4px;
+    margin-bottom: 0;
     background-image: url(../img/israel-headding.png);
     background-repeat: no-repeat;
     background-position: 50% 20%;   
@@ -118,8 +121,8 @@ a {
 
 .promo-wrapper_btn {
     position: absolute;
-    left: 48%;
-    top: 68%;
+    left: 915px;
+    top: 543px;
     background: transparent;
     outline: none;
     border: none;
@@ -132,8 +135,8 @@ a {
 
 .promo-tagline {
     position: absolute;
-    left: 42%;
-    top: 57%;
+    left: 781px;
+    top: 453px;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -155,7 +158,7 @@ a {
 /* about */
 
 .about {
-    margin-bottom: 191px;
+    margin-bottom: 195px;
     background-image: url(../img/about_Bg.png);
     background-repeat: no-repeat;
     background-position: 50% 222%;
@@ -170,8 +173,8 @@ a {
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #1FC0FC;
-    margin: 0 auto;
-    padding-bottom: 28px;
+    margin: 0;
+    padding-bottom: 24px;
 }
 
 .description {
@@ -200,8 +203,8 @@ a {
 
 .photo_about_btn {
     position: absolute;
-    top: 38%;
-    left: 45%;
+    top: 39%;
+    left: 388px;
     border: none;
     outline: none;
     padding: 0;
@@ -233,13 +236,13 @@ a {
 .programs {
     background-image: url(../img/programs-background.png);
     background-repeat: no-repeat;
-    background-position: 74% -76%;
+    background-position: 78% -76%;
     margin-bottom: 204px;
 }
 
 .programs-heading {
     margin-left: 15.3%;
-    margin-bottom: 53px;
+    margin-bottom: 59px;
 }
 
 .programs-wrapper {
@@ -396,7 +399,7 @@ a {
 
 .i-want-go {
     position: relative;
-    margin-bottom: 222px;
+    margin-bottom: 228px;
 }
 
 
@@ -525,7 +528,7 @@ a {
     line-height: 170%;
     opacity: 0.87;
     margin: 0;
-    padding-bottom: 32px;
+    padding-bottom: 35px;
     padding-left: 69px;
 } 
 
@@ -574,10 +577,11 @@ a {
 .how-to-go__list__point::before {
     position: absolute;
     left: -59px;
-    top: -9px;
+    top: -10px;
     counter-increment: my;
     content: counter(my);
     color: #FFC341;
+    font-weight: 700;
     background: #FFFFFF;
     text-align: center;
     line-height: 40px;
@@ -768,6 +772,7 @@ a {
     padding-left: 795px;
     padding-top: 120px;   
     padding-right: 274px;
+    padding-bottom: 31px;
     
 }
 
@@ -847,7 +852,7 @@ a {
 .questions-list {
     list-style: none;
     margin-left: 120px;
-    margin-top: 18px;
+    margin-top: 24px;
     margin-right: 0;
     margin-bottom: 0;
     padding: 0;  
@@ -937,7 +942,7 @@ a {
 .questions-list__items--cont { /*article*/
     overflow: hidden;
     height: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     margin-left: -3px;
 }
 
@@ -989,7 +994,7 @@ a {
 
 .comments-heading {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 29px;
 }
 
 .comments-list {
@@ -1076,6 +1081,11 @@ a {
     margin-left: 10px;
 }
 
+.comments-nav a:hover,
+.comments-social a:hover {
+    cursor: pointer;
+}
+
 .comments-nav a:last-child {
     padding-right: 0;
 }
@@ -1100,6 +1110,10 @@ a {
     margin: 0;
 }
 
+.comments-more:hover {
+    cursor: pointer;
+}
+
 .comments-social a{
     padding-right: 10px;
 }
@@ -1118,7 +1132,7 @@ a {
     margin-bottom: 73px;
     background-image: url(../img/map_Bg.png), url(../img/Marker-map.svg), url(../img/map.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%, 77% 40%, 78% 10%;
+    background-position: 50% 50%, 77% 39%, 78% 3%;
 }
 
 .map-wrapper {    
@@ -1138,14 +1152,14 @@ a {
     opacity: 0.74;
     margin: 0;
     padding-left: 20px;
-    padding-bottom: 39px;
-    padding-top: 20px;
+    padding-bottom: 41px;
+    padding-top: 23px;
 }
 
 .map-town::before {
     position: absolute;
     left: 0;
-    top: 19px;
+    top: 24px;
     content: "";
     background-image: url(../img/map-town-marker.svg);
     background-repeat: no-repeat;
@@ -1156,15 +1170,19 @@ a {
 .map-town a {    
     font-weight: 500;
     font-variant: small-caps;
-    opacity: 0.74;
+    font-size: larger;
     border-bottom: 1px dashed #1FC0FC;
-    padding-left: 10px;
+    margin-left: 12px;
+}
+
+.map-town a:hover {
+    cursor: pointer;
 }
 
 .map-town a::after {
     position: absolute;
     left: 218px;
-    top: 25px;
+    top: 28px;
     content: "";
     background-image: url(../img/map-town-gps.svg);
     background-repeat: no-repeat;
@@ -1181,6 +1199,10 @@ a {
 
 .map-curator a {
     padding-right: 7px;
+}
+
+.map-curator a:hover {
+    cursor: pointer;
 }
 
 .map-curator__photo {
@@ -1206,6 +1228,7 @@ a {
     line-height: 150%;
     color: var(--basic-text-color);
     opacity: 0.74;
+    padding-left: 5px;
 }
 
 .map-curator__adress {
@@ -1244,7 +1267,7 @@ a {
     opacity: 0.87;
     width: 330px;
     margin: 0;
-    padding-top: 10px;
+    padding-top: 4px;
 }
 
 .map__contact_name {
@@ -1354,6 +1377,10 @@ a {
     padding-left: 15px;
 }
 
+.social-footer a:hover {
+    cursor: pointer;
+}
+
 /* modal call */
 
 .modal-call {
@@ -1372,8 +1399,19 @@ a {
     bottom: auto;
 }
 
+.modal-call__bg {
+    position: relative;
+    top: -120px;
+    margin: 0 auto;
+    width: 1366px;
+    height: 768px;
+    background-color:rgba(229, 229, 229, 0.7);
+
+}
+
 .modal-call__wrapper {
     position: relative;
+    top: 123px;
     width: 480px;
     height: 521px;
     border: none;
@@ -1442,7 +1480,7 @@ a {
 }
 
 .modal-call__field--l {
-    padding-bottom: 11px;
+    padding-bottom: 4px;
 }
 
 .modal-call__name {
@@ -1461,7 +1499,6 @@ a {
     width: 360px;
     outline: none;
 }
-
 
 .modal-call__tel {
     padding-top: 19px;
@@ -1519,7 +1556,7 @@ a {
 
 .modal-call__agreement--box + .modal-call__agreement::before {
     position: absolute;
-    top: 232px;
+    top: 226px;
     left: 108px;
     content: "";
     width: 16px;
@@ -1693,7 +1730,7 @@ a {
 
 /* Animations */
 
-@keyframes bounce {
+/* @keyframes bounce {
     0% {
       transform: translateY(-2000px);
     }
@@ -1709,4 +1746,4 @@ a {
     100% {
       transform: translateY(0);
     }
-  }
+  } */

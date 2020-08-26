@@ -417,29 +417,32 @@
         </div>
     </footer>
     <section class="modal-call call-me__popap">
-        <div class="modal-call__wrapper">
-            <button class="modal-call__close" name="закрыть" type="button"></button>
-            <h2 class="modal-call__header">Заказать звонок</h2>
-            <p class="modal-call__text">Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и
-                обязательно поможем найти
-                ответ на ваш вопрос!</p>
-            <form class="modal-call__form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="modal-call__fields">
-                    <label class="modal-call__field--l" for="modal-call--name">
-                        <input class="modal-call__name" id="modal-call--name" name="name" type="text" placeholder="имя"
-                            required>
+        <div class="modal-call__bg">
+            <div class="modal-call__wrapper">
+                <button class="modal-call__close" name="закрыть" type="button"></button>
+                <h2 class="modal-call__header">Заказать звонок</h2>
+                <p class="modal-call__text">Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и
+                    обязательно поможем найти
+                    ответ на ваш вопрос!</p>
+                <form class="modal-call__form" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="modal-call__fields">
+                        <label class="modal-call__field--l" for="modal-call--name">
+                            <input class="modal-call__name" id="modal-call--name" name="name" type="text"
+                                placeholder="имя" required>
+                        </label>
+                        <label for="modal-call--phone">
+                            <input class="modal-call__tel" id="modal-call--phone" name="tel" type="tel"
+                                pattern="^[ 0-9]+$" placeholder="телефон" required>
+                        </label>
+                    </div>
+                    <button type="submit" class="modal-call__callMe--btn">перезвоните мне</button>
+                    <input class="modal-call__agreement--box" id="agreement" type="checkbox" name="agreement">
+                    <label class="modal-call__agreement" for="agreement">Нажимая на кнопку, вы даёте согласие на
+                        обработку
+                        персональных данных
                     </label>
-                    <label for="modal-call--phone">
-                        <input class="modal-call__tel" id="modal-call--phone" name="tel" type="tel" pattern="^[ 0-9]+$"
-                            placeholder="телефон" required>
-                    </label>
-                </div>
-                <button type="submit" class="modal-call__callMe--btn">перезвоните мне</button>
-                <input class="modal-call__agreement--box" id="agreement" type="checkbox" name="agreement">
-                <label class="modal-call__agreement" for="agreement">Нажимая на кнопку, вы даёте согласие на обработку
-                    персональных данных
-                </label>
-            </form>
+                </form>
+            </div>
         </div>
     </section>
     <section class="call-received">
