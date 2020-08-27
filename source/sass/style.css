@@ -90,6 +90,7 @@ a {
 
 .main-items__item a:hover {
     cursor: pointer;
+    opacity: 0.7;
 }
 
 .call {
@@ -121,7 +122,8 @@ a {
 
 .promo-wrapper_btn {
     position: absolute;
-    left: 915px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 543px;
     background: transparent;
     outline: none;
@@ -135,7 +137,8 @@ a {
 
 .promo-tagline {
     position: absolute;
-    left: 781px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 453px;
     font-style: normal;
     font-weight: bold;
@@ -1084,6 +1087,7 @@ a {
 .comments-nav a:hover,
 .comments-social a:hover {
     cursor: pointer;
+    opacity: 0.7;
 }
 
 .comments-nav a:last-child {
@@ -1112,6 +1116,7 @@ a {
 
 .comments-more:hover {
     cursor: pointer;
+    opacity: 0.7;
 }
 
 .comments-social a{
@@ -1177,6 +1182,7 @@ a {
 
 .map-town a:hover {
     cursor: pointer;
+    opacity: 0.7;
 }
 
 .map-town a::after {
@@ -1203,6 +1209,7 @@ a {
 
 .map-curator a:hover {
     cursor: pointer;
+    opacity: 0.7;
 }
 
 .map-curator__photo {
@@ -1379,6 +1386,7 @@ a {
 
 .social-footer a:hover {
     cursor: pointer;
+    opacity: 0.7;
 }
 
 /* modal call */
@@ -1563,17 +1571,19 @@ a {
     height: 16px;
     background-image: url(../img/modal_square.svg);
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .modal-call__agreement--box:checked + .modal-call__agreement::after {
     position: absolute;
-    top: 232px;
+    top: 226px;
     left: 108px;
     content: "";
     width: 14px;
     height: 14px;
     background-image: url(../img/modal_close.png);
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .call-me__popap--show {
