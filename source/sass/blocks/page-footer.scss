@@ -49,3 +49,43 @@
   line-height: 17px;
   text-decoration: underline;
 }
+
+@media (min-width: 768px) {
+  .page-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 0 21px;
+    text-align: left;
+  }
+
+  .page-footer__title {
+    margin-top: 0;
+  }
+
+  .page-footer__countries {
+    margin-bottom: 20px;
+    align-items: start;
+    border-right: 1px solid #D7D9DF;;
+    border-bottom: none;
+  }
+
+  .page-footer__cities {
+    margin-right: 60px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .page-footer__contacts {
+    align-items: start;
+    margin-left: 120px;
+    width: 202px;
+    border-bottom: none;
+  }
+
+  .page-footer__team-building {
+    padding-top: 30px;
+    text-align: center;
+    border-top: 1px solid #D7D9DF;
+  }
+}
