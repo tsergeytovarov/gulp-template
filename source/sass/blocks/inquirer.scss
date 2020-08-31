@@ -41,11 +41,44 @@
 
 @media (min-width: 768px) {
   .inquirer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 55px;
     background-image: url("../img/inquirer-bg-tablet.png");
     background-size: cover, 768px 455px;
     min-height: 455px;
     background-color: hotpink;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .inquirer__background {
+    justify-content: center;
+    align-items: center;
+    padding: 0 6.25%;
+    width: 658px;
+    height: 311px;
+  }
+
+  .inquirer__title {
+    margin-bottom: 0;
+  }
+
+  .inquirer__paragraph {
+    margin-top: 11px;
+  }
+
+  .inquirer__wrapper {
+    display: flex;
+  }
+
+  .inquirer__input {
+    margin-left: 20px;
+    width: 269px;
+  }
+
+  .inquirer__button {
+    width: 250px;
   }
 }
