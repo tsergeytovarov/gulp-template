@@ -1,0 +1,52 @@
+.main-nav {
+  min-height: 50px;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+
+  &--opened {
+    .main-nav__toggle {
+      &--close {
+        display: block;
+      }
+
+      &--open {
+        display: none;
+      }
+    }
+  }
+
+  &--closed {
+    .main-nav__toggle {
+      &--open {
+        top: 70px;
+        z-index: 1;
+      }
+
+      &--close {
+        display: none;
+      }
+    }
+
+    .site-list__item {
+      display: none;
+
+      &--active {
+        display: block;
+      }
+    }
+  }
+
+  &--nojs {
+    .main-nav__toggle {
+      display: none;
+    }
+  }
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
