@@ -73,9 +73,9 @@
       <ul class="description-cards__items list">
         <li class="list__item active">Греция</li>
         <li class="list__item">Албания</li>
-        <li class="list__item hidden">Македония</li>
-        <li class="list__item hidden">Черногория</li>
-        <li class="list__item hidden">Хорватия</li>
+        <li class="list__item hidden-tablet">Македония</li>
+        <li class="list__item hidden-tablet">Черногория</li>
+        <li class="list__item hidden-desktop">Хорватия</li>
       </ul>
       <div class="description-cards__block">
         <h2 class="description-cards__slide-title">Греция</h2>
@@ -162,8 +162,10 @@
         Ощущение такое, как будто
         стоишь на краю света!
       </p>
-      <img class="comment__img" src="img/comment-mobile.png" width="37" height="38" alt="Commentator's photo">
-      <p class="comment__name">Влада Голицина</p>
+      <div class="comment__author">
+        <img class="comment__img" src="img/comment-mobile.png" width="37" height="38" alt="Commentator's photo">
+        <p class="comment__name">Влада Голицина</p>
+      </div>
     </div>
   </section>
   <section class="prices">
@@ -183,45 +185,49 @@
     <div class="prices__contacts">
       <h4 class="prices__contacts-title">Свяжитесь с нами</h4>
       <p class="prices__contacts-paragraph">
-        <a class="page-main__phone" href="tel:+749978468446">
+        <a class="prices__phone" href="tel:+749978468446">
           +7 (499)-784-684-46
         </a>
       </p>
     </div>
-    <div class="prices__special">
-      <h4 class="prices__special-title">Комплексный</h4>
-      <h4 class="prices__special-price">$1999</h4>
-      <p class="prices__special-paragraph">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-      <ul class="prices__special-list about">
-        <li class="about-item">Разработанный маршрут с гидом группы</li>
-        <li class="about-item">Перелет, трансфер и проживание в отелях</li>
-        <li class="about-item">Завтраки, ужины в отелях и ланчи на природе</li>
-        <li class="about-item">Экскурсии по удивительно красивым местам Европы</li>
-      </ul>
-      <a class="prices__button button" href="">Купить тур сейчас</a>
-    </div>
-    <div class="prices__offer">
-      <h4 class="prices__offer-title">Экономный</h4>
-      <h4 class="prices__offer-price">$1399</h4>
-      <p class="prices__offer-paragraph">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-      <ul class="prices__offer-list about">
-        <li class="about-item">Разработанный маршрут с гидом группы</li>
-        <li class="about-item">Перелет и трансфер</li>
-        <li class="about-item">Проживание в хостелах при отелях</li>
-        <li class="about-item">Только завтраки в отелях</li>
-        <li class="about-item">Экскурсии по удивительно красивым местам Европы</li>
-      </ul>
-      <a class="prices__button button" href="">Купить тур сейчас</a>
+    <div class="prices__offers-block">
+      <div class="prices__special">
+        <h4 class="prices__special-title">Комплексный</h4>
+        <h4 class="prices__special-price">$1999</h4>
+        <p class="prices__special-paragraph">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+        <ul class="prices__special-list about">
+          <li class="about-item">Разработанный маршрут с гидом группы</li>
+          <li class="about-item">Перелет, трансфер и проживание в отелях</li>
+          <li class="about-item">Завтраки, ужины в отелях и ланчи на природе</li>
+          <li class="about-item">Экскурсии по удивительно красивым местам Европы</li>
+        </ul>
+        <a class="prices__button button" href="">Купить тур сейчас</a>
+      </div>
+      <div class="prices__offer">
+        <h4 class="prices__offer-title">Экономный</h4>
+        <h4 class="prices__offer-price">$1399</h4>
+        <p class="prices__offer-paragraph">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+        <ul class="prices__offer-list about">
+          <li class="about-item">Разработанный маршрут с гидом группы</li>
+          <li class="about-item">Перелет и трансфер</li>
+          <li class="about-item">Проживание в хостелах при отелях</li>
+          <li class="about-item">Только завтраки в отелях</li>
+          <li class="about-item">Экскурсии по удивительно красивым местам Европы</li>
+        </ul>
+        <a class="prices__button button" href="">Купить тур сейчас</a>
+      </div>
     </div>
   </section>
   <section class="inquirer">
-    <h4 class="inquirer__title">У вас остались вопросы?</h4>
-    <p class="inquirer__paragraph">Оставьте свой номер или e-mail, и мы свяжемся с вами</p>
-    <div class="inquirer__wrapper">
-      <input class="inquirer__input" type="tel" name="tel" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" required="" placeholder="+7 Введите 10 цифр номера">
-      <input class="inquirer__input" type="email" name="email" placeholder="E-mail" required="">
+    <div class="inquirer__background">
+      <h4 class="inquirer__title">У вас остались вопросы?</h4>
+      <p class="inquirer__paragraph">Оставьте свой номер или e-mail, и мы свяжемся с вами</p>
+      <div class="inquirer__wrapper">
+        <input class="inquirer__input" type="tel" name="tel" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" required="" placeholder="+7 Введите 10 цифр номера">
+        <input class="inquirer__input" type="email" name="email" placeholder="E-mail" required="">
+      </div>
+      <a class="inquirer__button button" href="">Отправить</a>
     </div>
-    <a class="inquirer__button button" href="">Отправить</a>
   </section>
   <footer class="page-footer container">
     <div class="page-footer__countries">

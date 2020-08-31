@@ -47,3 +47,46 @@
   font-size: 16px;
   line-height: 24px;
 }
+
+@media (min-width: 768px) {
+  .comment {
+    background-image: url("../img/comment-bg-tablet.png");
+    background-size: cover, 768px 415px;
+  }
+
+  .comment__block {
+    margin-top: 80px;
+    text-align: left;
+    width: 382px;
+    height: 367px;
+  }
+
+  .comment__title {
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 37px;
+    border-bottom: 1px solid #FE7865;
+  }
+
+  .comment__paragraph {
+    margin: 0 40px;
+  }
+
+  .comment__author {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+  }
+
+  .comment__img {
+    margin-top: 0;
+    margin-left: 40px;
+    height: 38px;
+  }
+
+  .comment__name {
+    margin-left: 16px;
+  }
+}

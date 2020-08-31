@@ -1,4 +1,4 @@
-.inquirer {
+.inquirer__background {
   display: flex;
   flex-direction: column;
   padding: 50px 6.25%;
@@ -37,4 +37,15 @@
   color: #141517;
   font-size: 14px;
   line-height: 17px;
+}
+
+@media (min-width: 768px) {
+  .inquirer {
+    background-image: url("../img/inquirer-bg-tablet.png");
+    background-size: cover, 768px 455px;
+    min-height: 455px;
+    background-color: hotpink;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }

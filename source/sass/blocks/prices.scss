@@ -30,7 +30,7 @@
   font-weight: 400;
 }
 
-.page-main__phone {
+.prices__phone {
   color: #FE7865;
   font-size: 18px;
   line-height: 32px;
@@ -109,4 +109,23 @@
   padding: 0;
   text-align: left;
   list-style: none;
+}
+
+@media (min-width: 768px) {
+  .prices__title {
+    margin: 0;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 400;
+  }
+
+  .prices__offers-block {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .prices__offer {
+    margin-top: 0;
+    margin-left: 50px;
+  }
 }

@@ -8,3 +8,14 @@
   line-height: 36px;
   font-weight: 500;
 }
+
+@media (min-width: 768px) {
+  .description-cards {
+    margin-top: 80px;
+  }
+
+  .description-cards__slide-title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
