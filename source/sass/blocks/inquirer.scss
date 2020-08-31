@@ -1,3 +1,40 @@
 .inquirer {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 6.25%;
+  text-align: center;
   background-color: #FBF8F8;
+}
+
+.inquirer__title {
+  color: #141517;
+  font-size: 25px;
+  line-height: 32px;
+}
+
+.inquirer__paragraph {
+  color: #141517;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.inquirer__input {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 50px;
+  padding-left: 16px;
+  color: #141517;
+  background-color: #ffffff;
+  border: 1px solid rgba(44, 46, 63, 0.3);
+  outline: none;
+}
+
+.inquirer__input::placeholder {
+  color: #141517;
+  font-size: 14px;
+  line-height: 17px;
 }
