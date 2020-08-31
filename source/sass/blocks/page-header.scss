@@ -11,9 +11,56 @@
 }
 
 .page-header__main-title {
+  margin: 0 30px;
   text-align: center;
   color: #ffffff;
   font-size: 24px;
   line-height: 36px;
   font-weight: 500;
+}
+
+.page-header__wrapper {
+  padding: 0 6.25%;
+}
+
+.page-header__main-paragraph {
+  text-align: center;
+  color: #2C2E3F;
+}
+
+@media (min-width: 768px) {
+  .page-header__welcome {
+    align-items: flex-start;
+    background-image: url("../img/greece-tablet.png");
+    background-size: cover, 768px 344px;
+    min-height: 344px;
+    background-color: cadetblue;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .page-header__main-title {
+    margin-top: 60px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -240px;
+  }
+
+  .page-header__main-paragraph {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 27px;
+    width: 398px;
+  }
+
+  .page-header__button {
+    width: 250px;
+  }
 }

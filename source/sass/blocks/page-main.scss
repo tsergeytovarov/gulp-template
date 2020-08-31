@@ -1,8 +1,3 @@
-.page-main__main-paragraph {
-  text-align: center;
-  color: #2C2E3F;
-}
-
 .page-main__title {
   margin-top: 108px;
   text-align: center;
@@ -15,28 +10,21 @@
   text-align: center;
 }
 
-.page-main__card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
+@media (min-width: 768px) {
+  .page-main {
+    margin-top: 50px;
+  }
 
-.page-main__country {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -61px;
-  background-color: #ffffff;
-  width: 215px;
-  height: 61px;
-  text-align: center;
-}
+  .page-main__title {
+    margin-bottom: 0;
+    font-size: 30px;
+    line-height: 45px;
+  }
 
-.page-main__country-title {
-  color: #2C2E3F;
-  font-size: 24px;
-  line-height: 29px;
-  font-weight: 500;
+  .page-main__paragraph {
+    margin-bottom: 30px;
+    width: 343px;
+    font-size: 16px;
+    line-height: 28px;
+  }
 }

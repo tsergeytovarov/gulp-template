@@ -1,0 +1,39 @@
+.photo-cards__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.photo-cards__country {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -61px;
+  background-color: #ffffff;
+  width: 215px;
+  height: 61px;
+  text-align: center;
+}
+
+.photo-cards__country-title {
+  color: #2C2E3F;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .photo-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .photo-cards__card {
+    margin: 20px;
+  }
+}

@@ -2,17 +2,17 @@
   &--logo {
     position: relative;
     background-color: #ffffff;
-  }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    background-color: #FE7865;
-    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      background-color: #FE7865;
+      cursor: pointer;
+    }
   }
 
   a {
@@ -23,5 +23,15 @@
     height: 50px;
     color: #48494D;
     background-color: #FBF8F8;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-list__item {
+    &--logo {
+      &::before {
+        width: 72px;
+      }
+    }
   }
 }
