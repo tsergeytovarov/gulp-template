@@ -1,0 +1,51 @@
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 70px;
+  padding: 0 6.25%;
+  text-align: center;
+}
+
+.page-footer__countries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #D7D9DF;
+}
+
+.page-footer__title {
+  color: #141517;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.page-footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page-footer__cities {
+  margin: 10px 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.page-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #D7D9DF;
+}
+
+.page-footer__contacts-paragraph a {
+  color: #FE7865;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: underline;
+}
