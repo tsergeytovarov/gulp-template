@@ -1,8 +1,25 @@
 .site-list__item {
+  &--logo {
+    position: relative;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #FE7865;
+    cursor: pointer;
+  }
+
   a {
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
+    padding-left: 16px;
     height: 50px;
     color: #48494D;
     background-color: #FBF8F8;

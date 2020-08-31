@@ -1,0 +1,42 @@
+.page-main__main-paragraph {
+  text-align: center;
+  color: #2C2E3F;
+}
+
+.page-main__title {
+  margin-top: 108px;
+  text-align: center;
+  color: #2C2E3F;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.page-main__paragraph {
+  text-align: center;
+}
+
+.page-main__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.page-main__country {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -61px;
+  background-color: #ffffff;
+  width: 215px;
+  height: 61px;
+  text-align: center;
+}
+
+.page-main__country-title {
+  color: #2C2E3F;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+}

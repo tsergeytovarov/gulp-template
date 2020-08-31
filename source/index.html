@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header class="page-header container">
+<header class="page-header container container--indent">
   <nav class="main-nav main-nav--opened main-nav--nojs">
     <button class="main-nav__toggle main-nav__toggle--close" type="button">
       <span class="visually-hidden">Закрыть меню</span>
     </button>
     <ul class="main-nav__list site-list">
-      <li class="site-list__item site-list__item--active"><a href="">
+      <li class="site-list__item site-list__item--logo site-list__item--active"><a href="">
         <img class="site-list__logo" src="img/logo.png" width="44" height="17" alt="Logo of WAY">
       </a></li>
       <li class="site-list__item"><a href="">О путешествии</a></li>
@@ -25,54 +25,53 @@
     </button>
   </nav>
   <div class="page-header__welcome">
-    <p class="page-header__main-title">Путешествие по Европе</p>
+    <p class="page-header__main-title">Путешествие по<br>Европе</p>
   </div>
 </header>
 <main class="page-main container">
-  <p class="page-main__paragraph">В этом туре вы откроете для себя Европу в новом свете.
+  <p class="page-main__main-paragraph">В этом туре вы откроете для себя Европу в новом свете.
     Вас ждет: море, горы, а также потрясающая красота природы.</p>
   <a class="page-main__button button" href="">Смотреть тур</a>
   <h2 class="page-main__title">Места посещения</h2>
   <p class="page-main__paragraph">Вы можете выбрать полный тур или частичный, с посещением первых трех мест</p>
   <div class="page-main__card">
-    <img class="page-main__img" src="img/" width="" height="" alt="">
+    <img class="page-main__img" src="img/greece-card-mobile.jpg" width="288" height="425" alt="Photo of Greece">
     <div class="page-main__country">
       <h3 class="page-main__country-title">Греция</h3>
     </div>
   </div>
   <div class="page-main__card">
-    <img class="page-main__img" src="img/" width="" height="" alt="">
+    <img class="page-main__img" src="img/albania-card-mobile.png" width="288" height="425" alt="Photo of Albania">
     <div class="page-main__country">
       <h3 class="page-main__country-title">Албания</h3>
     </div>
   </div>
   <div class="page-main__card">
-    <img class="page-main__img" src="img/" width="" height="" alt="">
-    <div class="page-main__country">
+    <img class="page-main__img" src="img/macedonia-card-mobile.png" width="288" height="425" alt="Photo of Macedonia">    <div class="page-main__country">
       <h3 class="page-main__country-title">Македония</h3>
     </div>
   </div>
   <div class="page-main__card">
-    <img class="page-main__img" src="img/" width="" height="" alt="">
+    <img class="page-main__img" src="img/montenegro-card-mobile.png" width="288" height="425" alt="Photo of Montenegro">
     <div class="page-main__country">
       <h3 class="page-main__country-title">Черногория</h3>
     </div>
   </div>
   <div class="page-main__card">
-    <img class="page-main__img" src="img/" width="" height="" alt="">
+    <img class="page-main__img" src="img/croatia-card-mobile.png" width="288" height="425" alt="Photo of Croatia">
     <div class="page-main__country">
       <h3 class="page-main__country-title">Хорватия</h3>
     </div>
   </div>
   <section class="description-cards">
     <ul class="description-cards__items list">
-      <li class="list-item active">Греция</li>
-      <li class="list-item">Албания</li>
-      <li class="list-item">Македония</li>
-      <li class="list-item">Черногория</li>
-      <li class="list-item">Хорватия</li>
+      <li class="list__item active">Греция</li>
+      <li class="list__item">Албания</li>
+      <li class="list__item hidden">Македония</li>
+      <li class="list__item hidden">Черногория</li>
+      <li class="list__item hidden">Хорватия</li>
     </ul>
-    <div class="description-cards__paragraph">
+    <div class="description-cards__block">
       <h2 class="description-cards__slide-title">Греция</h2>
       <p class="description-cards__slide-paragraph">
         На севере Греции находится один
@@ -91,7 +90,7 @@
         царящая в монастырях Метеоры.
       </p>
     </div>
-    <div class="description-cards__paragraph">
+    <div class="description-cards__block hidden">
       <h2 class="description-cards__slide-title">Албания</h2>
       <p class="description-cards__slide-paragraph">
         В Албании мы посетим Курорт Ксамиль. Этот
@@ -104,7 +103,7 @@
         перетёртые до такого мелкого состояния.
       </p>
     </div>
-    <div class="description-cards__paragraph">
+    <div class="description-cards__block hidden">
       <h2 class="description-cards__slide-title">Македония</h2>
       <p class="description-cards__slide-paragraph">
         В Македонии нашей целью будет посетить
@@ -117,7 +116,7 @@
         около 100 метров.
       </p>
     </div>
-    <div class="description-cards__paragraph">
+    <div class="description-cards__block hidden">
       <h2 class="description-cards__slide-title">Черногория</h2>
       <p class="description-cards__slide-paragraph">
         Черногория удивит нас самым большим в
@@ -128,7 +127,7 @@
         км.
       </p>
     </div>
-    <div class="description-cards__paragraph">
+    <div class="description-cards__block hidden">
       <h2 class="description-cards__slide-title">Хорватия</h2>
       <p class="description-cards__slide-paragraph">
         В Хорватии мы посетим необычайную
@@ -208,7 +207,7 @@
       <a class="prices__button button" href="">Купить тур сейчас</a>
     </div>
   </section>
-  <section class="inquirer__user--contacts">
+  <section class="inquirer">
     <h4 class="inquirer__title">У вас остались вопросы?</h4>
     <p class="inquirer__paragraph">Оставьте свой номер или e-mail, и мы свяжемся с вами</p>
     <div class="inquirer__wrapper">
