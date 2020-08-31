@@ -1,0 +1,112 @@
+.prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 0 6.25%;
+  text-align: center;
+}
+
+.prices__price {
+  margin-top: 100px;
+}
+
+.prices__title {
+  color: #2C2E3F;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.prices__paragraph {
+  margin: 0 20px;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.prices__contacts-title {
+  color: #141517;
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+.page-main__phone {
+  color: #FE7865;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.prices__special {
+  width: 288px;
+  height: 614px;
+  border: 3px solid #FE7865;
+}
+
+.prices__special-title {
+  margin-bottom: 10px;
+  color: #FE7865;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 500;
+}
+
+.prices__special-price {
+  margin-top: 0;
+  color: #FE7865;
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: 600;
+}
+
+.prices__special-paragraph {
+  margin: 0 30px;
+  padding-bottom: 10px;
+  line-height: 24px;
+  border-bottom: 1px solid #FE7865;
+}
+
+.prices__special-list {
+  margin-bottom: 44px;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+
+.prices__offer {
+  margin-top: 30px;
+  width: 288px;
+  height: 614px;
+  border: 1px solid rgba(44, 46, 63, 0.3);
+}
+
+.prices__offer-title {
+  margin-bottom: 10px;
+  color: rgba(20, 21, 23, 0.7);
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 500;
+}
+
+.prices__offer-price {
+  margin-top: 0;
+  color: rgba(20, 21, 23, 0.7);
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: 600;
+}
+
+.prices__offer-paragraph {
+  margin: 0 30px;
+  padding-bottom: 10px;
+  line-height: 24px;
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+}
+
+.prices__offer-list {
+  margin-bottom: 34px;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}

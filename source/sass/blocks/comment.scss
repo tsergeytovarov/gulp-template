@@ -1,5 +1,49 @@
+.comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-image: url("../img/comment-bg.png");
+  background-size: cover, 320px 415px;
+  min-height: 415px;
+  background-color: cadetblue;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.comment__block {
+  margin-top: 60px;
+  text-align: center;
+  background-color: #ffffff;
+  width: 268px;
+  height: 431px;
+}
+
 .comment__title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  text-align: center;
   color: #2C2E3F;
   font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  border-bottom: 1px solid #FE7865;
+}
+
+.comment__paragraph {
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0 25px;
+}
+
+.comment__img {
+  margin-top: 50px;
+}
+
+.comment__name {
+  font-family: "Poppins", "Arial", sans-serif;
+  color: #2C2E3F;
+  font-size: 16px;
   line-height: 24px;
 }
