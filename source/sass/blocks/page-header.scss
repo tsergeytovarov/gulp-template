@@ -34,9 +34,7 @@
     background-image: url("../img/greece-tablet.png");
     background-size: cover, 768px 344px;
     min-height: 344px;
-    background-color: cadetblue;
     background-position: center;
-    background-repeat: no-repeat;
   }
 
   .page-header__main-title {
@@ -62,5 +60,32 @@
 
   .page-header__button {
     width: 250px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-header__welcome {
+    background-image: url("../img/greece-desktop.png");
+    background-size: cover, 1024px 860px;
+    min-height: 860px;
+  }
+
+  .page-header__main-title {
+    margin-top: 180px;
+    margin-left: 600px;
+    font-size: 55px;
+    line-height: 80px;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .page-header__wrapper {
+    margin-top: -500px;
+    margin-left: 540px;
+    align-items: start;
+  }
+
+  .page-header__main-paragraph {
+    text-align: left;
   }
 }

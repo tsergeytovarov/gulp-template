@@ -45,3 +45,19 @@ a {
   margin: 0 auto;
   padding: 0;
 }
+
+@media (min-width: 1024px) {
+  .hidden-desktop {
+    display: block;
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container--indent {
+    padding: 0 360px;
+  }
+}

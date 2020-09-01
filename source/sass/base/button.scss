@@ -23,3 +23,9 @@
     background-color: pink;
   }
 }
+
+@media (min-width: 1024px) {
+  .button {
+    padding: 25px 0;
+  }
+}

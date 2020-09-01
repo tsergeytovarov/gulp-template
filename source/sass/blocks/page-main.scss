@@ -32,3 +32,19 @@
     width: 250px;
   }
 }
+
+@media (min-width: 1024px) {
+  .page-main__title {
+    margin-top: 400px;
+    text-align: left;
+    font-size: 55px;
+    line-height: 80px;
+    width: 358px;
+    border-bottom: 4px solid #FE7865;
+  }
+
+  .page-main__paragraph {
+    text-align: left;
+    width: 328px;
+  }
+}

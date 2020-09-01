@@ -35,3 +35,46 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .site-list {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 99px;
+    align-items: center;
+  }
+
+  .site-list__item {
+    &--logo {
+      &::before {
+        background-color: transparent;
+      }
+    }
+
+    a {
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 500;
+      color: #141517;
+      background-color: #ffffff;
+    }
+
+    &--price a {
+      margin-left: 40px;
+      color: #FE7865;
+    }
+
+    &--phone a {
+      margin-left: 80px;
+      font-size: 18px;
+      line-height: 32px;
+      font-weight: 300;
+      color: #FE7865;
+      text-decoration: underline;
+    }
+
+    &--about {
+      margin-left: 460px;
+    }
+  }
+}
