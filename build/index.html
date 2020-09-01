@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Стартовый шаблон</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="page-header container container--header">
@@ -75,7 +76,7 @@
   <section class="description-comment">
     <section class="description-cards">
       <ul class="description-cards__items list">
-        <li class="list__item active">Греция</li>
+        <li class="list__item list__item--first active">Греция</li>
         <li class="list__item">Албания</li>
         <li class="list__item hidden-tablet">Македония</li>
         <li class="list__item hidden-tablet">Черногория</li>
@@ -230,10 +231,13 @@
   </section>
   <section class="inquirer">
     <div class="inquirer__background">
-      <h4 class="inquirer__title">У вас остались вопросы?</h4>
-      <p class="inquirer__paragraph">Оставьте свой номер или e-mail, и мы свяжемся с вами</p>
+      <h4 class="inquirer__title">У Вас остались вопросы?</h4>
+      <p class="inquirer__paragraph">Оставьте свой номер или e-mail, и мы свяжемся с Вами</p>
       <div class="inquirer__wrapper">
-        <input class="inquirer__input" type="tel" name="tel" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" required="" placeholder="+7 Введите 10 цифр номера">
+        <input class="inquirer__input inquirer__input--phone" type="tel" name="tel" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" required="" placeholder="+7  Введите 10 цифр номера">
+        <svg class="inquirer__svg" width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.519 6.028L3.434 4.158L4.998 5.161L5.542 4.243L3.893 3.393L5.542 2.543L4.998 1.608L3.434 2.611L3.519 0.740999H2.448L2.533 2.611L0.952 1.608L0.425 2.543L2.074 3.393L0.425 4.243L0.952 5.161L2.533 4.158L2.448 6.028H3.519Z" fill="#FE7865"></path>
+        </svg>
         <input class="inquirer__input" type="email" name="email" placeholder="E-mail" required="">
       </div>
       <a class="inquirer__button button" href="">Отправить</a>

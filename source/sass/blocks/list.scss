@@ -1,17 +1,32 @@
 .list {
+  position: relative;
   display: flex;
   box-sizing: border-box;
   list-style: none;
   margin: 0;
   padding-left: 0;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: -25px;
+    width: 305px;
+    height: 1px;
+    background-color: rgba(44, 46, 63, 0.3);
+  }
 }
 
 .list__item {
+  margin-left: 100px;
   color: rgba(44, 46, 63, 0.3);
   font-size: 20px;
   line-height: 24px;
+
+  &--first {
+    margin-left: -25px;
+  }
 }
 
 .active {

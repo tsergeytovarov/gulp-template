@@ -1,5 +1,6 @@
 .page-main__title {
-  margin-top: 108px;
+  margin-top: 113px;
+  margin-bottom: 8px;
   text-align: center;
   color: #2C2E3F;
   font-size: 24px;
@@ -8,6 +9,8 @@
 
 .page-main__paragraph {
   text-align: center;
+  letter-spacing: -0.466667px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {

@@ -2,17 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
-  padding: 0 6.25%;
+  margin-bottom: 64px;
   text-align: center;
 }
 
 .prices__price {
-  margin-top: 100px;
+  margin-top: 112px;
 }
 
 .prices__title {
   position: relative;
+  margin-bottom: 19px;
   color: #2C2E3F;
   font-size: 24px;
   line-height: 36px;
@@ -24,11 +24,17 @@
   line-height: 27px;
 }
 
+.prices__contacts {
+  margin-bottom: 38px;
+}
+
 .prices__contacts-title {
+  margin-top: 19px;
+  margin-bottom: -6px;
   color: #141517;
   font-size: 18px;
   line-height: 34px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .prices__phone {
@@ -43,18 +49,21 @@
   width: 288px;
   height: 614px;
   border: 3px solid #FE7865;
+  border-radius: 3px;
 }
 
 .prices__special-title {
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 9px;
   color: #FE7865;
   font-size: 24px;
   line-height: 34px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .prices__special-price {
   margin-top: 0;
+  margin-bottom: 12px;
   color: #FE7865;
   font-size: 25px;
   line-height: 34px;
@@ -62,36 +71,55 @@
 }
 
 .prices__special-paragraph {
+  position: relative;
   margin: 0 30px;
   padding-bottom: 10px;
   line-height: 24px;
-  border-bottom: 1px solid #FE7865;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: -10px;
+    width: 248px;
+    height: 1px;
+    background-color: #FE7865;
+  }
 }
 
 .prices__special-list {
-  margin-bottom: 44px;
+  margin-bottom: 29px;
   padding: 0;
   text-align: left;
   list-style: none;
 }
 
+.prices__button {
+  padding: 19px 71px;
+}
+
 .prices__offer {
-  margin-top: 30px;
+  margin-top: 25px;
   width: 288px;
   height: 614px;
   border: 1px solid rgba(44, 46, 63, 0.3);
+  border-radius: 3px;
 }
 
 .prices__offer-title {
-  margin-bottom: 10px;
+  margin-top: 31px;
+  margin-bottom: 9px;
   color: rgba(20, 21, 23, 0.7);
   font-size: 24px;
   line-height: 34px;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: -1.27273px;
 }
 
 .prices__offer-price {
   margin-top: 0;
+  margin-left: -10px;
+  margin-bottom: 12px;
   color: rgba(20, 21, 23, 0.7);
   font-size: 25px;
   line-height: 34px;
@@ -99,14 +127,24 @@
 }
 
 .prices__offer-paragraph {
-  margin: 0 30px;
+  position: relative;
+  margin: 0 30px 20px;
   padding-bottom: 10px;
   line-height: 24px;
-  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: -10px;
+    width: 248px;
+    height: 1px;
+    background-color: rgba(44, 46, 63, 0.3);;
+  }
 }
 
 .prices__offer-list {
-  margin-bottom: 34px;
+  margin-bottom: 30px;
   padding: 0;
   text-align: left;
   list-style: none;
