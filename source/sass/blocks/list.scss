@@ -16,12 +16,17 @@
 }
 
 .active {
-  margin-left: 0;
   color: #FE7865;
 }
 
 @media (min-width: 768px) {
   .hidden-tablet {
     display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .list__item {
+    margin-left: 75px;
   }
 }

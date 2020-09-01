@@ -53,10 +53,15 @@ a {
 
   .wrapper {
     padding: 0;
+    align-items: start;
   }
 }
 
 @media (min-width: 1920px) {
+  .wrapper {
+    padding: 0;
+  }
+
   .container--indent {
     padding: 0 360px;
   }

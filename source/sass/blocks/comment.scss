@@ -20,6 +20,7 @@
 }
 
 .comment__title {
+  position: relative;
   margin-top: 40px;
   margin-bottom: 40px;
   padding-bottom: 10px;
@@ -28,7 +29,6 @@
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
-  border-bottom: 1px solid #FE7865;
 }
 
 .comment__paragraph {
@@ -67,7 +67,6 @@
     text-align: left;
     font-size: 30px;
     line-height: 37px;
-    border-bottom: 1px solid #FE7865;
   }
 
   .comment__paragraph {
@@ -88,5 +87,41 @@
 
   .comment__name {
     margin-left: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .comment {
+    margin-left: -400px;
+    margin-top: 160px;
+    background-image: url("../img/comment-bg-desktop.png");
+    background-size: cover, 430px 596px;
+    width: 430px;
+    height: 596px;
+  }
+
+  .comment__block {
+    margin-top: 0px;
+    margin-left: 330px;
+  }
+
+  .comment__title {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 68px;
+      height: 1px;
+      background-color: #FE7865;
+    }
+  }
+
+  .comment__paragraph {
+    width: 300px;
+  }
+
+  .comment__author {
+    margin-top: 10px;
   }
 }

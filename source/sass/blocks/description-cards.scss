@@ -9,6 +9,10 @@
   font-weight: 500;
 }
 
+.description-cards__button {
+  width: 250px;
+}
+
 @media (min-width: 768px) {
   .description-cards {
     margin-top: 80px;
@@ -17,5 +21,39 @@
   .description-cards__slide-title {
     font-size: 30px;
     line-height: 45px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .description-cards__block {
+    text-align: left;
+    padding: 0 0 0 30px;
+    width: 310px;
+  }
+
+  .description-cards__slide-title {
+    position: relative;
+    font-size: 55px;
+    line-height: 90px;
+    font-weight: 600;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 90px;
+      left: 0;
+      width: 175px;
+      height: 3px;
+      background-color: #FE7865;
+    }
+  }
+
+  .description-cards__slide-paragraph {
+    width: 360px;
+    height: 308px;
+  }
+
+  .description-cards__button {
+    margin-left: 30px;
   }
 }
