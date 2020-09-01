@@ -3,22 +3,36 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 70px;
-  padding: 0 6.25%;
+  margin-top: 95px;
   text-align: center;
 }
 
 .page-footer__countries {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 366px;
+    left: 11px;
+    width: 288px;
+    height: 1px;
+    background-color: #D7D9DF;
+  }
 }
 
 .page-footer__title {
+  margin-left: -10px;
+  margin-bottom: 20px;
   color: #141517;
   font-size: 18px;
   line-height: 32px;
+  font-weight: 600;
 }
 
 .page-footer__list {
@@ -28,24 +42,87 @@
 }
 
 .page-footer__cities {
-  margin: 10px 20px;
+  margin-top: 0;
+  margin-bottom: 11px;
   padding: 0;
   list-style: none;
 }
 
 .page-footer__contacts {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-bottom: 2px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 160px;
+    left: 11px;
+    width: 288px;
+    height: 1px;
+    background-color: #D7D9DF;
+  }
+}
+.page-footer__contacts-paragraph {
+  margin-top: -5px;
+  margin-bottom: 19px;
 }
 
 .page-footer__contacts-paragraph a {
   color: #FE7865;
+  text-decoration: underline;
+}
+
+.page-footer__email {
+  position: relative;
+  margin-left: 30px;
   font-size: 14px;
   line-height: 17px;
-  text-decoration: underline;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 26px;
+    height: 20px;
+    background-image: url("../img/email.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.page-footer__phone {
+  position: relative;
+  margin-left: 29px;
+  font-size: 16px;
+  line-height: 32px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -34px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.page-footer__team-building {
+  .page-footer__title {
+    margin-left: 6px;
+  }
+
+  .page-footer__paragraph {
+    margin: 20px 14px 25px 18px;
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 @media (min-width: 768px) {

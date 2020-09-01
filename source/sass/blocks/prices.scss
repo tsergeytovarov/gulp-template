@@ -92,6 +92,17 @@
   padding: 0;
   text-align: left;
   list-style: none;
+
+  .about-item::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -30px;
+    width: 19px;
+    height: 19px;
+    background-image: url("../img/check-black.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .prices__button {
@@ -144,10 +155,22 @@
 }
 
 .prices__offer-list {
+  position: relative;
   margin-bottom: 30px;
   padding: 0;
   text-align: left;
   list-style: none;
+
+  .about-item::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -28px;
+    width: 19px;
+    height: 19px;
+    background-image: url("../img/check-orange.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: 768px) {
