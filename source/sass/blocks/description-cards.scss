@@ -28,12 +28,19 @@
 
 @media (min-width: 768px) {
   .description-cards {
-    margin-top: 80px;
+    margin-top: 89px;
   }
 
   .description-cards__slide-title {
+    margin-top: 37px;
+    margin-bottom: 20px;
     font-size: 30px;
     line-height: 45px;
+  }
+
+  .description-cards__button {
+    margin-top: 21px;
+    padding: 19px 53px;
   }
 }
 

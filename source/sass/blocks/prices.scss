@@ -49,7 +49,7 @@
   width: 288px;
   height: 614px;
   border: 3px solid #FE7865;
-  border-radius: 3px;
+  border-radius: 6px;
 }
 
 .prices__special-title {
@@ -114,7 +114,7 @@
   width: 288px;
   height: 614px;
   border: 1px solid rgba(44, 46, 63, 0.3);
-  border-radius: 3px;
+  border-radius: 6px;
 }
 
 .prices__offer-title {
@@ -181,6 +181,15 @@
     font-weight: 400;
   }
 
+  .prices__paragraph {
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+
+  .prices__contacts {
+    margin-bottom: 29px;
+  }
+
   .prices__offers-block {
     display: flex;
     align-items: baseline;
@@ -188,7 +197,15 @@
 
   .prices__offer {
     margin-top: 0;
-    margin-left: 50px;
+    margin-left: 46px;
+  }
+
+  .prices__special {
+    height: 626px;
+  }
+
+  .prices__special-list {
+    margin-bottom: 43px;
   }
 }
 

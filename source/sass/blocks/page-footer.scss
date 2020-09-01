@@ -8,22 +8,11 @@
 }
 
 .page-footer__countries {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 5px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 366px;
-    left: 11px;
-    width: 288px;
-    height: 1px;
-    background-color: #D7D9DF;
-  }
 }
 
 .page-footer__title {
@@ -39,6 +28,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 320px;
 }
 
 .page-footer__cities {
@@ -54,14 +44,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
   margin-bottom: 2px;
 
   &::after {
     content: "";
     position: absolute;
     top: 160px;
-    left: 11px;
+    left: -50px;
     width: 288px;
     height: 1px;
     background-color: #D7D9DF;
@@ -130,35 +119,63 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
-    padding: 0 21px;
+    justify-content: center;
     text-align: left;
+    margin-top: 57px;
   }
 
   .page-footer__title {
-    margin-top: 0;
+    margin-left: 0;
   }
 
   .page-footer__countries {
-    margin-bottom: 20px;
     align-items: start;
+    margin-left: -60px;
   }
 
-  .page-footer__cities {
-    margin-right: 60px;
-    margin-left: 0;
-    margin-bottom: 0;
+  .page-footer__list {
+    justify-content: space-between;
+    width: 343px;
   }
 
   .page-footer__contacts {
     align-items: start;
-    margin-left: 120px;
-    width: 202px;
-    border-bottom: none;
+    margin-left: 102px;
+    width: 222px;
+    &::after {
+      top: 24px;
+      left: -50px;
+      width: 1px;
+      height: 177px;
+    }
+  }
+
+  .page-footer__email {
+    margin-left: 41px;
+  }
+
+  .page-footer__phone {
+    margin-left: 40px;
   }
 
   .page-footer__team-building {
-    padding-top: 30px;
+    position: relative;
+    padding-top: 10px;
     text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 20px;
+      width: 726px;
+      height: 1px;
+      background-color: #D7D9DF;
+    }
+
+    .page-footer__title {
+      margin-left: 0;
+    }
   }
 }
 

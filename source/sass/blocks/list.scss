@@ -23,6 +23,7 @@
   color: rgba(44, 46, 63, 0.3);
   font-size: 20px;
   line-height: 24px;
+  font-weight: 500;
 
   &--first {
     margin-left: -25px;
@@ -34,6 +35,19 @@
 }
 
 @media (min-width: 768px) {
+  .list::after {
+    left: 10px;
+    width: 728px;
+  }
+
+  .list__item {
+    letter-spacing: -0.415px;
+
+    &--first {
+      margin-left: 9px;
+    }
+  }
+
   .hidden-tablet {
     display: block;
   }

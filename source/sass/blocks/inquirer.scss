@@ -22,6 +22,10 @@
   line-height: 24px;
 }
 
+.inquirer__wrapper {
+  position: relative;
+}
+
 .inquirer__input {
   position: relative;
   box-sizing: border-box;
@@ -53,8 +57,8 @@
   position: absolute;
   display: flex;
   z-index: 1;
-  top: 210px;
-  left: 30px;
+  top: 9px;
+  left: 14px;
 }
 
 .inquirer__button {
@@ -66,6 +70,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 123px;
     padding: 0 55px;
     background-image: url("../img/inquirer-bg-tablet.png");
     background-size: cover, 768px 455px;
@@ -81,27 +86,32 @@
     padding: 0 6.25%;
     width: 658px;
     height: 311px;
+    border-radius: 5px;
   }
 
   .inquirer__title {
+    margin-top: -7px;
     margin-bottom: 0;
+    font-weight: 600;
   }
 
   .inquirer__paragraph {
     margin-top: 11px;
+    margin-bottom: 26px;
   }
 
   .inquirer__wrapper {
     display: flex;
+    justify-content: space-between;
+    width: 558px;
   }
 
   .inquirer__input {
-    margin-left: 20px;
     width: 269px;
   }
 
   .inquirer__button {
-    width: 250px;
+    padding: 19px 84px;
   }
 }
 

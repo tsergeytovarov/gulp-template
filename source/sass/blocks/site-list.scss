@@ -41,10 +41,19 @@
 }
 
 @media (min-width: 768px) {
+  .site-list__logo {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
   .site-list__item {
     &--logo {
       &::before {
         width: 72px;
+      }
+
+      &::after {
+        right: 20px;
       }
     }
   }

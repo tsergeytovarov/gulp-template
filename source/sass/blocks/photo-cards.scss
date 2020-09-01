@@ -27,14 +27,20 @@
 @media (min-width: 768px) {
   .photo-cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 20px;
+    width: 606px;
   }
 
   .photo-cards__card {
-    margin: 20px;
+    margin-bottom: 20px;
+
+    &--croatia {
+      margin: 10px auto;
+    }
   }
 }
 

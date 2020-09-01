@@ -62,6 +62,8 @@
 
   .page-header__main-title {
     margin-top: 60px;
+    margin-left: -10px;
+    margin-right: 0;
     font-size: 30px;
     line-height: 45px;
   }
@@ -75,6 +77,8 @@
   }
 
   .page-header__main-paragraph {
+    margin-top: 16px;
+    margin-bottom: 10px;
     color: #ffffff;
     font-size: 16px;
     line-height: 27px;
@@ -82,7 +86,7 @@
   }
 
   .page-header__button {
-    width: 250px;
+    padding: 19px 107px 19px 40px;
   }
 }
 
