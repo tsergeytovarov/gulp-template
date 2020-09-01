@@ -82,3 +82,18 @@
     width: 250px;
   }
 }
+
+@media (min-width: 1024px) {
+  .inquirer {
+    padding: 0;
+    background-image: url("../img/inquirer-bg-desktop.png");
+    background-size: cover, 844px 455px;
+    min-height: 455px;
+    width: 844px;
+    height: 455px;
+  }
+
+  .inquirer__background {
+    margin-left: 520px;
+  }
+}

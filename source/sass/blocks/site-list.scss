@@ -18,11 +18,14 @@
   a {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
     padding-left: 16px;
     height: 50px;
     color: #48494D;
     background-color: #FBF8F8;
+  }
+
+  .site-list__logo {
+    margin-top: 2px;
   }
 }
 

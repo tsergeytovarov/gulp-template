@@ -71,18 +71,18 @@
   }
 
   .page-header__main-title {
-    margin-top: 180px;
-    margin-left: 600px;
     font-size: 55px;
     line-height: 80px;
     font-weight: 600;
     text-align: left;
+    width: 412px;
+    margin-left: 600px;
+    margin-top: 200px;
   }
 
   .page-header__wrapper {
     margin-top: -500px;
-    margin-left: 540px;
-    align-items: start;
+    align-items: baseline;
   }
 
   .page-header__main-paragraph {

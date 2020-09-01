@@ -13,7 +13,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #D7D9DF;
 }
 
 .page-footer__title {
@@ -40,7 +39,6 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  border-bottom: 1px solid #D7D9DF;
 }
 
 .page-footer__contacts-paragraph a {
@@ -66,8 +64,6 @@
   .page-footer__countries {
     margin-bottom: 20px;
     align-items: start;
-    border-right: 1px solid #D7D9DF;;
-    border-bottom: none;
   }
 
   .page-footer__cities {
@@ -86,6 +82,31 @@
   .page-footer__team-building {
     padding-top: 30px;
     text-align: center;
-    border-top: 1px solid #D7D9DF;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-footer {
+    justify-content: start;
+    padding: 0;
+  }
+
+  .page-footer__team-building {
+    margin-left: 30px;
+    width: 320px;
+    text-align: left;
+  }
+
+  .page-footer__paragraph {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .page-footer__countries {
+    margin-left: 30px;
+  }
+
+  .page-footer__contacts {
+    margin-left: 20px;
   }
 }

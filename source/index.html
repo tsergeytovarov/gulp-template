@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header class="page-header container">
+<header class="page-header container container--header">
   <nav class="main-nav main-nav--opened main-nav--nojs">
     <button class="main-nav__toggle main-nav__toggle--close" type="button">
       <span class="visually-hidden">Закрыть меню</span>
@@ -17,8 +17,8 @@
       <li class="site-list__item site-list__item--logo site-list__item--active"><a href="">
         <img class="site-list__logo" src="img/logo.png" width="44" height="17" alt="Logo of WAY">
       </a></li>
-      <li class="site-list__item site-list__item--about"><a href="">О путешествии</a></li>
-      <li class="site-list__item site-list__item--price"><a href="">Цены</a></li>
+      <li class="site-list__item site-list__item--about hidden"><a href="">О путешествии</a></li>
+      <li class="site-list__item site-list__item--price hidden"><a href="">Цены</a></li>
       <li class="site-list__item site-list__item--phone hidden-desktop"><a href="tel:+749978468446">+7
         (499)-784-684-46</a></li>
     </ul>
@@ -175,31 +175,35 @@
     </section>
   </section>
   <section class="prices">
-    <div class="prices__price">
-      <h4 class="prices__title">Цены</h4>
-      <p class="prices__paragraph">
-        Специально для Вас мы
-        разработали 2 пакета цен с
-        разными условиями,
-        отталкиваясь от Ваших
-        потребностей и возможностей.
-        Выберите для себя лучший
-        вариант отпуска и отдохните на
-        все 100%!
-      </p>
-    </div>
-    <div class="prices__contacts">
-      <h4 class="prices__contacts-title">Свяжитесь с нами</h4>
-      <p class="prices__contacts-paragraph">
-        <a class="prices__phone" href="tel:+749978468446">
-          +7 (499)-784-684-46
-        </a>
-      </p>
+    <div class="prices__price-contacts">
+      <div class="prices__price">
+        <h4 class="prices__title">Цены</h4>
+        <p class="prices__paragraph">
+          Специально для Вас мы
+          разработали 2 пакета цен с
+          разными условиями,
+          отталкиваясь от Ваших
+          потребностей и возможностей.
+          Выберите для себя лучший
+          вариант отпуска и отдохните на
+          все 100%!
+        </p>
+      </div>
+      <div class="prices__contacts">
+        <h4 class="prices__contacts-title">Свяжитесь с нами</h4>
+        <p class="prices__contacts-paragraph">
+          <a class="prices__phone" href="tel:+749978468446">
+            +7 (499)-784-684-46
+          </a>
+        </p>
+      </div>
     </div>
     <div class="prices__offers-block">
       <div class="prices__special">
-        <h4 class="prices__special-title">Комплексный</h4>
-        <h4 class="prices__special-price">$1999</h4>
+        <div class="prices__title-wrapper">
+          <h4 class="prices__special-title">Комплексный</h4>
+          <h4 class="prices__special-price">$1999</h4>
+        </div>
         <p class="prices__special-paragraph">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
         <ul class="prices__special-list about">
           <li class="about-item">Разработанный маршрут с гидом группы</li>
@@ -210,8 +214,10 @@
         <a class="prices__button button" href="">Купить тур сейчас</a>
       </div>
       <div class="prices__offer">
-        <h4 class="prices__offer-title">Экономный</h4>
-        <h4 class="prices__offer-price">$1399</h4>
+        <div class="prices__title-wrapper">
+          <h4 class="prices__offer-title">Экономный</h4>
+          <h4 class="prices__offer-price">$1399</h4>
+        </div>
         <p class="prices__offer-paragraph">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
         <ul class="prices__offer-list about">
           <li class="about-item">Разработанный маршрут с гидом группы</li>
