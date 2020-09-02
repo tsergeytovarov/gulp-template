@@ -215,16 +215,27 @@
     flex-direction: row;
     flex-wrap: wrap;
     text-align: left;
-    margin-top: -200px;
-    margin-bottom: 100px;
+    margin-top: -143px;
+    margin-bottom: 133px;
     padding: 0;
   }
 
+  .prices__price {
+    margin-top: 50px;
+    margin-right: 35px;
+  }
+
   .prices__title {
+    margin-left: 20px;
+    margin-bottom: 50px;
+    font-size: 55px;
+    line-height: 90px;
+    font-weight: 600;
+
     &::after {
       content: "";
       position: absolute;
-      top: 60px;
+      top: 105px;
       left: 0;
       width: 175px;
       height: 3px;
@@ -233,8 +244,7 @@
   }
 
   .prices__paragraph {
-    width: 260px;
-    margin: 0;
+    width: 299px;
   }
 
   .prices__price-contacts {
@@ -246,8 +256,24 @@
     margin-left: auto;
   }
 
-  .prices__paragraph {
-    margin-top: 60px;
+  .prices__contacts {
+    margin-top: 20px;
+    margin-left: -35px;
+  }
+
+  .prices__contacts-title {
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 500px;
+  }
+
+  .prices__phone {
+    color: #000000;
+    font-size: 20px;
+  }
+
+  .prices__offers-block {
+    margin-left: 62px;
   }
 
   .prices__special {
@@ -266,7 +292,7 @@
     background-color: #ffffff;
     width: 370px;
     height: 672px;
-    margin-left: 10px;
+    margin-left: 26px;
   }
 
   .prices__title-wrapper {
@@ -276,8 +302,21 @@
   }
 
   .prices__special-title {
+    margin-top: 40px;
+    margin-bottom: 40px;
     font-size: 28px;
     font-weight: 600;
+  }
+
+  .prices__special-paragraph {
+    margin-left: 30px;
+    width: 289px;
+
+    &::after {
+      top: 75px;
+      left: 0;
+      width: 310px;
+    }
   }
 
   .prices__special-price {
@@ -285,20 +324,40 @@
   }
 
   .prices__special-list {
-    margin-bottom: 125px;
+    margin-left: 10px;
   }
 
   .prices__offer-title {
+    margin-top: 39px;
+    margin-bottom: 40px;
     font-size: 28px;
     line-height: 38px;
     font-weight: 600;
   }
 
   .prices__offer-price {
-    margin-left: 20px;
+    margin-left: 75px;
+  }
+
+  .prices__offer-paragraph {
+    margin-left: 30px;
+    width: 289px;
+
+    &::after {
+      top: 75px;
+      left: 0;
+      width: 310px;
+    }
   }
 
   .prices__offer-list {
-    margin-bottom: 150px;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+
+  .prices__button {
+    padding: 30px 70px;
+    margin: 0 auto;
   }
 }

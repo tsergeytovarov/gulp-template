@@ -183,12 +183,26 @@
   .page-footer {
     justify-content: start;
     padding: 0;
+    margin-top: 136px;
+    margin-bottom: 100px;
   }
 
   .page-footer__team-building {
-    margin-left: 30px;
+    margin-left: 130px;
     width: 320px;
     text-align: left;
+
+    &::after {
+      top: 35px;
+      left: -50px;
+      width: 1px;
+      height: 190px;
+    }
+
+    .page-footer__paragraph {
+      margin-left: 0;
+      width: 320px;
+    }
   }
 
   .page-footer__paragraph {
@@ -197,10 +211,17 @@
   }
 
   .page-footer__countries {
-    margin-left: 30px;
+    margin-left: 78px;
   }
 
   .page-footer__contacts {
-    margin-left: 20px;
+    margin-left: 135px;
+
+    &::after {
+      top: 24px;
+      left: -90px;
+      width: 1px;
+      height: 190px;
+    }
   }
 }
