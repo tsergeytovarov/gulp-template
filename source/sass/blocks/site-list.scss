@@ -78,6 +78,11 @@
       }
     }
 
+    .site-list__logo {
+      width: 57px;
+      height: 22px;
+    }
+
     a {
       font-size: 14px;
       line-height: 17px;
@@ -101,14 +106,7 @@
     }
 
     &--about {
-      margin-left: 460px;
+      margin-left: 550px;
     }
-  }
-}
-
-@media (min-width: 1920px) {
-  .site-list__logo {
-    width: 57px;
-    height: 22px;
   }
 }
