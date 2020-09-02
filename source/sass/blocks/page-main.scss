@@ -39,19 +39,32 @@
 
 @media (min-width: 1024px) {
   .page-main__title {
-    padding: 0 0 0 30px;
-    margin-top: 400px;
+    position: relative;
+    margin-top: 445px;
+    margin-left: 65px;
     margin-right: auto;
     text-align: left;
     font-size: 55px;
     line-height: 80px;
     width: 358px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 190px;
+      left: 0;
+      width: 228px;
+      height: 4px;
+      background-color: #FE7865;
+    }
   }
 
   .page-main__paragraph {
-    padding: 0 0 0 30px;
+    margin-top: 65px;
+    margin-left: 65px;
+    margin-right: auto;
+    margin-bottom: 36px;
     text-align: left;
     width: 328px;
-    margin-right: auto;
   }
 }

@@ -46,6 +46,28 @@
 
 @media (min-width: 1024px) {
   .photo-cards {
-    width: 1024px;
+    width: 1170px;
+  }
+
+  .photo-cards__country {
+    margin-top: -70px;
+  }
+
+  .photo-cards__img {
+    width: 350px;
+    height: 430px;
+  }
+
+  .photo-cards__card {
+    margin-bottom: 100px;
+
+    &--croatia {
+      margin-top: 0;
+      margin-right: 175px;
+    }
+
+    &--montenegro {
+      margin-left: 175px;
+    }
   }
 }

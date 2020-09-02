@@ -18,8 +18,8 @@
       <li class="site-list__item site-list__item--logo site-list__item--active"><a href="">
         <img class="site-list__logo" src="img/logo.png" width="44" height="17" alt="Logo of WAY">
       </a></li>
-      <li class="site-list__item site-list__item--about hidden"><a href="">О путешествии</a></li>
-      <li class="site-list__item site-list__item--price hidden"><a href="">Цены</a></li>
+      <li class="site-list__item site-list__item--about hidden-desktop"><a href="">О путешествии</a></li>
+      <li class="site-list__item site-list__item--price hidden-desktop"><a href="">Цены</a></li>
       <li class="site-list__item site-list__item--phone hidden-desktop"><a href="tel:+749978468446">+7
         (499)-784-684-46</a></li>
     </ul>
@@ -42,31 +42,46 @@
     <p class="page-main__paragraph">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
     <section class="photo-cards">
       <div class="photo-cards__card">
-        <img class="photo-cards__img" src="img/greece-card-mobile.jpg" width="288" height="425" alt="Photo of Greece">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="img/greece-card-desktop.png">
+          <img class="photo-cards__img" src="img/greece-card-mobile.jpg" width="288" height="425" alt="Photo of Greece">
+        </picture>
         <div class="photo-cards__country">
           <h3 class="photo-cards__country-title">Греция</h3>
         </div>
       </div>
       <div class="photo-cards__card">
-        <img class="photo-cards__img" src="img/albania-card-mobile.png" width="288" height="425" alt="Photo of Albania">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="img/albania-card-desktop.png">
+          <img class="photo-cards__img" src="img/albania-card-mobile.png" width="288" height="425" alt="Photo of Albania">
+        </picture>
         <div class="photo-cards__country">
           <h3 class="photo-cards__country-title">Албания</h3>
         </div>
       </div>
       <div class="photo-cards__card">
-        <img class="photo-cards__img" src="img/macedonia-card-mobile.png" width="288" height="425" alt="Photo of Macedonia">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="img/macedonia-card-desktop.png">
+          <img class="photo-cards__img" src="img/macedonia-card-mobile.png" width="288" height="425" alt="Photo of Macedonia">
+        </picture>
         <div class="photo-cards__country">
           <h3 class="photo-cards__country-title">Македония</h3>
         </div>
       </div>
-      <div class="photo-cards__card">
-        <img class="photo-cards__img" src="img/montenegro-card-mobile.png" width="288" height="425" alt="Photo of Montenegro">
+      <div class="photo-cards__card photo-cards__card--montenegro">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="img/montenegro-card-desktop.png">
+          <img class="photo-cards__img" src="img/montenegro-card-mobile.png" width="288" height="425" alt="Photo of Montenegro">
+        </picture>
         <div class="photo-cards__country">
           <h3 class="photo-cards__country-title">Черногория</h3>
         </div>
       </div>
       <div class="photo-cards__card photo-cards__card--croatia">
-        <img class="photo-cards__img" src="img/croatia-card-mobile.png" width="288" height="425" alt="Photo of Croatia">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="img/croatia-card-desktop.png">
+          <img class="photo-cards__img" src="img/croatia-card-mobile.png" width="288" height="425" alt="Photo of Croatia">
+        </picture>
         <div class="photo-cards__country">
           <h3 class="photo-cards__country-title">Хорватия</h3>
         </div>

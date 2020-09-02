@@ -55,6 +55,15 @@
 
 @media (min-width: 1024px) {
   .list__item {
-    margin-left: 75px;
+    margin-left: 100px;
+
+    &--first {
+      margin-left: 65px;
+    }
+  }
+
+  .list::after {
+    left: 67px;
+    width: 899px;
   }
 }

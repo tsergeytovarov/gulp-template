@@ -72,6 +72,10 @@
       &::before {
         background-color: transparent;
       }
+
+      &::after {
+        display: none;
+      }
     }
 
     a {
@@ -99,5 +103,12 @@
     &--about {
       margin-left: 460px;
     }
+  }
+}
+
+@media (min-width: 1920px) {
+  .site-list__logo {
+    width: 57px;
+    height: 22px;
   }
 }

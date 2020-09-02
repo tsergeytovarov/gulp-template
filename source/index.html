@@ -18,8 +18,8 @@
       <li class="site-list__item site-list__item--logo site-list__item--active"><a href="">
         <img class="site-list__logo" src="img/logo.png" width="44" height="17" alt="Logo of WAY">
       </a></li>
-      <li class="site-list__item site-list__item--about hidden"><a href="">О путешествии</a></li>
-      <li class="site-list__item site-list__item--price hidden"><a href="">Цены</a></li>
+      <li class="site-list__item site-list__item--about hidden-desktop"><a href="">О путешествии</a></li>
+      <li class="site-list__item site-list__item--price hidden-desktop"><a href="">Цены</a></li>
       <li class="site-list__item site-list__item--phone hidden-desktop"><a href="tel:+749978468446">+7
         (499)-784-684-46</a></li>
     </ul>
@@ -42,33 +42,50 @@
     <p class="page-main__paragraph">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
     <section class="photo-cards">
       <div class="photo-cards__card">
-        <img class="photo-cards__img" src="img/greece-card-mobile.jpg" width="288" height="425" alt="Photo of Greece">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="img/greece-card-desktop.png">
+          <img class="photo-cards__img" src="img/greece-card-mobile.jpg" width="288" height="425" alt="Photo of Greece">
+        </picture>
         <div class="photo-cards__country">
           <h3 class="photo-cards__country-title">Греция</h3>
         </div>
       </div>
       <div class="photo-cards__card">
-        <img class="photo-cards__img" src="img/albania-card-mobile.png" width="288" height="425" alt="Photo of Albania">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="img/albania-card-desktop.png">
+          <img class="photo-cards__img" src="img/albania-card-mobile.png" width="288" height="425"
+               alt="Photo of Albania">
+        </picture>
         <div class="photo-cards__country">
           <h3 class="photo-cards__country-title">Албания</h3>
         </div>
       </div>
       <div class="photo-cards__card">
-        <img class="photo-cards__img" src="img/macedonia-card-mobile.png" width="288" height="425"
-             alt="Photo of Macedonia">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="img/macedonia-card-desktop.png">
+          <img class="photo-cards__img" src="img/macedonia-card-mobile.png" width="288" height="425"
+               alt="Photo of Macedonia">
+        </picture>
         <div class="photo-cards__country">
           <h3 class="photo-cards__country-title">Македония</h3>
         </div>
       </div>
-      <div class="photo-cards__card">
-        <img class="photo-cards__img" src="img/montenegro-card-mobile.png" width="288" height="425"
-             alt="Photo of Montenegro">
+      <div class="photo-cards__card photo-cards__card--montenegro">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="img/montenegro-card-desktop.png">
+          <img class="photo-cards__img" src="img/montenegro-card-mobile.png" width="288" height="425"
+               alt="Photo of Montenegro">
+        </picture>
         <div class="photo-cards__country">
           <h3 class="photo-cards__country-title">Черногория</h3>
         </div>
       </div>
       <div class="photo-cards__card photo-cards__card--croatia">
-        <img class="photo-cards__img" src="img/croatia-card-mobile.png" width="288" height="425" alt="Photo of Croatia">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="img/croatia-card-desktop.png">
+          <img class="photo-cards__img" src="img/croatia-card-mobile.png" width="288" height="425"
+               alt="Photo of Croatia">
+        </picture>
         <div class="photo-cards__country">
           <h3 class="photo-cards__country-title">Хорватия</h3>
         </div>
@@ -236,10 +253,14 @@
       <h4 class="inquirer__title">У Вас остались вопросы?</h4>
       <p class="inquirer__paragraph">Оставьте свой номер или e-mail, и мы свяжемся с Вами</p>
       <div class="inquirer__wrapper">
-        <input class="inquirer__input inquirer__input--phone" type="tel" name="tel" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+        <input class="inquirer__input inquirer__input--phone" type="tel" name="tel"
+               pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
                required="" placeholder="+7  Введите 10 цифр номера">
-        <svg class="inquirer__svg" width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3.519 6.028L3.434 4.158L4.998 5.161L5.542 4.243L3.893 3.393L5.542 2.543L4.998 1.608L3.434 2.611L3.519 0.740999H2.448L2.533 2.611L0.952 1.608L0.425 2.543L2.074 3.393L0.425 4.243L0.952 5.161L2.533 4.158L2.448 6.028H3.519Z" fill="#FE7865"/>
+        <svg class="inquirer__svg" width="6" height="7" viewBox="0 0 6 7" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M3.519 6.028L3.434 4.158L4.998 5.161L5.542 4.243L3.893 3.393L5.542 2.543L4.998 1.608L3.434 2.611L3.519 0.740999H2.448L2.533 2.611L0.952 1.608L0.425 2.543L2.074 3.393L0.425 4.243L0.952 5.161L2.533 4.158L2.448 6.028H3.519Z"
+            fill="#FE7865"/>
         </svg>
         <input class="inquirer__input" type="email" name="email" placeholder="E-mail" required="">
       </div>

@@ -40,7 +40,7 @@ a {
 .container {
   box-sizing: border-box;
   min-width: 320px;
-  max-width: 1024px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0;
 
@@ -54,12 +54,6 @@ a {
     display: block;
   }
 
-  .wrapper {
-    padding: 0;
-  }
-}
-
-@media (min-width: 1920px) {
   .wrapper {
     padding: 0;
   }

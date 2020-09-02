@@ -45,6 +45,10 @@
 }
 
 @media (min-width: 1024px) {
+  .description-cards {
+    margin-top: -8px;
+  }
+
   .description-cards__block {
     text-align: left;
     padding: 0 0 0 30px;

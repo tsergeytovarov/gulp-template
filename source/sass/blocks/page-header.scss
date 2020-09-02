@@ -109,10 +109,28 @@
 
   .page-header__wrapper {
     margin-top: -500px;
-    align-items: baseline;
+    margin-left: 605px;
   }
 
   .page-header__main-paragraph {
+    margin-bottom: 32px;
     text-align: left;
+    width: 376px;
+  }
+
+  .page-header__button {
+    padding: 30px 179px 30px 40px;
+    margin-left: -34px;
+
+    &::after {
+      top: 30px;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .page-header__main-title {
+    margin-left: 640px;
+    margin-top: 186px;
   }
 }
