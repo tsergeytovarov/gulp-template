@@ -113,8 +113,8 @@
 
 @media (min-width: 1024px) {
   .comment {
-    margin-left: -400px;
-    margin-top: 160px;
+    margin-left: -425px;
+    margin-top: 110px;
     background-image: url("../img/comment-bg-desktop.png");
     background-size: cover, 430px 596px;
     width: 430px;
@@ -123,26 +123,20 @@
 
   .comment__block {
     margin-top: 0px;
-    margin-left: 330px;
+    margin-left: 575px;
   }
 
   .comment__title {
     &::after {
-      content: "";
-      position: absolute;
-      top: 40px;
-      left: 0;
-      width: 68px;
-      height: 1px;
-      background-color: #FE7865;
+      top: 49px;
     }
   }
 
   .comment__paragraph {
-    width: 300px;
+    width: 322px;
   }
 
   .comment__author {
-    margin-top: 10px;
+    margin-top: 40px;
   }
 }
