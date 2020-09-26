@@ -1,0 +1,1759 @@
+:root {
+    --basic-text-color: #484848;
+    --basic-background-color: #ffffff;
+    --other-heading-font: 'Montserrat', 'Arial', sans-serif;
+
+
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+
+body {
+    font-family: 'Fira Sans', 'Arial', sans-serif;
+    min-width: 1366px;
+    min-height: 100%;
+    font-size: 17px;
+    line-height: 24px;
+    color: var(--basic-text-color);
+    font-weight: normal;
+    background-color: var(--basic-background-color);
+    padding: 0;
+    margin: 0;
+}
+
+
+.visually-hidden {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1386px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* header */
+
+.main-menu {
+    display: flex;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    color: var(--basic-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;  
+    list-style: none;
+    margin-top: 30px;
+}
+
+
+.main-items {  
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main-items__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 110px;
+    margin-top: 4px;
+    margin-right: 254px;
+}
+
+.main-items__item a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.call {
+    margin-right: 0;
+    margin-left: 120px;
+    
+}
+
+.call a {
+    border-bottom: 2px dashed var(--basic-text-color);
+}
+
+.promo {
+    position: relative;
+    margin-bottom: 0;
+    background-image: url(../img/israel-headding.png);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;   
+}
+
+
+.promo-wrapper {
+    background: url(../img/israel_all.png);
+    background-repeat: no-repeat;
+    background-position: 50% 84%;
+    width: 100%;
+    height: 810px;
+} 
+
+.promo-wrapper_btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 543px;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+.promo-wrapper_btn:hover {
+    cursor: pointer;
+}
+
+.promo-tagline {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 453px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 343px;
+    height: 58px;
+    margin: 0 auto;
+}
+
+.girl {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-44%);
+    top: 160px;
+}
+
+/* about */
+
+.about {
+    margin-bottom: 195px;
+    background-image: url(../img/about_Bg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 222%;
+}
+
+.other-heading {
+    font-family: var(--other-heading-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #1FC0FC;
+    margin: 0;
+    padding-bottom: 24px;
+}
+
+.description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 170%;
+    text-align: center;
+    width: 720px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+}
+
+.about-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 860px;
+    margin: 0 auto;
+}
+
+.photo_about {
+    position: relative;
+}
+
+.photo_about_btn {
+    position: absolute;
+    top: 39%;
+    left: 388px;
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 96px;
+    height: 96px;
+    background: transparent;
+    background-image: url(../img/about_play_button.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.photo_about_btn:hover {
+    cursor: pointer;
+    background-image: url(../img/about_play_button_hover.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.photo_about_btn:active {
+    cursor: pointer;
+    background-image: url(../img/about_play_button_active.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+/* programs */
+
+.programs {
+    background-image: url(../img/programs-background.png);
+    background-repeat: no-repeat;
+    background-position: 78% -76%;
+    margin-bottom: 204px;
+}
+
+.programs-heading {
+    margin-left: 15.3%;
+    margin-bottom: 59px;
+}
+
+.programs-wrapper {
+    display: flex;
+    width: 852px;
+    margin: 0 auto;
+}
+
+/* program left */
+.program-list {
+    width: 228px;
+    padding-left: 26px;
+    
+}
+
+.program-list__items {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.program-list__decorator {
+    position: relative;
+    padding-top: 10px;
+    height: 72px;    
+}
+
+.program-list__decorator:last-child {
+    padding-bottom: 0;
+}
+
+.culture,
+.study,
+.business,
+.volonteur,
+.religion {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.culture::before {
+    content: "";
+    position: absolute;
+    left: -49px;
+    top: 3px;
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/programs-list-ico-star.svg);
+    background-repeat: no-repeat;
+}
+
+
+.study::before {
+    content: "";
+    position: absolute;
+    left: -53px;
+    top: 1px;
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/programs-list-ico-hat.svg);
+    background-repeat: no-repeat;
+}
+
+.business::before {
+    content: "";
+    position: absolute;
+    left: -53px;
+    top: 3px;
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/programs-list-ico-business.svg);
+    background-repeat: no-repeat;
+}
+
+.volonteur::before {
+    content: "";
+    position: absolute;
+    left: -51px;
+    top: 5px;
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/programs-list-ico-hand.svg);
+    background-repeat: no-repeat;
+}
+
+.religion::before {
+    content: "";
+    position: absolute;
+    left: -47px;
+    top: 8px;
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/programs-list-ico-religion.svg);
+    background-repeat: no-repeat;
+}
+
+
+.program-list__decorator--active button::after {
+    position: absolute;
+    left: -73px;
+    top: -15px;
+    content: "";
+    width: 228px;
+    height: 68px;
+    background-image: url(../img/programs-list-ico-checked.svg);
+    z-index: -1;
+    
+}
+
+.program-list__decorator.program-list__decorator--active button {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 500;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+/* program right */
+
+.program-about {
+    width: 572px;
+    padding-left: 18px;
+}
+
+.program-name {
+    font-family: var(--other-heading-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #1FC0FC;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+.program-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 170%;
+    opacity: 0.87;
+    margin: 0;
+    width: 560px;
+    padding-bottom: 10px;
+}
+
+/* i want to go */
+
+.i-want-go {
+    position: relative;
+    margin-bottom: 228px;
+}
+
+
+.backpack {
+    position: absolute;
+    transform: rotate(2deg);
+    left: 14%;
+    top: -29%;
+}
+
+.i-want-go__wrapper {
+    width: 477px;
+    margin-left: 210px;
+}
+
+.i-want-go__contact {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 170%;
+    opacity: 0.87;
+    margin: 0;
+    width: 400px;
+    padding-bottom: 63px;
+}
+
+.callback-wrapper {
+    position: relative;
+}
+
+.i-want-go__girlFlag {
+    position: absolute;
+    top: -81%;
+    left: 43%;
+}
+
+.phone-form {
+    padding-top: 17px;
+    padding-right: 60px;
+    padding-bottom: 18px;
+    padding-left: 39px;
+    border: 2px solid #E3E3E3;
+    border-radius: 80px;
+    font-variant: small-caps;
+    opacity: 0.5;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.phone-form:focus {
+    outline: none;
+}
+
+.callback {
+    position: absolute;
+    top: 0;
+    left: 55%;
+    background: linear-gradient(140.64deg, #FFC341 20.46%, #FFD701 65.31%);
+    border: none;
+    border-radius: 80px;
+    padding-top: 20px;
+    padding-right: 38px;
+    padding-bottom: 20px;
+    padding-left: 39px;
+
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.callback:active, 
+.callback:focus {
+    outline: none;
+}
+
+/* how-to-go */
+
+.how-to-go {
+    position: relative;
+    background-image: url(../img/how-to-stamp.png), url(../img/how_to_Bg.png);
+    background-repeat: no-repeat;
+    background-position: 80% 43%, 50% 43%;
+    min-height: 900px;
+    margin-bottom: 33px;
+}
+
+.how-to-go__heading {
+    margin-left: 69px;
+}
+
+.how-to-go__wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 400px;
+    background-image: url(../img/img_how-to-go.png);
+    background-repeat: no-repeat;
+    background-position: 12px 64px;
+    height: 900px;
+}
+
+.how-to-go__img {
+    position: absolute;
+    left: 15%;
+    top: 7%;
+}
+
+.how-to-go__items {
+    position: relative;
+    padding-left: 48px;
+    width: 600px;
+    margin-top: 10%;
+}
+
+.how-to-go__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 170%;
+    opacity: 0.87;
+    margin: 0;
+    padding-bottom: 35px;
+    padding-left: 69px;
+} 
+
+.how-to-go__need {
+    display: block;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 170%;
+    padding-left: 68px;
+    width: 520px;
+}
+
+.how-to-go__list {
+    position: relative;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 33px;
+
+    padding-top: 33px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 79px;
+    list-style: none;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%;
+    opacity: 0.87;
+
+    counter-reset: my;
+
+    background-image: url(../img/how_to-go---.svg);
+    background-repeat: no-repeat;
+    background-position: 7% 50%;
+}
+
+.how-to-go__list__point {
+    position: relative;
+    width: 480px;
+    height: 39px;
+    padding-bottom: 75px;
+}
+
+.how-to-go__list__point::before {
+    position: absolute;
+    left: -59px;
+    top: -10px;
+    counter-increment: my;
+    content: counter(my);
+    color: #FFC341;
+    font-weight: 700;
+    background: #FFFFFF;
+    text-align: center;
+    line-height: 40px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.how-to-go__list__point:last-child{
+    padding-bottom: 0;
+}
+
+.how-to-go__money {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%;
+    opacity: 0.5;
+    padding-left: 85px;
+    padding-top: 30px;
+    margin: 0;
+    width: 600px;
+}
+
+.how-to-go__money::before {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 4px;
+    background-color: #ffc341;
+    left: 95px;
+    margin-top: 17px;
+    transform: rotate(90deg);
+}
+
+/* life-in-israel */
+
+.life-in-israel {
+    min-height: 888px;
+    position: relative; 
+    margin-bottom: 62px;   
+}
+
+.life-in-israel__wrapper {
+    background: url(../img/life-in-israel_Bg.png), url(../img/life-in-israel-watch.png);
+    background-repeat: no-repeat;
+    background-position: 50% 609%, 100% 77%;
+    padding-bottom: 100px;
+}
+
+.life-in-israel__description {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.life-in-israel__header {
+    text-align: center;
+}
+
+.life-in-israel__leisure {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 170%;
+    text-align: right;
+    opacity: 0.87;
+    width: 720px;
+    margin: 0 auto;
+}
+
+.life-in-israel__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.life-in-israel__more {
+    display: flex;
+    flex-wrap: wrap;
+    width: 666px;
+    margin-top: 44px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.life-in-israel__tour {
+    background: url(../img/life-in-israel-tour.png);
+    background-repeat: no-repeat;
+    width: 482px;
+    height: 732px;
+    margin-top: -24px;
+}
+
+.life-in-israel__tour .life-in-israel__items_about {
+    position: absolute;
+    left: 144px;
+    bottom: 31px;
+    width: 320px;
+}
+
+.life-in-israel__hebrew {
+    background: url(../img/life-in-israel-Hebrew.png);
+    background-repeat: no-repeat;
+    width: 211px;
+    height: 318px;
+    margin-right: 30px;
+}
+
+.life-in-israel__hebrew .life-in-israel__items_about {
+    position: absolute;
+    left: 25px;
+    top: 237px;
+    width: 120px;
+}
+
+.life-in-israel__study {
+    background: url(../img/life-in-israel-study.png);
+    background-repeat: no-repeat;
+    width: 411px;
+    height: 318px;
+    margin-bottom: 30px;
+}
+
+.life-in-israel__study .life-in-israel__items_about {
+    position: absolute;
+    right: 73px;
+    top: 238px;
+    width: 320px;
+}
+
+.life-in-israel__creation {
+    background: url(../img/life-in-israel-creation.png);
+    background-repeat: no-repeat;
+    width: 411px;
+    height: 318px;
+    margin-right: 30px;
+}
+
+.life-in-israel__creation .life-in-israel__items_about {
+    position: absolute;
+    bottom: 30px;
+    left: 32px;
+    width: 365px;
+}
+
+.life-in-israel__develop {
+    background: url(../img/life-in-israel-develop.png);
+    background-repeat: no-repeat;
+    width: 214px;
+    height: 318px;
+}
+
+.life-in-israel__develop .life-in-israel__items_about {
+    position: absolute;
+    bottom: 30px;
+    right: 81px;
+    width: 120px;
+}
+
+.life-in-israel__items_about {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    margin: 0;
+    min-height: 50px;
+}
+
+/* masaisrael*/
+
+.masaisrael {
+    background-image: url(../img/masaisrael.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-height: 583px;
+    margin-bottom: 136px;
+}
+
+.masaisrael-heading {
+    padding-left: 795px;
+    padding-top: 120px;   
+    padding-right: 274px;
+    padding-bottom: 31px;
+    
+}
+
+
+.masaisrael-description {
+    padding: 0;
+    margin-left: auto;
+    margin-right: 168px;
+    margin-top: -3px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 170%;
+    color: #FFFFFF;
+    opacity: 0.87;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    width: 398px;
+    min-height: 87px;
+}
+
+.masaisrael-btn {
+    display: block;
+    width: 230px;
+    height: 59px;
+    background: url(../img/masaisrael-btn-img.svg), linear-gradient(142.39deg, #FFC341 20.46%, #FFD701 65.31%);
+    background-repeat: no-repeat;
+    background-position: 19% 50%;
+    border: none;
+    border-radius: 80px;
+    padding-top: 20px;
+    padding-right: 35px;
+    padding-bottom: 19px;
+    padding-left: 70px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    font-variant: small-caps;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+    outline: none;
+
+    margin-left: auto;
+    margin-top: 47px;
+    margin-right: 340px;
+    margin-bottom: 0;
+}
+
+
+/* questions */
+
+.questions {
+    background: url(../img/questions-watercolor_Bg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 16%;
+    
+}
+
+.questions-wrapper {
+    position: relative;
+    background: url(../img/questions-bag.png), url(../img/questions-img.png);;
+    background-repeat: no-repeat;
+    background-position: 0% 99%, right 0%;
+    min-height: 909px;
+    margin-bottom: 20px;
+}
+
+.questions-heading {
+    margin-left: 110px;
+}
+
+.questions-list {
+    list-style: none;
+    margin-left: 120px;
+    margin-top: 24px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;  
+    counter-reset: my; 
+}
+
+.questions-list__items {
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+    width: 560px;
+    min-height: 72px;
+    padding-left: 20px;  
+    padding-bottom: 20px;
+    list-style: none;
+}
+
+.questions-list__items::before {
+    position: absolute;
+    left: -9px;
+    top: -14px;
+    counter-increment: my;
+    content: counter(my);
+    color: #FFC341;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 170%;
+}
+
+
+.line {
+    border-bottom: 1px solid #dadada;
+    margin-left: -27px;
+}
+
+.questions-list__item--wrapper {
+    min-height: 72px;
+}
+
+.questions-list__items--str { /*input*/
+    display: none;
+}
+
+.questions-list__items--str + .questions-list__items--qst::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 504px;
+    top: 10px;
+    background-image: url(../img/questions-btn-V.svg);
+    background-repeat: no-repeat;
+}
+
+.questions-list__items--str:checked + .questions-list__items--qst::before {
+    display: none;
+}
+
+.questions-list__items--str:checked + .questions-list__items--qst::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 504px;
+    top: 0;
+    background-image: url(../img/questions-btn-V-dwn.svg);
+    background-repeat: no-repeat;
+}
+
+.questions-list__items--qst { /*label*/
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+    width: 560px;
+    cursor: pointer;
+    display: block;
+    user-select: none;
+    margin-bottom: 24px;
+    padding-left: 26px;
+}
+
+.questions-list__items--cont { /*article*/
+    overflow: hidden;
+    height: 0px;
+    margin-bottom: 26px;
+    margin-left: -3px;
+}
+
+.questions-list__items--str:checked ~ .questions-list__items--cont {
+    height: auto;
+    
+}
+
+.questions-list__items--ans {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%;
+    opacity: 0.74;
+    width: 480px;
+    height: auto;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.questions-btn {
+    position: absolute;
+    border: none;
+    outline: none;
+    left: 612px;
+    margin-top: 15px;
+    background: inherit;
+    cursor: pointer;
+}
+
+.questions-btn img {
+    position: absolute;
+    top: -4px;
+    left: -114px;
+}
+
+/* comments */
+
+.comments {
+    margin-bottom: 104px;
+}
+
+.comments-wrapper {
+    background-image: url(../img/comments-town.png), url(../img/comments_bg.png);
+    background-repeat: no-repeat;
+    background-position: 100% 24%, 100% 250%;
+    min-height: 540px;
+}
+
+.comments-heading {
+    text-align: center;
+    margin-bottom: 29px;
+}
+
+.comments-list {
+    position: relative;
+    list-style: none;
+    width: 680px;
+    min-height: 359px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 55px;
+    margin-left: 502px;
+    padding: 0;
+}
+
+.comments-pesonal::before {
+    position: absolute;
+    left: -398px;
+    top: -39px;
+    content: "";
+    width: 353px;
+    height: 528px;
+    background-image: url(../img/comments-olga.png);
+    background-repeat: no-repeat;
+    
+}
+
+.comments__header {
+    padding-bottom: 20px;
+}
+
+.comments-name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    opacity: 0.74;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.comments-program {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%;
+    opacity: 0.74;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.comments-program span {
+    color: #1FC0FC;
+    padding-right: 5px;
+}
+
+.comments__text {
+    padding-bottom: 17px;
+}
+
+.comments__text_about {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 170%;
+    opacity: 0.74;
+    margin: 0;
+}
+
+.comments-items {
+    display: flex;
+    justify-content: space-between;
+    width: 680px;
+    margin-left: 502px;
+}
+
+.comments-nav {
+    display: flex;
+    width: 96px;
+    height: 26px;
+}
+
+.comments-nav a {
+    padding-top: 5px;
+    padding-right: 12px;
+    margin-left: 10px;
+}
+
+.comments-nav a:hover,
+.comments-social a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.comments-nav a:last-child {
+    padding-right: 0;
+}
+
+.comments-nav__page {
+    margin: 0;
+    padding-right: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+    opacity: 0.5;
+}
+
+.comments-more {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    color: #1FC0FC;
+    margin: 0;
+}
+
+.comments-more:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.comments-social a{
+    padding-right: 10px;
+}
+
+.comments-social a:last-child{
+    padding-right: 0px;
+}
+
+.comments-social__ico {
+    opacity: 0.16;
+}
+
+/* map */
+
+.map {
+    margin-bottom: 73px;
+    background-image: url(../img/map_Bg.png), url(../img/Marker-map.svg), url(../img/map.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%, 77% 39%, 78% 3%;
+}
+
+.map-wrapper {    
+    margin-left: 113px;
+}
+
+.map-heading {
+    margin-left: 110px;
+}
+
+.map-town {
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    opacity: 0.74;
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 41px;
+    padding-top: 23px;
+}
+
+.map-town::before {
+    position: absolute;
+    left: 0;
+    top: 24px;
+    content: "";
+    background-image: url(../img/map-town-marker.svg);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 18px;
+}
+
+.map-town a {    
+    font-weight: 500;
+    font-variant: small-caps;
+    font-size: larger;
+    border-bottom: 1px dashed #1FC0FC;
+    margin-left: 12px;
+}
+
+.map-town a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.map-town a::after {
+    position: absolute;
+    left: 218px;
+    top: 28px;
+    content: "";
+    background-image: url(../img/map-town-gps.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 15px;
+}
+
+.map-curator {
+    position: relative;
+    width: 264px;
+    margin-left: 133px;
+    margin-bottom: 32px;
+}
+
+.map-curator a {
+    padding-right: 7px;
+}
+
+.map-curator a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.map-curator__photo {
+    position: absolute;
+    left: -136px;
+    top: -2px;
+}
+
+.map-curator__name {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    color: #1FC0FC;
+    padding-bottom: 12px;
+}
+
+.map-curator__name span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    color: var(--basic-text-color);
+    opacity: 0.74;
+    padding-left: 5px;
+}
+
+.map-curator__adress {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    opacity: 0.74;
+    padding-bottom: 10px;
+}
+
+.map__curator_about {
+    margin: 0;
+    margin-bottom: 128px;
+    width: 480px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 170%;
+    opacity: 0.87;
+}
+
+.map__contact_wrapper {
+    display: flex;
+    margin-bottom: 6px;
+    margin-left: 110px;
+}
+
+
+.map__contact_wrapper_ans {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+    opacity: 0.87;
+    width: 330px;
+    margin: 0;
+    padding-top: 4px;
+}
+
+.map__contact_name {
+    padding-top: 19px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    margin-right: 24px;
+    margin-left: 48px;
+
+    border: 2px solid #E3E3E3;
+    border-radius: 80px;
+
+    font-variant: small-caps;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    opacity: 0.5;
+    outline: none;
+}
+
+.map__contact_phone {
+    padding-top: 19px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    margin-right: 24px;
+
+    border: 2px solid #ffc341;
+    border-radius: 80px;
+    text-decoration: underline;
+    text-decoration-color: #E3E3E3;
+    font-variant: small-caps;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    opacity: 0.5;
+    outline: none;
+}
+
+.map__contact_btn{
+    border: none;
+    background: linear-gradient(142.39deg, #FFC341 20.46%, #FFD701 65.31%);
+    border-radius: 80px;
+    padding-top: 19px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    font-variant: small-caps;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.map__contact_wrapper_spam {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    opacity: 0.5;
+    width: 364px;
+    margin: 0;
+    margin-left: 110px;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;;
+    margin-bottom: 30px;
+    border-top: 1px solid #dadada;
+    padding-top: 20px;
+}
+
+.logo-footer {
+    margin-left: 110px;
+}
+
+.copyright {
+    margin-top: 7px;
+    margin-right: -153px;
+    margin-bottom: 6px;
+    margin-left: -108px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    opacity: 0.5;
+}
+
+.social-footer {
+    height: 24px;
+    opacity: 0.16;
+    margin-right: 115px;
+}
+
+.social-footer a {
+    padding-left: 15px;
+}
+
+.social-footer a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* modal call */
+
+.modal-call {
+    display: none;
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 100;
+}
+
+.call-me__popap {
+    top: 120px;
+    bottom: auto;
+}
+
+.modal-call__bg {
+    position: relative;
+    top: -120px;
+    margin: 0 auto;
+    width: 1366px;
+    height: 768px;
+    background-color:rgba(229, 229, 229, 0.7);
+
+}
+
+.modal-call__wrapper {
+    position: relative;
+    top: 123px;
+    width: 480px;
+    height: 521px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--basic-background-color);
+    margin: 0 auto;
+    box-shadow: 0 30px 50px rgba(0,0,0,0.7);
+}
+
+.modal-call__close {
+    border: none;
+    outline: none;
+    background: transparent;
+    background-image: url(../img/modal_close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    cursor: pointer;
+}
+
+.modal-call__header {
+    font-family: var(--other-heading-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #1FC0FC;
+    margin: 0;
+    padding-top: 56px;
+    padding-right: 190px;
+    padding-bottom: 16px;
+    padding-left: 48px;
+}
+
+
+.modal-call__text {
+    width: 360px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 170%;
+    opacity: 0.87;
+    margin-top: 4px;
+    margin-right: 72px;
+    margin-bottom: 32px;
+    margin-left: auto;
+}
+
+.modal-call__form {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.modal-call__fields {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    margin-left: 48px;
+}
+
+.modal-call__field--l {
+    padding-bottom: 4px;
+}
+
+.modal-call__name {
+    padding-top: 19px;
+    padding-right: 0;
+    padding-bottom: 18px;
+    padding-left: 40px;
+    border: 2px solid #E3E3E3;
+    border-radius: 80px;
+    font-variant: small-caps;
+    opacity: 0.5;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    width: 360px;
+    outline: none;
+}
+
+.modal-call__tel {
+    padding-top: 19px;
+    padding-right: 0;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    border: 2px solid #E3E3E3;
+    border-radius: 80px;
+    font-variant: small-caps;
+    opacity: 0.5;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    width: 360px;
+    outline: none;
+}
+
+.modal-call__callMe--btn {
+    background: linear-gradient(140.64deg, #FFC341 20.46%, #FFD701 65.31%);
+    border: none;
+    border-radius: 80px;
+    padding-top: 20px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    outline: none;
+}
+
+.modal-call__agreement {
+    width: 265px;
+    min-height: 40px;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-left: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    opacity: 0.74;
+}
+
+.modal-call__agreement--box {
+    display: none;
+}
+
+.modal-call__agreement--box + .modal-call__agreement::before {
+    position: absolute;
+    top: 226px;
+    left: 108px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/modal_square.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.modal-call__agreement--box:checked + .modal-call__agreement::after {
+    position: absolute;
+    top: 226px;
+    left: 108px;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-image: url(../img/modal_close.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.call-me__popap--show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+/*Заявка принята*/
+
+.call-received {
+    display: none;
+    position: fixed;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 100;
+}
+
+.call-received__wrapper {
+    position: relative;
+    width: 480px;
+    height: 521px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--basic-background-color);
+    margin: 0 auto;
+    box-shadow: 0 30px 50px rgba(0,0,0,0.7);
+    background-image: url(../img/call_ok.png);
+    background-repeat: no-repeat;
+    background-position: 50% 26%;
+}
+
+.call-received__close {
+    border: none;
+    outline: none;
+    background: transparent;
+    background-image: url(../img/modal_close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    cursor: pointer;
+}
+
+.call-received__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 217px;
+}
+
+.call-received__header {
+    font-family: var(--other-heading-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #1FC0FC;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 16px;
+}
+
+.call-received__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 170%;
+    text-align: center;
+    opacity: 0.87;
+    width: 360px;
+    min-height: 52px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
+
+.call-received__btn {
+    background: linear-gradient(140.64deg, #FFC341 20.46%, #FFD701 65.31%);
+    border: none;
+    border-radius: 80px;
+    padding-top: 19px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    width: 264px;
+    height: 59px;
+    outline: none;
+}
+
+
+/* look */
+
+.masaisrael-btn:hover {
+    background: url(../img/masaisrael-btn-img.svg), #FFC341;
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: 19% 50%;
+}
+
+.masaisrael-btn:active {
+    background: url(../img/masaisrael-btn-img.svg), radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(109.15deg, #FFC341 -50.3%, #FFD701 63.1%);
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: 19% 50%;
+}
+
+.call-received__btn:hover,
+.modal-call__callMe--btn:hover,
+.map-contact__btn:hover,
+.callback:hover,
+.modal-call__callMe--btn:hover {
+    background: #FFC341;
+    outline: none;
+}
+
+.call-received__btn:active,
+.modal-call__callMe--btn:active,
+.map-contact__btn:active,
+.callback:active,
+.modal-call__callMe--btn:active {
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(109.15deg, #FFC341 -50.3%, #FFD701 63.1%);
+    outline: none;
+}
+
+
+.phone-form:focus,
+.map-contact__name:focus,
+.modal-call__name:focus,
+.modal-call__tel:focus {
+    border: 2px solid transparent;
+    background: linear-gradient(#FFFFFF, #FFFFFF) padding-box, linear-gradient(to right, #FFC341 -50.3%, #FFD701 63.1%) border-box;
+}
+
+.phone-form:invalid,
+.map-contact__name:invalid {
+    border: 2px solid #f57676;
+}
+
+
+/* Animations */
+
+/* @keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  } */
