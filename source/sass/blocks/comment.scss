@@ -1,0 +1,142 @@
+.comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-image: url("../img/comment-bg.png");
+  background-size: cover, 320px 415px;
+  height: 415px;
+  background-color: cadetblue;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.comment__block {
+  margin-top: 115px;
+  text-align: center;
+  background-color: #ffffff;
+  width: 268px;
+  height: 431px;
+}
+
+.comment__title {
+  position: relative;
+  margin-top: 32px;
+  margin-bottom: 23px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #2C2E3F;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: 100px;
+    width: 68px;
+    height: 1px;
+    background-color: #FE7865;
+  }
+}
+
+.comment__paragraph {
+  margin: 0 20px;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.408333px;
+}
+
+.comment__img {
+  margin-top: 16px;
+}
+
+.comment__name {
+  margin-top: 3px;
+  margin-left: -7px;
+  font-family: "Poppins", "Arial", sans-serif;
+  color: #2C2E3F;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.466667px;
+}
+
+@media (min-width: 768px) {
+  .comment {
+    margin-top: 30px;
+    background-image: url("../img/comment-bg-tablet.png");
+    background-size: cover, 768px 415px;
+  }
+
+  .comment__block {
+    margin-top: 110px;
+    text-align: left;
+    width: 382px;
+    height: 367px;
+  }
+
+  .comment__title {
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 37px;
+
+    &::after {
+      top: 48px;
+      left: 0;
+    }
+  }
+
+  .comment__paragraph {
+    width: 322px;
+    margin-left: 30px;
+  }
+
+  .comment__author {
+    display: flex;
+    margin-top: 38px;
+    align-items: center;
+  }
+
+  .comment__img {
+    margin-top: -20px;
+    margin-left: 32px;
+    height: 38px;
+  }
+
+  .comment__name {
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .comment {
+    margin-left: -425px;
+    margin-top: 110px;
+    background-image: url("../img/comment-bg-desktop.png");
+    background-size: cover, 430px 596px;
+    width: 430px;
+    height: 596px;
+  }
+
+  .comment__block {
+    margin-top: 0px;
+    margin-left: 575px;
+  }
+
+  .comment__title {
+    &::after {
+      top: 49px;
+    }
+  }
+
+  .comment__paragraph {
+    width: 322px;
+  }
+
+  .comment__author {
+    margin-top: 40px;
+  }
+}

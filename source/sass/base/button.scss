@@ -1,0 +1,33 @@
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  background-color: #FE7865;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: pink;
+  }
+
+  &:active {
+    background-color: pink;
+  }
+
+  &:disabled {
+    background-color: pink;
+  }
+}
+
+@media (min-width: 1024px) {
+  .button {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 2px;
+  }
+}

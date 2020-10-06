@@ -1,0 +1,227 @@
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 95px;
+  text-align: center;
+}
+
+.page-footer__countries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.page-footer__title {
+  margin-left: -10px;
+  margin-bottom: 20px;
+  color: #141517;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.page-footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 320px;
+}
+
+.page-footer__cities {
+  margin-top: 0;
+  margin-bottom: 11px;
+  padding: 0;
+  list-style: none;
+}
+
+.page-footer__contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 160px;
+    left: -50px;
+    width: 288px;
+    height: 1px;
+    background-color: #D7D9DF;
+  }
+}
+.page-footer__contacts-paragraph {
+  margin-top: -5px;
+  margin-bottom: 19px;
+}
+
+.page-footer__contacts-paragraph a {
+  color: #FE7865;
+  text-decoration: underline;
+}
+
+.page-footer__email {
+  position: relative;
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 17px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 26px;
+    height: 20px;
+    background-image: url("../img/email.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.page-footer__phone {
+  position: relative;
+  margin-left: 29px;
+  font-size: 16px;
+  line-height: 32px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -34px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.page-footer__team-building {
+  .page-footer__title {
+    margin-left: 6px;
+  }
+
+  .page-footer__paragraph {
+    margin: 20px 14px 25px 18px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    text-align: left;
+    margin-top: 57px;
+  }
+
+  .page-footer__title {
+    margin-left: 0;
+  }
+
+  .page-footer__countries {
+    align-items: start;
+    margin-left: -60px;
+  }
+
+  .page-footer__list {
+    justify-content: space-between;
+    width: 343px;
+  }
+
+  .page-footer__contacts {
+    align-items: start;
+    margin-left: 102px;
+    width: 222px;
+    &::after {
+      top: 24px;
+      left: -50px;
+      width: 1px;
+      height: 177px;
+    }
+  }
+
+  .page-footer__email {
+    margin-left: 41px;
+  }
+
+  .page-footer__phone {
+    margin-left: 40px;
+  }
+
+  .page-footer__team-building {
+    position: relative;
+    padding-top: 10px;
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 20px;
+      width: 726px;
+      height: 1px;
+      background-color: #D7D9DF;
+    }
+
+    .page-footer__title {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-footer {
+    justify-content: start;
+    padding: 0;
+    margin-top: 136px;
+    margin-bottom: 100px;
+  }
+
+  .page-footer__team-building {
+    margin-left: 130px;
+    width: 320px;
+    text-align: left;
+
+    &::after {
+      top: 35px;
+      left: -50px;
+      width: 1px;
+      height: 190px;
+    }
+
+    .page-footer__paragraph {
+      margin-left: 0;
+      width: 320px;
+    }
+  }
+
+  .page-footer__paragraph {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .page-footer__countries {
+    margin-left: 78px;
+  }
+
+  .page-footer__contacts {
+    margin-left: 135px;
+
+    &::after {
+      top: 24px;
+      left: -90px;
+      width: 1px;
+      height: 190px;
+    }
+  }
+}

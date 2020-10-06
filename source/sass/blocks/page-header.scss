@@ -1,0 +1,136 @@
+.page-header__welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/greece-mobile.png");
+  background-size: cover, 320px 235px;
+  min-height: 235px;
+  background-color: cadetblue;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.page-header__main-title {
+  margin: 0 30px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-header__main-paragraph {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 288px;
+  text-align: center;
+  color: #2C2E3F;
+  line-height: 27px;
+  letter-spacing: -0.466667px;
+}
+
+.page-header__button {
+  padding: 19px 145px 19px 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 41px;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/arrow-right.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header__welcome {
+    align-items: flex-start;
+    background-image: url("../img/greece-tablet.png");
+    background-size: cover, 768px 344px;
+    min-height: 344px;
+    background-position: center;
+  }
+
+  .page-header__main-title {
+    margin-top: 60px;
+    margin-left: -10px;
+    margin-right: 0;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -240px;
+  }
+
+  .page-header__main-paragraph {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 27px;
+    width: 398px;
+  }
+
+  .page-header__button {
+    padding: 19px 107px 19px 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-header__welcome {
+    background-image: url("../img/greece-desktop.png");
+    background-size: cover, 1024px 860px;
+    min-height: 860px;
+  }
+
+  .page-header__main-title {
+    font-size: 55px;
+    line-height: 80px;
+    font-weight: 600;
+    text-align: left;
+    width: 412px;
+    margin-left: 600px;
+    margin-top: 200px;
+  }
+
+  .page-header__wrapper {
+    margin-top: -500px;
+    margin-left: 605px;
+  }
+
+  .page-header__main-paragraph {
+    margin-bottom: 32px;
+    text-align: left;
+    width: 376px;
+  }
+
+  .page-header__button {
+    padding: 30px 179px 30px 40px;
+    margin-left: -34px;
+
+    &::after {
+      top: 30px;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .page-header__main-title {
+    margin-left: 640px;
+    margin-top: 186px;
+  }
+}

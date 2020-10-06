@@ -1,0 +1,14 @@
+.description-comment {
+  margin-top: 5px;
+}
+
+@media (min-width: 1024px) {
+  .description-comment {
+    display: flex;
+    background-image: url("../img/map-desktop.png");
+    background-size: cover, 1443px 1088px;
+    min-height: 1088px;
+    background-position: center;
+    background-repeat: no-repeat
+  }
+}

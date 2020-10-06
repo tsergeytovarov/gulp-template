@@ -1,0 +1,55 @@
+.city {
+  &--first {
+    margin-left: 38px;
+  }
+
+  &--second {
+    margin-left: auto;
+    margin-right: 51px;
+  }
+
+  &--third {
+    position: relative;
+    margin-left: 108px;
+    margin-right: auto;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      right: -95px;
+      width: 288px;
+      height: 1px;
+      background-color: #D7D9DF;
+    }
+  }
+}
+
+.city-item {
+  margin-bottom: 10px;
+  color: rgba(20, 21, 23, 0.5);
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media (min-width: 768px) {
+  .city {
+    &--first {
+      margin-left: 0;
+    }
+
+    &--second {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &--third {
+      margin-left: 0;
+      margin-right: 0;
+
+      &::after {
+        width: 0;
+      }
+    }
+  }
+}

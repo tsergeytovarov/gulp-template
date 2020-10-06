@@ -1,0 +1,73 @@
+.photo-cards__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.photo-cards__country {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -61px;
+  background-color: #ffffff;
+  width: 215px;
+  height: 61px;
+  text-align: center;
+}
+
+.photo-cards__country-title {
+  color: #2C2E3F;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .photo-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 606px;
+  }
+
+  .photo-cards__card {
+    margin-bottom: 20px;
+
+    &--croatia {
+      margin: 10px auto;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .photo-cards {
+    width: 1170px;
+  }
+
+  .photo-cards__country {
+    margin-top: -70px;
+  }
+
+  .photo-cards__img {
+    width: 350px;
+    height: 430px;
+  }
+
+  .photo-cards__card {
+    margin-bottom: 100px;
+
+    &--croatia {
+      margin-top: 0;
+      margin-right: 175px;
+    }
+
+    &--montenegro {
+      margin-left: 175px;
+    }
+  }
+}

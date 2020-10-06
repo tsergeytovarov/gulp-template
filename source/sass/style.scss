@@ -1,3 +1,17 @@
-h1 {
-  color: red;
-}
+@import "base/base.scss";
+@import "base/button.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/list.scss";
+@import "blocks/description-cards.scss";
+@import "blocks/comment.scss";
+@import "blocks/prices.scss";
+@import "blocks/about.scss";
+@import "blocks/inquirer.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/city.scss";
+@import "blocks/photo-cards.scss";
+@import "blocks/description-comment.scss";
+@import "utils/variables.scss";

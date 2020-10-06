@@ -1,0 +1,363 @@
+.prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.prices__price {
+  margin-top: 112px;
+}
+
+.prices__title {
+  position: relative;
+  margin-bottom: 19px;
+  color: #2C2E3F;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.prices__paragraph {
+  margin: 0 20px;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.prices__contacts {
+  margin-bottom: 38px;
+}
+
+.prices__contacts-title {
+  margin-top: 19px;
+  margin-bottom: -6px;
+  color: #141517;
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 500;
+}
+
+.prices__phone {
+  color: #FE7865;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.prices__special {
+  width: 288px;
+  height: 614px;
+  border: 3px solid #FE7865;
+  border-radius: 6px;
+}
+
+.prices__special-title {
+  margin-top: 30px;
+  margin-bottom: 9px;
+  color: #FE7865;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+}
+
+.prices__special-price {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #FE7865;
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: 600;
+}
+
+.prices__special-paragraph {
+  position: relative;
+  margin: 0 30px;
+  padding-bottom: 10px;
+  line-height: 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: -10px;
+    width: 248px;
+    height: 1px;
+    background-color: #FE7865;
+  }
+}
+
+.prices__special-list {
+  margin-bottom: 29px;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+
+  .about-item::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -30px;
+    width: 19px;
+    height: 19px;
+    background-image: url("../img/check-black.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.prices__button {
+  padding: 19px 71px;
+}
+
+.prices__offer {
+  margin-top: 25px;
+  width: 288px;
+  height: 614px;
+  border: 1px solid rgba(44, 46, 63, 0.3);
+  border-radius: 6px;
+}
+
+.prices__offer-title {
+  margin-top: 31px;
+  margin-bottom: 9px;
+  color: rgba(20, 21, 23, 0.7);
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  letter-spacing: -1.27273px;
+}
+
+.prices__offer-price {
+  margin-top: 0;
+  margin-left: -10px;
+  margin-bottom: 12px;
+  color: rgba(20, 21, 23, 0.7);
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: 600;
+}
+
+.prices__offer-paragraph {
+  position: relative;
+  margin: 0 30px 20px;
+  padding-bottom: 10px;
+  line-height: 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: -10px;
+    width: 248px;
+    height: 1px;
+    background-color: rgba(44, 46, 63, 0.3);;
+  }
+}
+
+.prices__offer-list {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+
+  .about-item::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -28px;
+    width: 19px;
+    height: 19px;
+    background-image: url("../img/check-orange.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 768px) {
+  .prices__title {
+    margin: 0;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 400;
+  }
+
+  .prices__paragraph {
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+
+  .prices__contacts {
+    margin-bottom: 29px;
+  }
+
+  .prices__offers-block {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .prices__offer {
+    margin-top: 0;
+    margin-left: 46px;
+  }
+
+  .prices__special {
+    height: 626px;
+  }
+
+  .prices__special-list {
+    margin-bottom: 43px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .prices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-top: -143px;
+    margin-bottom: 133px;
+    padding: 0;
+  }
+
+  .prices__price {
+    margin-top: 50px;
+    margin-right: 35px;
+  }
+
+  .prices__title {
+    margin-left: 20px;
+    margin-bottom: 50px;
+    font-size: 55px;
+    line-height: 90px;
+    font-weight: 600;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 105px;
+      left: 0;
+      width: 175px;
+      height: 3px;
+      background-color: #FE7865;
+    }
+  }
+
+  .prices__paragraph {
+    width: 299px;
+  }
+
+  .prices__price-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+    margin-left: auto;
+  }
+
+  .prices__contacts {
+    margin-top: 20px;
+    margin-left: -35px;
+  }
+
+  .prices__contacts-title {
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 500px;
+  }
+
+  .prices__phone {
+    color: #000000;
+    font-size: 20px;
+  }
+
+  .prices__offers-block {
+    margin-left: 62px;
+  }
+
+  .prices__special {
+    display: flex;
+    flex-direction: column;
+    order: -1;
+    background-color: #ffffff;
+    width: 370px;
+    height: 672px;
+  }
+
+  .prices__offer {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    background-color: #ffffff;
+    width: 370px;
+    height: 672px;
+    margin-left: 26px;
+  }
+
+  .prices__title-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .prices__special-title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .prices__special-paragraph {
+    margin-left: 30px;
+    width: 289px;
+
+    &::after {
+      top: 75px;
+      left: 0;
+      width: 310px;
+    }
+  }
+
+  .prices__special-price {
+    margin-left: 20px;
+  }
+
+  .prices__special-list {
+    margin-left: 10px;
+  }
+
+  .prices__offer-title {
+    margin-top: 39px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 600;
+  }
+
+  .prices__offer-price {
+    margin-left: 75px;
+  }
+
+  .prices__offer-paragraph {
+    margin-left: 30px;
+    width: 289px;
+
+    &::after {
+      top: 75px;
+      left: 0;
+      width: 310px;
+    }
+  }
+
+  .prices__offer-list {
+    margin-top: 0;
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+
+  .prices__button {
+    padding: 30px 70px;
+    margin: 0 auto;
+  }
+}

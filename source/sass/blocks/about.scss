@@ -1,0 +1,14 @@
+.about-item {
+  position: relative;
+  width: 218px;
+  margin-top: 10px;
+  margin-left: 49px;
+  line-height: 32px;
+}
+
+@media (min-width: 1024px) {
+  .about-item {
+    margin-top: 20px;
+    width: 280px;
+  }
+}
