@@ -3,10 +3,10 @@
   padding-bottom: 147px;
   background-color: $grey-background;
 
-  // @media (max-width: $tablet-width-only) {
-  //   padding-top: 80px;
-  //   margin-bottom: 92px;
-  // }
+  @media (max-width: $tablet-width-only) {
+    padding-top: 50px;
+    // margin-bottom: 92px;
+  }
 
   // @media (max-width: $mobile-width-only) {
   //   padding-top: 0;
@@ -47,13 +47,25 @@
   list-style-type: none;
   padding: 0;
   margin: 0 auto 0 auto;
-  width: 1126px;
+  max-width: 1126px;
+
+  @media (max-width: $tablet-width-only) {
+    max-width: 590px;
+  }
 }
 
 .variants__item {
   position: relative;
   z-index: 1;
   // margin-bottom: 96px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-bottom: 50px;
+
+    & img {
+      width: 270px;
+    }
+  }
 
   // @media (max-width: $tablet-width-only) {
   //   margin-bottom: 18px;
@@ -72,6 +84,10 @@
   &--ring {
     margin-top: 10px;
 
+    @media (max-width: $tablet-width-only) {
+      margin-top: 0;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -81,34 +97,47 @@
       height: 180px;
       z-index: -1;
       background-image: url("../../img/ring.svg");
+
+      @media (max-width: $tablet-width-only) {
+        left: -40px;
+        top: 200px;
+        width: 127px;
+        height: 127px;
+        background-image: url("../../img/ring-middle.svg");
+      }
     }
   }
 
   &--square {
     margin-top: 39px;
 
-    &::after,
-    &::before {
-      content: "";
-      position: absolute;
-      width: 47px;
-      height: 47px;
-      background-image: url("../../img/square.svg");
+    @media (max-width: $tablet-width-only) {
+      margin-top: 0;
     }
 
-    &::after {
-      left: -20px;
-      top: -20px;
-    }
+    @media (min-width: $desktop-width) {
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        width: 47px;
+        height: 47px;
+        background-image: url("../../img/square.svg");
+      }
 
-    &::before {
-      right: -20px;
-      bottom: 40px;
-    }
+      &::after {
+        left: -20px;
+        top: -20px;
+      }
+
+      &::before {
+        right: -20px;
+        bottom: 40px;
+      }
+      }
   }
 
   &--ring-little {
-
     &::after {
       content: "";
       position: absolute;
@@ -117,9 +146,16 @@
       width: 95px;
       height: 95px;
       background-image: url("../../img/ring-little.svg");
+
+      @media (max-width: $tablet-width-only) {
+        right: -20px;
+        top: -20px;
+        width: 68px;
+        height: 68px;
+        background-image: url("../../img/ring-least.svg");
+      }
     }
   }
-
 }
 
 .variants__title {

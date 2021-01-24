@@ -4,9 +4,7 @@
 
   @media (max-width: $tablet-width-only) {
     margin: -600px auto 0 auto;
-    // text-align: center;
   }
-
 }
 
 .order__header {
@@ -40,12 +38,12 @@
 
   @media (max-width: $tablet-width-only) {
     margin: 0 auto 20px auto;
+    padding-left: 21px;
     width: 321px;
   }
 }
 
 .order__submit {
-  // margin-bottom: 20px;
   padding: 0;
   width: 326px;
   height: 51px;
