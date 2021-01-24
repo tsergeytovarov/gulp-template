@@ -1,15 +1,28 @@
 .order {
   margin: 0;
   background: transparent;
+
+  @media (max-width: $tablet-width-only) {
+    margin: -600px auto 0 auto;
+    // text-align: center;
+  }
+
 }
 
 .order__header {
-  color: $white;
+  margin-bottom: 20px;
   width: 327px;
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
   text-align: center;
+  color: $white;
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 18px;
+    color: $black;
+    margin: 0 auto 30px auto;
+  }
 }
 
 .order__name,
@@ -24,16 +37,27 @@
   color: $input-color;
   font-size: 15px;
   line-height: 24px;
+
+  @media (max-width: $tablet-width-only) {
+    margin: 0 auto 20px auto;
+    width: 321px;
+  }
 }
 
 .order__submit {
   // margin-bottom: 20px;
+  padding: 0;
   width: 326px;
   height: 51px;
+  border: none;
   color: $black;
   background-color: $btn-color;
   border-radius: 6px;
   font-weight: 600;
   font-size: 15px;
   line-height: 21px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 321px;
+  }
 }

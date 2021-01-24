@@ -4,4 +4,10 @@
   margin-top: -520px;
   width: 880px;
   height: 504px;
+
+  @media (max-width: $tablet-width-only) {
+    display: block;
+    margin-top: -240px;
+    width: 100%;
+  }
 }

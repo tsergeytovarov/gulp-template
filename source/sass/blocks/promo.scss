@@ -2,7 +2,6 @@
   margin: 0;
   padding-top: 48px;
   background: transparent;
-  // background-color: $promoBackgroundColor;
   height: 860px;
 
   // @media (max-width: $tablet-width-only) {
@@ -28,20 +27,20 @@
 }
 
 .promo__header {
-  margin: 0;
+  margin: 0 0 24px 0;
   width: 412px;
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
   color: $white;
 
-  // @media (max-width: $tablet-width-only) {
-  //   margin: 0 auto 15px auto;
-  //   font-size: 30px;
-  //   line-height: 45px;
-  //   letter-spacing: 0;
-  //   text-align: center;
-  // }
+  @media (max-width: $tablet-width-only) {
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+  }
 
   // @media (max-width: $mobile-width-only) {
   //   margin-bottom: 102px;
@@ -55,17 +54,16 @@
 .promo__slogan {
   margin: 0;
   width: 375px;
-  // background: transparent;
   color: $white;
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
 
-  // @media (max-width: $tablet-width-only) {
-  //   width: 417px;
-  //   margin: 0 auto 10px auto;
-  //   text-align: center;
-  // }
+  @media (max-width: $tablet-width-only) {
+    width: 435px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+  }
 
   // @media (max-width: $mobile-width-only) {
   //   color: $grey-dark;

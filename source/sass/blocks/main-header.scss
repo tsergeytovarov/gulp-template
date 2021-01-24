@@ -14,9 +14,15 @@
     background-image: url("../../img/bike_desktop@2x.png");
   }
 
-  // @media (max-width: $tablet-width-only) {
-  //   min-height: 50px;
-  // }
+  @media (max-width: $tablet-width-only) {
+    display: block;
+    height: 340px;
+    background-image: url("../../img/bike_tablet@1x.png");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../../img/bike_tablet@2x.png");
+    }
+  }
 }
 
 .main-header__link {
@@ -26,24 +32,17 @@
   z-index: 1;
   background: transparent;
 
-  // @media (max-width: $tablet-width-only) {
-  //   padding-left: 21px;
-  //   padding-top: 10px;
-  // }
+  @media (max-width: $tablet-width-only) {
+    position: static;
+    display: block;
+    padding-left: 21px;
+    padding-top: 25px;
+  }
 
-  // @media (max-width: $mobile-width-only) {
-  //   padding-left: 16px;
-  //   padding-top: 8px;
-  // }
+  @media (max-width: $mobile-width-only) {
+    padding-left: 16px;
+  }
 }
-
-// .main-header__logo {
-//   @media (max-width: $tablet-width-only) {
-//     width: 44px;
-//     height: 17px;
-//   }
-// }
-
 
 .main-header__nav {
   display: flex;
@@ -55,9 +54,9 @@
   border-bottom: 1px solid $white-02;
   list-style-type: none;
 
-  // @media (max-width: $tablet-width-only) {
-  //   display: none;
-  // }
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
 }
 
 .main-header__part {
@@ -77,17 +76,13 @@
   @media (max-width: $tablet-width-only) {
     display: block;
     position: absolute;
-    width: 72px;
+    width: 50px;
     height: 50px;
     top: 0;
     right: 0;
     cursor: pointer;
     border: none;
     background-color: $main-acsent;
-
-    @media (max-width: $mobile-width-only) {
-      width: 50px;
-    }
 
     &:hover {
       background-color: $main-on-hover;
@@ -96,19 +91,15 @@
     &::before {
       content: "";
       position: absolute;
-      top: 17px;
-      right: 25px;
+      top: 18px;
+      right: 14px;
       width: 23px;
-      height: 2px;
-      background-color: $white;
+      height: 1px;
+      background-color: $black;
       cursor: pointer;
       box-shadow:
-        0 7px 0 0 $white,
-        0 14px 0 0 $white;
-
-      @media (max-width: $mobile-width-only) {
-        right: 14px;
-      }
+        0 6px 0 0 $black,
+        0 12px 0 0 $black;
     }
 
     &--clicked {
@@ -117,6 +108,8 @@
   }
 
   &--no-js {
-    display: none;
+    @media (max-width: $tablet-width-only) {
+      display: block;
+    }
   }
 }

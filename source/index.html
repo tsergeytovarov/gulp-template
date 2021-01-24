@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Велосипеды</title>
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>
@@ -58,7 +57,7 @@
         <h1 class="promo__header">Мы продаем велосипеды</h1>
         <p class="promo__slogan">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </section>
-      <section class="order container container--order">
+      <section class="order container">
         <h2 class="visually-hidden">Форма для подбора велосипеда</h2>
         <form class="order__form" action="https://echo.htmlacademy.ru/courses" method="post">
           <h3 class="order__header">Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
@@ -69,7 +68,9 @@
             <input class="order__telephone" type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона"
               pattern="[0-9]{10}">
           </div>
-          <button class="order__submit" type="submit">Подобрать велосипед мечты</button>
+          <div class="container container--submit">
+            <button class="order__submit container--submit" type="submit">Подобрать велосипед мечты</button>
+          </div>
         </form>
       </section>
     </div>
