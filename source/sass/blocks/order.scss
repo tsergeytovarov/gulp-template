@@ -1,0 +1,39 @@
+.order {
+  margin: 0;
+  background: transparent;
+}
+
+.order__header {
+  color: $white;
+  width: 327px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.order__name,
+.order__telephone {
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  width: 327px;
+  height: 48px;
+  border: 1px solid $grey-border;
+  border-radius: 4px;
+  color: $input-color;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.order__submit {
+  // margin-bottom: 20px;
+  width: 326px;
+  height: 51px;
+  color: $black;
+  background-color: $btn-color;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+}

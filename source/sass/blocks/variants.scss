@@ -1,0 +1,133 @@
+.variants {
+  padding-top: 149px;
+  padding-bottom: 147px;
+  background-color: $grey-background;
+
+  // @media (max-width: $tablet-width-only) {
+  //   padding-top: 80px;
+  //   margin-bottom: 92px;
+  // }
+
+  // @media (max-width: $mobile-width-only) {
+  //   padding-top: 0;
+  //   margin-bottom: 5px;
+  // }
+}
+
+.variants__header {
+  margin: 0 0 51px 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: $grey-dark;
+
+  // @media (max-width: $mobile-width-only) {
+  //   width: 100%;
+  // }
+
+  // @media (max-width: $tablet-width-only) {
+  //   margin: 0 auto 20px auto;
+  //   font-size: 30px;
+  //   line-height: 45px;
+  //   letter-spacing: 0;
+  //   text-align: center;
+  // }
+
+  // @media (max-width: $mobile-width-only) {
+  //   font-size: 24px;
+  //   line-height: 36px;
+  // }
+}
+
+.variants__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto 0 auto;
+  width: 1126px;
+}
+
+.variants__item {
+  position: relative;
+  z-index: 1;
+  // margin-bottom: 96px;
+
+  // @media (max-width: $tablet-width-only) {
+  //   margin-bottom: 18px;
+  //   width: 288px;
+  //   height: 425px;
+  // }
+
+  // &:hover {
+  //   cursor: pointer;
+  //   filter: brightness(70%);
+  // }
+
+  // @media (max-width: $mobile-width-only) {
+  //   margin: 0 auto 35px auto;
+  // }
+  &--ring {
+    margin-top: 10px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -60px;
+      top: 160px;
+      width: 180px;
+      height: 180px;
+      z-index: -1;
+      background-image: url("../../img/ring.svg");
+    }
+  }
+
+  &--square {
+    margin-top: 39px;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 47px;
+      background-image: url("../../img/square.svg");
+    }
+
+    &::after {
+      left: -20px;
+      top: -20px;
+    }
+
+    &::before {
+      right: -20px;
+      bottom: 40px;
+    }
+  }
+
+  &--ring-little {
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -40px;
+      top: -40px;
+      width: 95px;
+      height: 95px;
+      background-image: url("../../img/ring-little.svg");
+    }
+  }
+
+}
+
+.variants__title {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  color: $dark;
+}

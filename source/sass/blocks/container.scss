@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
+  min-width: 320px;
+
+  &--footer {
+    max-width: 957px;
+  //   @media (max-width: $tablet-width-only) {
+  //     width: 98%;
+  //   }
+
+  //   @media (max-width: $mobile-width-only) {
+  //     width: 93%;
+  //     min-width: 288px;
+  //   }
+  }
+
+  // @media (max-width: $tablet-width-only) {
+  //   width: 90%;
+  // }
+
+  // &--variants {
+  //   width: 79%;
+  // }
+
+  // &--details {
+  //   @media (max-width: $tablet-width-only) {
+  //     width: 100%;
+  //   }
+  // }
+
+  // &--tarifs {
+  //   @media (max-width: $mobile-width-only) {
+  //     min-width: 288px;
+  //   }
+  // }
+
+
+  // &--95 {
+  //   @media (max-width: $tablet-width-only) {
+  //     margin-left: 2.5%;
+  //     margin-right: 2.5%;
+  //   }
+
+  //   @media (max-width: $mobile-width-only) {
+  //     margin-left: 5%;
+  //     margin-right: 5%;
+  //   }
+  // }
+
+  // &--feedback {
+  //   @media (max-width: $tablet-width-only) {
+  //     width: 100%;
+  //   }
+  // }
+
+
+  // &--wide {
+  //   max-width: 1444px;
+  // }
+
+  // &--tablet-mobile {
+  //   @media (max-width: $tablet-width-only) {
+  //     width: 100%;
+  //   }
+  // }
+
+  // &--mobile {
+  //   @media (max-width: $mobile-width-only) {
+  //     width: 100%;
+  //   }
+  // }
+}

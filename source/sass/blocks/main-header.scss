@@ -1,0 +1,122 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 860px;
+  color: $white;
+  background-color: $black;
+  background-image: url("../../img/bike_desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../../img/bike_desktop@2x.png");
+  }
+
+  // @media (max-width: $tablet-width-only) {
+  //   min-height: 50px;
+  // }
+}
+
+.main-header__link {
+  position: absolute;
+  top: 330px;
+  left: 20%;
+  z-index: 1;
+  background: transparent;
+
+  // @media (max-width: $tablet-width-only) {
+  //   padding-left: 21px;
+  //   padding-top: 10px;
+  // }
+
+  // @media (max-width: $mobile-width-only) {
+  //   padding-left: 16px;
+  //   padding-top: 8px;
+  // }
+}
+
+// .main-header__logo {
+//   @media (max-width: $tablet-width-only) {
+//     width: 44px;
+//     height: 17px;
+//   }
+// }
+
+
+.main-header__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -400px;
+  margin-bottom: 9px;
+  padding: 0 20px 0 20px;
+  width: 873px;
+  border-bottom: 1px solid $white-02;
+  list-style-type: none;
+
+  // @media (max-width: $tablet-width-only) {
+  //   display: none;
+  // }
+}
+
+.main-header__part {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+
+  &:hover {
+    cursor: pointer;
+    color: $main-acsent;
+  }
+}
+
+.main-header__button {
+  display: none;
+
+  @media (max-width: $tablet-width-only) {
+    display: block;
+    position: absolute;
+    width: 72px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border: none;
+    background-color: $main-acsent;
+
+    @media (max-width: $mobile-width-only) {
+      width: 50px;
+    }
+
+    &:hover {
+      background-color: $main-on-hover;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 17px;
+      right: 25px;
+      width: 23px;
+      height: 2px;
+      background-color: $white;
+      cursor: pointer;
+      box-shadow:
+        0 7px 0 0 $white,
+        0 14px 0 0 $white;
+
+      @media (max-width: $mobile-width-only) {
+        right: 14px;
+      }
+    }
+
+    &--clicked {
+      display: none;
+    }
+  }
+
+  &--no-js {
+    display: none;
+  }
+}

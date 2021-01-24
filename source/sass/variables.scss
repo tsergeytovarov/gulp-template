@@ -1,0 +1,46 @@
+// Полупрозрачные цвета
+$white-02: rgba(255, 255, 255, 0.2);
+$black-07: rgba(0, 0, 0, 0.7);
+$black-05: rgba(0, 0, 0, 0.5);
+
+$grey-border: #c9ccd4;
+$grey-background: #f6f7f9;
+$btn-color: #0ad9c6;
+$input-color: #1c1c1c;
+$grey-dark: #1f1f1f;
+$video-background: #131314;
+
+
+// стандартные цвета
+$white: #ffffff;
+$black: #000000;
+
+// цвета стайл-гайда
+$main-acsent: #fe7865;
+$main-on-hover: #f17d4b;
+$darkest: #1f1f1f;
+$dark: #2c2e3f;
+
+// цвета макета
+$grey: #d7d9df;
+$grey-modal: #48494d;
+$grey-ok: #fbf8f8;
+$grey-check:#93939c;
+$grey-dark: #2c2e3f;
+
+
+$grey-five: rgba(20, 21, 23, 0.5);
+$grey-seven: rgba(20, 21, 23, 0.7);
+$grey-two: rgba(20, 21, 23, 0.2);
+$grey-decor-three: rgba(44, 46, 63, 0.3);
+$grey-decor-seven: rgba(44, 46, 63, 0.7);
+$grey-decor-one: rgba(41, 54, 66, 0.1);
+
+// // Цвет фона для фоновой картинки
+$promoBackgroundColor: $black;
+
+// Реальные брейкпойнты
+$tablet-width: 768px;
+$mobile-width-only: ($tablet-width - 1px);
+$desktop-width: 1024px;
+$tablet-width-only: ($desktop-width - 1px);

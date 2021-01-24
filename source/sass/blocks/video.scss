@@ -1,0 +1,45 @@
+.video {
+
+}
+
+.video__wrap {
+  padding-top: 120px;
+  padding-bottom: 480px;
+  background-color: $video-background;
+}
+
+.video__header {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: $white;
+}
+
+.video__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: $white;
+}
+
+.video__player {
+  position: relative;
+  margin-top: -424px;
+  margin-left: 18%;
+  // margin-right: 18%;
+}
+
+.video__btn {
+  position: absolute;
+  top: 229px;
+  left: 37%;
+  // transform: translateX(-50%);
+  background: transparent;
+  border: none;
+}
