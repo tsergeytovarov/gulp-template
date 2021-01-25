@@ -5,6 +5,10 @@
   @media (max-width: $tablet-width-only) {
     margin: -600px auto 0 auto;
   }
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: -450px;
+  }
 }
 
 .order__header {
@@ -20,6 +24,11 @@
     font-size: 18px;
     color: $black;
     margin: 0 auto 30px auto;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -41,6 +50,10 @@
     padding-left: 21px;
     width: 321px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    width: 288px;
+  }
 }
 
 .order__submit {
@@ -57,5 +70,9 @@
 
   @media (max-width: $tablet-width-only) {
     width: 321px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 288px;
   }
 }

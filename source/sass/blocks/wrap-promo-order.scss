@@ -10,4 +10,8 @@
     margin-top: -240px;
     width: 100%;
   }
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: -310px;
+  }
 }

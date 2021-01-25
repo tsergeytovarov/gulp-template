@@ -8,10 +8,9 @@
     padding-bottom: 20px;
   }
 
-  // @media (max-width: $mobile-width-only) {
-  //   padding-top: 0;
-  //   margin-bottom: 5px;
-  // }
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 0;
+  }
 }
 
 .variants__header {
@@ -22,22 +21,9 @@
   text-align: center;
   color: $grey-dark;
 
-  // @media (max-width: $mobile-width-only) {
-  //   width: 100%;
-  // }
-
-  // @media (max-width: $tablet-width-only) {
-  //   margin: 0 auto 20px auto;
-  //   font-size: 30px;
-  //   line-height: 45px;
-  //   letter-spacing: 0;
-  //   text-align: center;
-  // }
-
-  // @media (max-width: $mobile-width-only) {
-  //   font-size: 24px;
-  //   line-height: 36px;
-  // }
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 30px;
+  }
 }
 
 .variants__list {
@@ -51,6 +37,11 @@
 
   @media (max-width: $tablet-width-only) {
     max-width: 590px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    width: 270px;
   }
 }
 
@@ -67,6 +58,8 @@
     }
   }
 
+
+
   // @media (max-width: $tablet-width-only) {
   //   margin-bottom: 18px;
   //   width: 288px;
@@ -81,6 +74,7 @@
   // @media (max-width: $mobile-width-only) {
   //   margin: 0 auto 35px auto;
   // }
+
   &--ring {
     margin-top: 10px;
 
@@ -104,6 +98,10 @@
         width: 127px;
         height: 127px;
         background-image: url("../../img/ring-middle.svg");
+      }
+
+      @media (max-width: $mobile-width-only) {
+        left: -25px;
       }
     }
   }
@@ -153,6 +151,10 @@
         width: 68px;
         height: 68px;
         background-image: url("../../img/ring-least.svg");
+      }
+
+      @media (max-width: $mobile-width-only) {
+        right: -15px;
       }
     }
   }

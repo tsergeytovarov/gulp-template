@@ -4,16 +4,6 @@
   background: transparent;
   height: 860px;
 
-  // @media (max-width: $tablet-width-only) {
-  //   padding-top: 60px;
-  //   height: 344px;
-  //   background-image: url("../../img/bike_tablet@1x.png");
-
-  //   @media (min-resolution: 1.5dppx) {
-  //     background-image: url("../../img/bike_tablet@2x.png");
-  //   }
-  // }
-
   // @media (max-width: $mobile-width-only) {
   //   padding-top: 82px;
   //   margin-bottom: 306px;
@@ -41,14 +31,6 @@
     line-height: 42px;
     text-align: center;
   }
-
-  // @media (max-width: $mobile-width-only) {
-  //   margin-bottom: 102px;
-  //   padding-left: 6px;
-  //   width: 294px;
-  //   font-size: 24px;
-  //   line-height: 36px;
-  // }
 }
 
 .promo__slogan {
@@ -65,9 +47,8 @@
     text-align: center;
   }
 
-  // @media (max-width: $mobile-width-only) {
-  //   color: $grey-dark;
-  //   width: 288px;
-  //   margin-bottom: 20px;
-  // }
+  @media (max-width: $mobile-width-only) {
+    width: auto;
+    // margin-bottom: 20px;
+  }
 }

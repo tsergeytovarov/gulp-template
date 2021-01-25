@@ -6,13 +6,6 @@
     padding-top: 70px;
     padding-bottom: 53px;
   }
-
-  // @media (max-width: $mobile-width-only) {
-  //   padding: 30px 0 0 0;
-  //   height: 165px;
-  //   border: none;
-  //   border-top: 1px solid $grey;
-  // }
 }
 
 .contacts__header {
@@ -24,10 +17,10 @@
   color: $grey-dark;
 
 
-  // @media (max-width: $mobile-width-only) {
-  //   margin-left: -8px;
-  //   text-align: center;
-  // }
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
 }
 
 .contacts__address {
@@ -45,6 +38,10 @@
       display: none;
     }
   }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 25px;
+  }
 }
 
 .contacts__email,
@@ -52,6 +49,10 @@
   display: inline;
   position: relative;
   color: $black-05;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
 }
 
 .contacts__telephone {
@@ -60,13 +61,10 @@
   line-height: 32px;
   letter-spacing: 0.4px;
 
-  // @media (max-width: $mobile-width-only) {
-  //   display: block;
-  //   margin-left: 80px;
-  //   width: 170px;
-  //   font-size: 16px;
-  //   line-height: 32px;
-  // }
+  @media (max-width: $mobile-width-only) {
+    margin-left: 0;
+    text-align: center;
+  }
 
   &::after {
     content: "";
@@ -77,9 +75,9 @@
     height: 23px;
     background-image: url("../../img/phone.svg");
 
-    // @media (max-width: $mobile-width-only) {
-    //   top: -3px;
-    // }
+    @media (max-width: $mobile-width-only) {
+      left: 25%;
+    }
   }
 }
 
@@ -88,9 +86,10 @@
   font-size: 16px;
   line-height: 22px;
 
-  // @media (max-width: $mobile-width-only) {
-  //   margin-left: 140px;
-  // }
+  @media (max-width: $mobile-width-only) {
+    margin-left: 0;
+    text-align: center;
+  }
 
   &::after {
     content: "";
@@ -100,6 +99,10 @@
     width: 26px;
     height: 20px;
     background-image: url("../../img/post.svg");
+
+    @media (max-width: $mobile-width-only) {
+      left: 18%;
+    }
   }
 
   // &--hidden {
@@ -173,5 +176,12 @@
     margin-right: 35px;
     height: 545px;
     width: 100%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 31px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 250px;
   }
 }

@@ -20,6 +20,10 @@
     font-size: 24px;
     line-height: 41px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 205px;
+  }
 }
 
 .about_us__list {
@@ -35,6 +39,11 @@
     flex-wrap: wrap;
     margin-bottom: -23px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    margin-bottom: -10px;
+  }
 }
 
 .about_us__item {
@@ -48,6 +57,12 @@
 
   @media (max-width: $tablet-width-only) {
     margin-bottom: 93px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &::before {
