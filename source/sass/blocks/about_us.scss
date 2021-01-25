@@ -1,18 +1,10 @@
 .about_us {
+  max-width: 1166px;
 
+  @media (max-width: $tablet-width-only) {
+    max-width: 556px;
+  }
 }
-
-//   padding: 0 0 0 46px;
-//   border-left: 1px solid $grey;
-
-//   @media (max-width: $tablet-width-only) {
-//     margin-top: 3px;
-//     padding-top: 30px;
-//     padding-left: 0;
-//     border-top: 1px solid $grey;
-//     border-left: none;
-//   }
-// }
 
 .about_us__header {
   margin-top: 150px;
@@ -23,14 +15,16 @@
   line-height: 30px;
   color: $grey-dark;
 
-//   @media (max-width: $mobile-width-only) {
-//     margin-bottom: 19px;
-//     padding-left: 8px;
-//   }
+  @media (max-width: $tablet-width-only) {
+    margin-bottom: 86px;
+    font-size: 24px;
+    line-height: 41px;
+  }
 }
 
 .about_us__list {
   display: flex;
+  // flex-wrap: wrap; ломает верстку
   justify-content: space-between;
   padding: 0;
   margin-bottom: 130px;
@@ -39,8 +33,7 @@
 
   @media (max-width: $tablet-width-only) {
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 70px;
+    margin-bottom: -23px;
   }
 }
 
@@ -54,7 +47,7 @@
   letter-spacing: -0.5px;
 
   @media (max-width: $tablet-width-only) {
-
+    margin-bottom: 93px;
   }
 
   &::before {

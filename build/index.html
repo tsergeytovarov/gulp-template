@@ -124,7 +124,7 @@
       <a name="video"></a>
       <div class="video__wrap">
         <h2 class="video__header">Видео про велосипеды</h2>
-        <p class="video__text">В этом видео мы подробно расскажем про <br>особенности выбора велосипеда для себя.</p>
+        <p class="video__text">В этом видео мы подробно расскажем про <br class="video__br">особенности<br class="video__br--tablet"> выбора велосипеда для себя.</p>
       </div>
       <div class="video__player">
         <picture>
@@ -136,7 +136,11 @@
           <img class="video__img" src="img/josh-nuttall_mobile@1x.png" srcset="img/josh-nuttall_mobile@2x.png 2x" width="929" height="522" alt="Велосипед крупным планом">
         </picture>
         <button class="video__btn" type="button" aria-label="запустить видео">
-          <img src="img/icon-play.svg" width="65" height="65" alt="">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/icon-play.svg">
+            <source media="(min-width: 768px)" srcset="img/icon-play-big.svg">
+            <img src="img/icon-play.svg" width="65" height="65" alt="">
+          </picture>
         </button>
       </div>
     </section>
