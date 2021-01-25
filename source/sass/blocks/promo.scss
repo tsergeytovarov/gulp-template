@@ -3,17 +3,6 @@
   padding-top: 48px;
   background: transparent;
   height: 860px;
-
-  // @media (max-width: $mobile-width-only) {
-  //   padding-top: 82px;
-  //   margin-bottom: 306px;
-  //   height: 235px;
-  //   background-image: url("../../img/bike_mobile@1x.png");
-
-  //   @media (min-resolution: 1.5dppx) {
-  //     background-image: url("../../img/bike_mobile@2x.png");
-  //   }
-  // }
 }
 
 .promo__header {
@@ -45,10 +34,13 @@
     width: 435px;
     margin: 0 auto 0 auto;
     text-align: center;
+    font-size: 18px;
+    letter-spacing: -0.005em;
   }
 
   @media (max-width: $mobile-width-only) {
+    margin-left: 16px;
+    margin-right: 16px;
     width: auto;
-    // margin-bottom: 20px;
   }
 }

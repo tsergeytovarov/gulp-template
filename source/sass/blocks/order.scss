@@ -1,18 +1,19 @@
 .order {
   margin: 0;
+  margin-top: -16px;
   background: transparent;
 
   @media (max-width: $tablet-width-only) {
-    margin: -600px auto 0 auto;
+    margin: -538px auto 0 auto;
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-top: -450px;
+    margin-top: -472px;
   }
 }
 
 .order__header {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   width: 327px;
   font-weight: 600;
   font-size: 17px;
@@ -52,8 +53,13 @@
   }
 
   @media (max-width: $mobile-width-only) {
+    margin-bottom: 19px;
     width: 288px;
   }
+}
+
+.order__telephone {
+  border-radius: 6px;
 }
 
 .order__submit {

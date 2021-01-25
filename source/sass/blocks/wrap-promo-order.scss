@@ -1,17 +1,17 @@
 .wrap-promo-order {
   display: flex;
   justify-content: space-between;
-  margin-top: -520px;
+  margin-top: -502px;
   width: 880px;
   height: 504px;
 
   @media (max-width: $tablet-width-only) {
     display: block;
-    margin-top: -240px;
+    margin-top: -252px;
     width: 100%;
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-top: -310px;
+    margin-top: -317px;
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 860px;
+  height: 832px;
   color: $white;
   background-color: $black;
   background-image: url("../../img/bike_desktop@1x.png");
@@ -23,19 +23,29 @@
       background-image: url("../../img/bike_tablet@2x.png");
     }
   }
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    height: 390px;
+    background-image: url("../../img/bike_mobile@1x.png");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../../img/bike_mobile@2x.png");
+    }
+  }
 }
 
 .main-header__link {
   position: absolute;
-  top: 330px;
-  left: 20%;
+  top: 325px;
+  left: 19.5%;
   z-index: 1;
   background: transparent;
 
   @media (max-width: $tablet-width-only) {
     position: static;
     display: block;
-    padding-left: 21px;
+    padding-left: 22px;
     padding-top: 25px;
   }
 
@@ -47,9 +57,9 @@
 .main-header__nav {
   display: flex;
   justify-content: space-between;
-  margin-top: -400px;
+  margin-top: -385px;
   margin-bottom: 9px;
-  padding: 0 20px 0 20px;
+  padding: 0 20px 7px 20px;
   width: 873px;
   border-bottom: 1px solid $white-02;
   list-style-type: none;
@@ -91,7 +101,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 18px;
+      top: 20px;
       right: 14px;
       width: 23px;
       height: 1px;

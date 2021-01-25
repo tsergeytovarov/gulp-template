@@ -16,13 +16,15 @@
   color: $grey-dark;
 
   @media (max-width: $tablet-width-only) {
-    margin-bottom: 86px;
+    margin-top: 162px;
+    margin-bottom: 85px;
     font-size: 24px;
     line-height: 41px;
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-top: 205px;
+    margin-top: 245px;
+    margin-bottom: 81px;
   }
 }
 
@@ -31,7 +33,7 @@
   // flex-wrap: wrap; ломает верстку
   justify-content: space-between;
   padding: 0;
-  margin-bottom: 130px;
+  margin-bottom: 152px;
   list-style-type: none;
   counter-reset: num;
 
@@ -42,7 +44,7 @@
 
   @media (max-width: $mobile-width-only) {
     display: block;
-    margin-bottom: -10px;
+    margin-bottom: 0;
   }
 }
 
@@ -60,21 +62,26 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 80px;
+    margin-bottom: 89px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 18px;
   }
 
   &::before {
     content: "0" counter(num);
     counter-increment: num;
     position: absolute;
-    top: -60px;
+    top: -52px;
     left: 50%;
     transform: translateX(-50%);
     color: $btn-color;
     font-weight: 700;
     font-size: 28px;
     line-height: 38px;
+
+    @media (max-width: $mobile-width-only) {
+      top: -46px;
+    }
   }
 }

@@ -3,19 +3,26 @@
   padding-bottom: 98px;
 
   @media (max-width: $tablet-width-only) {
-    padding-top: 70px;
+    padding-top: 66px;
     padding-bottom: 53px;
   }
 }
 
 .contacts__header {
   text-align: center;
-  margin: 0 0 30px 0;
+  margin: 0 0 27px 0;
+  padding-right: 9px;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
+  letter-spacing: -0.005em;
   color: $grey-dark;
 
+  @media (max-width: $tablet-width-only) {
+    margin-bottom: 20px;
+    padding-left: 9px;
+    font-size: 24px;
+  }
 
   @media (max-width: $mobile-width-only) {
     margin-bottom: 20px;
@@ -26,6 +33,7 @@
 .contacts__address {
   text-align: center;
   margin: 0 0 41px 0;
+  padding-right: 13px;
   font-weight: 400;
   font-size: 17px;
   line-height: 31px;
@@ -33,6 +41,7 @@
 
   @media (max-width: $tablet-width-only) {
     margin-bottom: 20px;
+    padding-right: 0;
 
     & br {
       display: none;
@@ -63,31 +72,38 @@
 
   @media (max-width: $mobile-width-only) {
     margin-left: 0;
+    padding-left: 24px;
     text-align: center;
   }
 
   &::after {
     content: "";
     position: absolute;
-    left: -40px;
-    top: 0;
+    left: -39px;
+    top: -3px;
     width: 22px;
     height: 23px;
     background-image: url("../../img/phone.svg");
 
     @media (max-width: $mobile-width-only) {
-      left: 25%;
+      top: 3px;
+      left: 18%;
     }
   }
 }
 
 .contacts__email {
-  margin-left: 237px;
+  margin-left: 33.2%;
   font-size: 16px;
   line-height: 22px;
 
+  @media (max-width: $tablet-width-only) {
+    margin-left: 19%;
+  }
+
   @media (max-width: $mobile-width-only) {
     margin-left: 0;
+    padding-left: 48px;
     text-align: center;
   }
 
@@ -101,7 +117,7 @@
     background-image: url("../../img/post.svg");
 
     @media (max-width: $mobile-width-only) {
-      left: 18%;
+      left: 9.5%;
     }
   }
 
@@ -166,20 +182,21 @@
 // }
 
 .contacts__frame {
-  margin-bottom: 39px;
+  margin-bottom: 32px;
+  margin-left: 17%;
   height: 530px;
-  width: 957px;
+  max-width: 957px;
+  width: 100%;
 
   @media (max-width: $tablet-width-only) {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-left: 35px;
     margin-right: 35px;
     height: 545px;
-    width: 100%;
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 31px;
+    margin-bottom: 8px;
     margin-left: 0;
     margin-right: 0;
     height: 250px;

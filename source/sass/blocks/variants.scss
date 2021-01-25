@@ -1,15 +1,16 @@
 .variants {
   padding-top: 149px;
-  padding-bottom: 147px;
+  padding-bottom: 148px;
   background-color: $grey-background;
 
   @media (max-width: $tablet-width-only) {
-    padding-top: 50px;
+    padding-top: 58px;
     padding-bottom: 20px;
   }
 
   @media (max-width: $mobile-width-only) {
-    padding-bottom: 0;
+    padding-top: 51px;
+    padding-bottom: 15px;
   }
 }
 
@@ -21,8 +22,13 @@
   text-align: center;
   color: $grey-dark;
 
+  @media (max-width: $tablet-width-only) {
+    margin-bottom: 35px;
+    font-size: 24px;
+  }
+
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 }
 
@@ -36,6 +42,7 @@
   max-width: 1126px;
 
   @media (max-width: $tablet-width-only) {
+    margin-bottom: -3px;
     max-width: 590px;
   }
 
@@ -48,7 +55,6 @@
 .variants__item {
   position: relative;
   z-index: 1;
-  // margin-bottom: 96px;
 
   @media (max-width: $tablet-width-only) {
     margin-bottom: 50px;
@@ -58,22 +64,9 @@
     }
   }
 
-
-
-  // @media (max-width: $tablet-width-only) {
-  //   margin-bottom: 18px;
-  //   width: 288px;
-  //   height: 425px;
-  // }
-
-  // &:hover {
-  //   cursor: pointer;
-  //   filter: brightness(70%);
-  // }
-
-  // @media (max-width: $mobile-width-only) {
-  //   margin: 0 auto 35px auto;
-  // }
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 41px;
+  }
 
   &--ring {
     margin-top: 10px;
@@ -86,14 +79,14 @@
       content: "";
       position: absolute;
       left: -60px;
-      top: 160px;
+      top: 157px;
       width: 180px;
       height: 180px;
       z-index: -1;
       background-image: url("../../img/ring.svg");
 
       @media (max-width: $tablet-width-only) {
-        left: -40px;
+        left: -37px;
         top: 200px;
         width: 127px;
         height: 127px;
@@ -124,13 +117,13 @@
       }
 
       &::after {
-        left: -20px;
-        top: -20px;
+        left: -19px;
+        top: -18px;
       }
 
       &::before {
-        right: -20px;
-        bottom: 40px;
+        right: -23px;
+        bottom: 32px;
       }
       }
   }
@@ -139,8 +132,8 @@
     &::after {
       content: "";
       position: absolute;
-      right: -40px;
-      top: -40px;
+      right: -36px;
+      top: -32px;
       width: 95px;
       height: 95px;
       background-image: url("../../img/ring-little.svg");
@@ -161,11 +154,12 @@
 }
 
 .variants__title {
-  margin-top: 20px;
+  margin-top: 18px;
   margin-bottom: 0;
   font-weight: 600;
   font-size: 22px;
   line-height: 34px;
+  letter-spacing: -0.7px;
   text-align: center;
   color: $dark;
 }
