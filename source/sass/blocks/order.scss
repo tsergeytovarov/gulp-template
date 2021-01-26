@@ -56,6 +56,10 @@
     margin-bottom: 19px;
     width: 288px;
   }
+
+  &:hover {
+    border: 1px solid $main-acsent;
+  }
 }
 
 .order__telephone {
@@ -80,5 +84,9 @@
 
   @media (max-width: $mobile-width-only) {
     width: 288px;
+  }
+
+  &:hover {
+    opacity: 0.8;
   }
 }

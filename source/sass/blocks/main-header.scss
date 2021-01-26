@@ -73,10 +73,27 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 32px;
+  border: none;
+
+  & img {
+    border: none;
+  }
 
   &:hover {
     cursor: pointer;
     color: $main-acsent;
+  }
+
+  & a:focus {
+    color: $main-acsent;
+    outline-offset: 4px;
+    outline: 2px solid $main-acsent;
+  }
+
+  & a:active {
+    color: $main-acsent;
+    outline-offset: 6px;
+    outline: 2px solid $main-acsent;
   }
 }
 

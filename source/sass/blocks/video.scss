@@ -76,6 +76,7 @@
   position: relative;
   margin-top: -424px;
   margin-left: 17.8%;
+  width: 929px;
 
   @media (max-width: $tablet-width-only) {
     margin-top: -196px;
@@ -94,19 +95,25 @@
 .video__btn {
   position: absolute;
   top: 229px;
-  left: 36%;
-  // left: 50%; // Неверный расчет
-  // transform: translateX(-50%);
+  left: 50%;
+  transform: translateX(-50%);
   background: transparent;
   border: none;
 
   @media (max-width: $tablet-width-only) {
     top: 108px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   @media (max-width: $mobile-width-only) {
     top: 45px;
+  }
+
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }

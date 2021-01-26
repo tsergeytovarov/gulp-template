@@ -62,6 +62,14 @@
   @media (max-width: $mobile-width-only) {
     display: block;
   }
+
+  &:hover {
+    color: $main-acsent;
+  }
+
+  &:active {
+    color: $black;
+  }
 }
 
 .contacts__telephone {

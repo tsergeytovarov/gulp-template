@@ -24,12 +24,12 @@
   padding-top: 16px;
   padding-left: 17px;
   min-height: 60px;
-  background-color: $grey-ok;
+  color: $hidemenu-color;
+  background-color: $hidemenu-background;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: $grey-modal;
 
   &:hover {
     color: $main-acsent;
@@ -45,7 +45,7 @@
     width: 15px;
     height: 4px;
     border-radius: 2px;
-    background-color: $grey-check;
+    background-color: $hidemenu-check;
   }
 
   &::before {
@@ -87,7 +87,7 @@
     width: 31px;
     height: 4px;
     border-radius: 2px;
-    background-color: $grey-two;
+    background-color: $hidemenu-cross;
   }
 
   &::before {
