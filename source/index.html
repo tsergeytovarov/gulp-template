@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Велосипеды</title>
   <!-- Pixel Glass -->
-<!-- <style>
+  <!-- <style>
   HTML {
     background-repeat: no-repeat;
     background-position:  50% 0;
@@ -30,7 +30,7 @@
 </style>
 <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
 <script src="../node_modules/pixel-glass/script.js"></script> -->
-<!-- // Pixel Glass -->
+  <!-- // Pixel Glass -->
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -68,20 +68,22 @@
     </button>
   </header>
   <main>
-    <section class="menu-compact visually-hidden">
-      <h2 class="visually-hidden">Меню для мобильной версии</h2>
-      <button class="menu-compact__close menu-compact__close--no-js" type="button" aria-label="закрыть"></button>
-      <ul class="menu-compact__list">
-        <li class="menu-compact__item"><a href="#about_us">О нас</a></li>
-        <li class="menu-compact__item"><a href="#bicycles">Виды велосипедов</a></li>
-        <li class="menu-compact__item"><a href="#video">Видео про велосипеды</a></li>
-        <li class="menu-compact__item"><a href="#contacts">Контакты</a></li>
-      </ul>
-    </section>
     <div class="wrap-promo-order container">
-      <section class="promo container">
-        <h1 class="promo__header">Мы продаем велосипеды</h1>
-        <p class="promo__slogan">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      <section class="wrap-promo-menu">
+        <section class="promo container">
+          <h1 class="promo__header">Мы продаем велосипеды</h1>
+          <p class="promo__slogan">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </section>
+        <section class="menu-compact">
+          <h2 class="visually-hidden">Меню для мобильной версии</h2>
+          <button class="menu-compact__close menu-compact__close--no-js" type="button" aria-label="закрыть"></button>
+          <ul class="menu-compact__list">
+            <li class="menu-compact__item"><a href="#about_us">О нас</a></li>
+            <li class="menu-compact__item"><a href="#bicycles">Виды велосипедов</a></li>
+            <li class="menu-compact__item"><a href="#video">Видео про велосипеды</a></li>
+            <li class="menu-compact__item"><a href="#contacts">Контакты</a></li>
+          </ul>
+        </section>
       </section>
       <section class="order container">
         <h2 class="visually-hidden">Форма для подбора велосипеда</h2>
@@ -89,10 +91,10 @@
           <h3 class="order__header">Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
           <div class="order__wrap">
             <label for="name" class="visually-hidden">Ваше имя</label>
-            <input class="order__name" type="text" name="name" id="name" placeholder="Введите Ваше Имя">
+            <input class="order__name" type="text" name="name" id="name" placeholder="Введите Ваше Имя" required>
             <label for="phone" class="visually-hidden">Ваш номер телефона</label>
             <input class="order__telephone" type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона"
-              pattern="[0-9]{10}">
+              required>
           </div>
           <div class="container container--submit">
             <button class="order__submit container--submit" type="submit">Подобрать велосипед мечты</button>
@@ -100,6 +102,7 @@
         </form>
       </section>
     </div>
+
     <section class="about_us container">
       <a name="about_us"></a>
       <h1 class="about_us__header">Несколько фактов о нас</h1>
@@ -200,7 +203,8 @@
       <section class="contacts">
         <a name="contacts"></a>
         <h2 class="contacts__header">Как нас найти?</h2>
-        <p class="contacts__address">Мы находимся по адресу: Санкт&#8209;Петербург, ул. Большая <br>Конюшенная, д. 19</p>
+        <p class="contacts__address">Мы находимся по адресу: Санкт&#8209;Петербург, ул. Большая <br>Конюшенная, д. 19
+        </p>
         <!-- <section class="location"> -->
         <!-- <a class="location__link" href="https://goo.gl/maps/oMgYmoi7jmtzHwTD8" target="_blank">
               <picture>
@@ -227,7 +231,7 @@
     </footer>
   </main>
 
-  <!-- <script src="../js/main.js"></script> -->
+  <script src="../js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,6 @@
+.wrap-promo-menu {
+  @media (max-width: $tablet-width-only) {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,8 +1,11 @@
 .menu-compact {
+  position: relative;
   display: none;
 
   @media (max-width: $tablet-width-only) {
     display: block;
+    // margin-top: -650px;
+    // margin-bottom: 800px;
     width: 100%;
   }
 
@@ -26,10 +29,9 @@
   min-height: 60px;
   color: $hidemenu-color;
   background-color: $hidemenu-background;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  text-align: center;
 
   &:hover {
     color: $main-acsent;
@@ -66,10 +68,10 @@
 
 .menu-compact__close {
   position: absolute;
-  top: 20px;
+  top: 45px;
   right: 28px;
-  width: 32px;
-  height: 32px;
+  width: 50px;
+  height: 52px;
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -82,10 +84,10 @@
   &::after {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 2px;
-    width: 31px;
-    height: 4px;
+    top: 25px;
+    left: 6px;
+    width: 40px;
+    height: 2px;
     border-radius: 2px;
     background-color: $hidemenu-cross;
   }
