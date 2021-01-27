@@ -3,6 +3,11 @@
   padding-top: 48px;
   background: transparent;
   height: 860px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-bottom: 100px;
+    height: auto;
+  }
 }
 
 .promo__header {

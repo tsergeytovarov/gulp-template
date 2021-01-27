@@ -1,13 +1,19 @@
 .about_us {
+  margin-top: 150px;
   max-width: 1166px;
 
   @media (max-width: $tablet-width-only) {
+    margin-top: 162px;
     max-width: 556px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 245px;
   }
 }
 
 .about_us__header {
-  margin-top: 150px;
+  margin-top: 0;
   margin-bottom: 102px;
   text-align: center;
   font-weight: 600;
@@ -16,14 +22,12 @@
   color: $grey-dark;
 
   @media (max-width: $tablet-width-only) {
-    margin-top: 162px;
     margin-bottom: 85px;
     font-size: 24px;
     line-height: 41px;
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-top: 245px;
     margin-bottom: 81px;
   }
 }

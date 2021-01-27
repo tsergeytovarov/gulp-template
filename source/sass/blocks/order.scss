@@ -4,11 +4,11 @@
   background: transparent;
 
   @media (max-width: $tablet-width-only) {
-    margin: -538px auto 0 auto;
+    margin: 0 auto 0 auto;
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-top: -472px;
+    margin-top: 100px;
   }
 }
 
