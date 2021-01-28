@@ -10,31 +10,30 @@
   @media (max-width: $mobile-width-only) {
     margin-top: 72px;
   }
-}
 
-.about_us__header {
-  margin-top: 0;
-  margin-bottom: 102px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 30px;
-  color: $grey-dark;
+  & h2 {
+    margin-top: 0;
+    margin-bottom: 102px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    color: $grey-dark;
 
-  @media (max-width: $tablet-width-only) {
-    margin-bottom: 85px;
-    font-size: 24px;
-    line-height: 41px;
-  }
+    @media (max-width: $tablet-width-only) {
+      margin-bottom: 85px;
+      font-size: 24px;
+      line-height: 41px;
+    }
 
-  @media (max-width: $mobile-width-only) {
-    margin-bottom: 30px;
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 30px;
+    }
   }
 }
 
 .about_us__list {
   display: flex;
-  // flex-wrap: wrap; ломает верстку
   justify-content: space-between;
   padding: 0;
   margin-bottom: 152px;
@@ -80,7 +79,7 @@
     top: -52px;
     left: 50%;
     transform: translateX(-50%);
-    color: $btn-color;
+    color: $main-acsent;
     font-weight: 700;
     font-size: 28px;
     line-height: 38px;

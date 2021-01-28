@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HtmlAcademy, Accelerator, Site 'Bicycles'">
   <title>Велосипеды</title>
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin="">
@@ -34,8 +35,8 @@
   <main>
     <div class="wrap-promo-order container">
       <section class="promo">
-        <h1 class="promo__header">Мы продаем велосипеды</h1>
-        <p class="promo__slogan">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        <h1>Мы продаем велосипеды</h1>
+        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </section>
       <section class="menu-compact">
         <h2 class="visually-hidden">Меню для мобильной версии</h2>
@@ -50,15 +51,19 @@
       <section class="order">
         <h2 class="visually-hidden">Форма для подбора велосипеда</h2>
         <form class="order__form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <h3 class="order__header">Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
+          <h3>Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
           <div class="order__wrap">
-            <label for="name" class="visually-hidden">Ваше имя</label>
-            <input class="order__name" type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="">
-            <label for="phone" class="visually-hidden">Ваш номер телефона</label>
-            <input class="order__telephone" type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" required="">
+            <div class="order__name">
+              <label for="name" class="visually-hidden">Ваше имя</label>
+              <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="">
+            </div>
+            <div class="order__telephone">
+              <label for="phone" class="visually-hidden">Ваш номер телефона</label>
+              <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{5,10}" required="">
+            </div>
           </div>
           <div class="container container--submit">
-            <button class="order__submit container--submit" type="submit">Подобрать велосипед мечты</button>
+            <button class="order__submit" type="submit">Подобрать велосипед мечты</button>
           </div>
         </form>
       </section>
@@ -66,7 +71,7 @@
 
     <section class="about_us container">
       <a name="about_us"></a>
-      <h1 class="about_us__header">Несколько фактов о нас</h1>
+      <h2>Несколько фактов о нас</h2>
       <ol class="about_us__list">
         <li class="about_us__item">Самый широкий выбор велосипедов!</li>
         <li class="about_us__item">Доставка велосипедов по всей России!</li>
@@ -76,7 +81,7 @@
     </section>
     <section class="variants container container--variants">
       <a name="bicycles"></a>
-      <h2 class="variants__header">Виды велосипедов</h2>
+      <h2>Виды велосипедов</h2>
       <ul class="variants__list">
         <li class="variants__item variants__item--ring">
           <picture>
@@ -85,9 +90,9 @@
             <source type="image/webp" srcset="img/andreas-haimerl_mobile@1x.webp 1x, img/andreas-haimerl_mobile@2x.webp 2x">
             <source media="(min-width: 1024px)" srcset="img/andreas-haimerl_desktop@1x.png 1x, img/andreas-haimerl_desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/andreas-haimerl_tablet@1x.png 1x, img/andreas-haimerl_tablet@2x.png 2x">
-            <img class="variants__img" src="img/andreas-haimerl_mobile@1x.png" srcset="img/andreas-haimerl_mobile@2x.png 2x" width="341" height="503" alt="Велосипед около стены">
+            <img src="img/andreas-haimerl_mobile@1x.png" srcset="img/andreas-haimerl_mobile@2x.png 2x" width="341" height="503" alt="Велосипед около стены">
           </picture>
-          <p class="variants__title">Дорожный велосипед</p>
+          <p>Дорожный велосипед</p>
         </li>
         <li class="variants__item variants__item--square">
           <picture>
@@ -96,9 +101,9 @@
             <source type="image/webp" srcset="img/eberhard-grossgasteiger_mobile@1x.webp 1x, img/eberhard-grossgasteiger_mobile@2x.webp 2x">
             <source media="(min-width: 1024px)" srcset="img/eberhard-grossgasteiger_desktop@1x.png 1x, img/eberhard-grossgasteiger_desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/eberhard-grossgasteiger_tablet@1x.png 1x, img/eberhard-grossgasteiger_tablet@2x.png 2x">
-            <img class="variants__img" src="img/eberhard-grossgasteiger_mobile@1x.png" srcset="img/eberhard-grossgasteiger_mobile@2x.png 2x" width="341" height="566" alt="Велосипед на горной тропе">
+            <img src="img/eberhard-grossgasteiger_mobile@1x.png" srcset="img/eberhard-grossgasteiger_mobile@2x.png 2x" width="341" height="566" alt="Велосипед на горной тропе">
           </picture>
-          <p class="variants__title">Горный велосипед</p>
+          <p>Горный велосипед</p>
         </li>
         <li class="variants__item  variants__item--ring-little">
           <picture>
@@ -107,17 +112,17 @@
             <source type="image/webp" srcset="img/roger-goh_mobile@1x.webp 1x, img/roger-goh_mobile@2x.webp 2x">
             <source media="(min-width: 1024px)" srcset="img/roger-goh_desktop@1x.png 1x, img/roger-goh_desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/roger-goh_tablet@1x.png 1x, img/roger-goh_tablet@2x.png 2x">
-            <img class="variants__img" src="img/roger-goh_mobile@1x.png" srcset="img/roger-goh_mobile@2x.png 2x" width="341" height="513" alt="Велосипед около парадной">
+            <img src="img/roger-goh_mobile@1x.png" srcset="img/roger-goh_mobile@2x.png 2x" width="341" height="513" alt="Велосипед около парадной">
           </picture>
-          <p class="variants__title">Детский велосипед</p>
+          <p>Детский велосипед</p>
         </li>
       </ul>
     </section>
     <section class="video container container--video">
       <a name="video"></a>
       <div class="video__wrap">
-        <h2 class="video__header">Видео про велосипеды</h2>
-        <p class="video__text">В этом видео мы подробно расскажем про <br class="video__br">особенности<br class="video__br--tablet"> выбора велосипеда для себя.</p>
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про <br class="video__br">особенности<br class="video__br--tablet"> выбора велосипеда для себя.</p>
       </div>
       <div class="video__player">
         <picture>
@@ -126,7 +131,7 @@
           <source type="image/webp" srcset="img/josh-nuttall_mobile@1x.webp 1x, img/josh-nuttall_mobile@2x.webp 2x">
           <source media="(min-width: 1024px)" srcset="img/josh-nuttall_desktop@1x.png 1x, img/josh-nuttall_desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/josh-nuttall_tablet@1x.png 1x, img/josh-nuttall_tablet@2x.png 2x">
-          <img class="video__img" src="img/josh-nuttall_mobile@1x.png" srcset="img/josh-nuttall_mobile@2x.png 2x" width="929" height="522" alt="Велосипед крупным планом">
+          <img src="img/josh-nuttall_mobile@1x.png" srcset="img/josh-nuttall_mobile@2x.png 2x" width="929" height="522" alt="Велосипед крупным планом">
         </picture>
         <button class="video__btn" type="button" aria-label="запустить видео">
         </button>
@@ -135,9 +140,9 @@
     <footer class="main-footer container">
       <section class="contacts">
         <a name="contacts"></a>
-        <h2 class="contacts__header">Как нас найти?</h2>
-        <p class="contacts__address">Мы находимся по адресу: Санкт&#8209;Петербург, ул. Большая <br>Конюшенная, д. 19
-        </p>
+        <h2>Как нас найти?</h2>
+        <h3 class="contacts__address">Мы находимся по адресу: Санкт&#8209;Петербург, ул. Большая <br>Конюшенная, д. 19
+        </h3>
         <iframe class="contacts__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989054779363!2d30.32128831609696!3d59.938797481876236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e354288bb%3A0xbbeecda9980bbc58!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1600172702829!5m2!1sru!2sru" allowfullscreen="" title="Офис компании по адресу ул. Большая Конюшенная, дом 19, Санкт-Петербург"></iframe>
 
         <a href="mailto:puteshestviemechta@gmail.ru">

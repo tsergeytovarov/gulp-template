@@ -146,7 +146,6 @@
     }
   }
 
-  // Если JS не загрузился
   &--no-js {
     @media (max-width: $tablet-width-only) {
       display: none;

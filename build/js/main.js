@@ -1,50 +1,45 @@
-"use strict";
+'use strict';
 
 // Удаляем прогрессивную верстку
-const mainHeader = document.querySelector(".main-header");
-const mainHeaderButton = mainHeader.querySelector(".main-header__button");
-const menuCompact = document.querySelector(".menu-compact");
-const menuCompactClose = menuCompact.querySelector(".menu-compact__close");
+const mainHeader = document.querySelector('.main-header');
 
-const orderForm = document.querySelector(".order__form");
-const orderName = orderForm.querySelector(".order__name");
-const orderTelephone = orderForm.querySelector(".order__telephone");
-const orderSubmit = orderForm.querySelector(".order__submit");
+if (mainHeader) {
 
-const onClickMainHeaderButton = function () {
-  menuCompact.classList.remove("menu-compact--closed");
-  menuCompactClose.addEventListener("click", onClickMenuCompactClose);
+  const mainHeaderButton = mainHeader.querySelector('.main-header__button');
+  const menuCompact = document.querySelector('.menu-compact');
+  const menuCompactClose = menuCompact.querySelector('.menu-compact__close');
 
-  mainHeaderButton.removeEventListener("click", onClickMainHeaderButton);
-  mainHeaderButton.classList.add("main-header__button--clicked");
-};
+  const onClickMainHeaderButton = function () {
+    menuCompact.classList.remove('menu-compact--closed');
+    menuCompactClose.addEventListener('click', onClickMenuCompactClose);
 
-const onClickMenuCompactClose = function () {
-  menuCompact.classList.add("menu-compact--closed");
-  menuCompactClose.removeEventListener("click", onClickMenuCompactClose);
+    mainHeaderButton.removeEventListener('click', onClickMainHeaderButton);
+    mainHeaderButton.classList.add('main-header__button--clicked');
+  };
 
-  mainHeaderButton.addEventListener("click", onClickMainHeaderButton);
-  mainHeaderButton.classList.remove("main-header__button--clicked");
-};
+  const onClickMenuCompactClose = function () {
+    menuCompact.classList.add('menu-compact--closed');
+    menuCompactClose.removeEventListener('click', onClickMenuCompactClose);
 
-const onClickOrderSubmit = function (evt) {
-  // evt.preventDefault();
-};
+    mainHeaderButton.addEventListener('click', onClickMainHeaderButton);
+    mainHeaderButton.classList.remove('main-header__button--clicked');
+  };
 
-const initSite = () => {
 
-  if (mainHeaderButton.classList.contains("main-header__button--no-js")) {
-    mainHeaderButton.classList.remove("main-header__button--no-js");
-    menuCompactClose.classList.remove("menu-compact__close--no-js");
-    menuCompact.classList.add("menu-compact--closed");
-  }
+  const initSite = () => {
 
-  mainHeaderButton.addEventListener("click", onClickMainHeaderButton);
-  orderSubmit.addEventListener("click", onClickOrderSubmit);
-};
+    if (mainHeaderButton.classList.contains('main-header__button--no-js')) {
+      mainHeaderButton.classList.remove('main-header__button--no-js');
+      menuCompactClose.classList.remove('menu-compact__close--no-js');
+      menuCompact.classList.add('menu-compact--closed');
+    }
 
-window.addEventListener(`load`, initSite);
+    mainHeaderButton.addEventListener('click', onClickMainHeaderButton);
+  };
 
-window.main = {
-  initSite
-};
+  window.addEventListener(`load`, initSite);
+
+  window.main = {
+    initSite
+  };
+}
