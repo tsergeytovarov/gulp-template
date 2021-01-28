@@ -1,6 +1,6 @@
 .main-header {
   position: absolute;
-  top: 0;
+  top: -6px;
   left: 0;
   right: 0;
   display: flex;
@@ -20,7 +20,7 @@
 
   @media (max-width: $tablet-width-only) {
     display: block;
-    height: 340px;
+    height: 347px;
     background-image: url("../../img/bike_tablet@1x.png");
 
     @media (min-resolution: 1.5dppx) {
@@ -29,8 +29,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    // display: block;
-    height: 390px;
+    height: 396px;
     background-image: url("../../img/bike_mobile@1x.png");
 
     @media (min-resolution: 1.5dppx) {
@@ -50,11 +49,12 @@
     position: static;
     display: block;
     padding-left: 22px;
-    padding-top: 25px;
+    padding-top: 32px;
   }
 
   @media (max-width: $mobile-width-only) {
-    padding-left: 16px;
+    padding-left: 17px;
+    padding-top: 31px;
   }
 }
 
@@ -63,7 +63,7 @@
   justify-content: space-between;
   margin-top: -390px;
   margin-bottom: 9px;
-  padding: 0 0 7px 10px;
+  padding: 0 10px 10px 10px;
   width: 873px;
   border-bottom: 1px solid $white-02;
   list-style-type: none;
@@ -112,7 +112,7 @@
     display: block;
     position: absolute;
     width: 50px;
-    height: 50px;
+    height: 57px;
     top: 0;
     right: 0;
     cursor: pointer;
@@ -120,7 +120,7 @@
     background-color: $main-acsent;
 
     &:hover {
-      background-color: $main-on-hover;
+      opacity: 0.7;
     }
 
     &::before {
@@ -135,6 +135,10 @@
       box-shadow:
         0 6px 0 0 $black,
         0 12px 0 0 $black;
+
+      @media (max-width: $mobile-width-only) {
+        top: 25px;
+      }
     }
 
     &--clicked {

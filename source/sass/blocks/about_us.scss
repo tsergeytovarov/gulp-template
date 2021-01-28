@@ -1,14 +1,14 @@
 .about_us {
-  margin-top: 150px;
+  margin-top: 149px;
   max-width: 1166px;
 
   @media (max-width: $tablet-width-only) {
-    margin-top: 162px;
+    margin-top: 70px;
     max-width: 556px;
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-top: 245px;
+    margin-top: 72px;
   }
 }
 
@@ -28,7 +28,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 81px;
+    margin-bottom: 30px;
   }
 }
 
@@ -48,7 +48,7 @@
 
   @media (max-width: $mobile-width-only) {
     display: block;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
@@ -66,7 +66,8 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 89px;
+    margin-top: 87px;
+    margin-bottom: 13px;
     margin-left: auto;
     margin-right: auto;
     font-size: 18px;

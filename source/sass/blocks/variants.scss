@@ -5,11 +5,11 @@
 
   @media (max-width: $tablet-width-only) {
     padding-top: 58px;
-    padding-bottom: 20px;
+    padding-bottom: 21px;
   }
 
   @media (max-width: $mobile-width-only) {
-    padding-top: 51px;
+    padding-top: 128px;
     padding-bottom: 15px;
   }
 }
@@ -44,7 +44,7 @@
   @media (max-width: $tablet-width-only) {
     justify-content: space-around;
     margin-bottom: -3px;
-    max-width: 590px;
+    max-width: 636px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -58,7 +58,7 @@
   z-index: 1;
 
   @media (max-width: $tablet-width-only) {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
 
     & img {
       width: 270px;
@@ -66,7 +66,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 41px;
+    margin-bottom: 44px;
   }
 
   &--ring {
@@ -140,8 +140,8 @@
       background-image: url("../../img/ring-little.svg");
 
       @media (max-width: $tablet-width-only) {
-        right: -20px;
-        top: -20px;
+        right: -24px;
+        top: -23px;
         width: 68px;
         height: 68px;
         background-image: url("../../img/ring-least.svg");
@@ -163,4 +163,8 @@
   letter-spacing: -0.7px;
   text-align: center;
   color: $dark;
+
+  @media (max-width: $tablet-width-only) {
+    margin-top: 15px;
+  }
 }

@@ -5,13 +5,17 @@
   height: 860px;
 
   @media (max-width: $tablet-width-only) {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     height: auto;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 140px;
   }
 }
 
 .promo__header {
-  margin: 0 0 24px 0;
+  margin: 0 0 25px 0;
   width: 412px;
   font-weight: 700;
   font-size: 46px;

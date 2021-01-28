@@ -49,7 +49,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 
@@ -200,11 +200,12 @@
     margin-bottom: 15px;
     margin-left: 35px;
     margin-right: 35px;
+    max-width: 698px;
     height: 545px;
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 8px;
+    margin-bottom: 13px;
     margin-left: 0;
     margin-right: 0;
     height: 250px;
