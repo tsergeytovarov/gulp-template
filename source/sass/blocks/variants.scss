@@ -85,13 +85,13 @@
       height: 180px;
       z-index: -1;
       background-image: url("../../img/ring.svg");
+      background-size: cover;
 
       @media (max-width: $tablet-width-only) {
         left: -37px;
         top: 200px;
         width: 127px;
         height: 127px;
-        background-image: url("../../img/ring-middle.svg");
       }
 
       @media (max-width: $mobile-width-only) {
@@ -137,14 +137,14 @@
       top: -32px;
       width: 95px;
       height: 95px;
-      background-image: url("../../img/ring-little.svg");
+      background-image: url("../../img/ring.svg");
+      background-size: cover;
 
       @media (max-width: $tablet-width-only) {
         right: -24px;
         top: -23px;
         width: 68px;
         height: 68px;
-        background-image: url("../../img/ring-least.svg");
       }
 
       @media (max-width: $mobile-width-only) {

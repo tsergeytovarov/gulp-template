@@ -10,7 +10,8 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 140px;
+    margin-bottom: 150px;
+    min-height: 150px;
   }
 }
 

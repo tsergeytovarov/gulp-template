@@ -99,13 +99,40 @@
   transform: translateX(-50%);
   background: transparent;
   border: none;
+  width: 65px;
+  height: 65px;
 
   @media (max-width: $tablet-width-only) {
     top: 108px;
+    width: 95px;
+    height: 95px;
   }
 
   @media (max-width: $mobile-width-only) {
-    top: 45px;
+    width: 65px;
+    height: 65px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 65px;
+    background-image: url("../../img/icon-play.svg");
+    background-size: cover;
+
+    @media (max-width: $tablet-width-only) {
+      width: 90px;
+      height: 90px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      width: 65px;
+      height: 65px;
+    }
   }
 
   &:hover {
