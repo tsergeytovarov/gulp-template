@@ -60,7 +60,7 @@
     width: 100%;
 
     @media (max-width: $tablet-width-only) {
-      margin-bottom: 15px;
+      margin-bottom: 12px;
       margin-left: 35px;
       margin-right: 35px;
       max-width: 698px;
@@ -68,10 +68,18 @@
     }
 
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 13px;
+      margin-bottom: 7px;
       margin-left: 0;
       margin-right: 0;
       height: 250px;
+    }
+  }
+
+  span {
+    display: none;
+
+    @media (max-width: $tablet-width-only) {
+      display: inline;
     }
   }
 }
@@ -80,6 +88,7 @@
 .contacts__telephone {
   display: inline;
   position: relative;
+  padding: 5px;
   color: $black-05;
 
   @media (max-width: $mobile-width-only) {
@@ -96,28 +105,38 @@
 }
 
 .contacts__telephone {
-  margin-left: 127px;
+  margin-left: 112px;
   font-size: 16px;
   line-height: 32px;
   letter-spacing: 0.4px;
 
+  @media (max-width: $tablet-width-only) {
+    margin-left: 114px;
+    // letter-spacing: 0;
+  }
+
   @media (max-width: $mobile-width-only) {
     margin-left: 0;
-    padding-left: 24px;
+    padding-left: 29px;
     text-align: center;
   }
 
   &::after {
     content: "";
     position: absolute;
-    left: -39px;
-    top: -3px;
+    left: -34px;
+    top: 2px;
     width: 22px;
     height: 23px;
     background-image: url("../../img/phone.svg");
 
+    @media (max-width: $tablet-width-only) {
+      top: 5px;
+      left: -31px;
+    }
+
     @media (max-width: $mobile-width-only) {
-      top: 3px;
+      top: 6px;
       left: 18%;
     }
   }
@@ -129,11 +148,12 @@
   line-height: 22px;
 
   @media (max-width: $tablet-width-only) {
-    margin-left: 19%;
+    margin-left: 18.2%;
   }
 
   @media (max-width: $mobile-width-only) {
     margin-left: 0;
+    margin-bottom: 9px;
     padding-left: 48px;
     text-align: center;
   }
@@ -142,13 +162,19 @@
     content: "";
     position: absolute;
     left: -40px;
-    top: 0;
+    top: 5px;
     width: 26px;
     height: 20px;
     background-image: url("../../img/post.svg");
 
+    @media (max-width: $tablet-width-only) {
+      left: -35px;
+      top: 8px;
+    }
+
     @media (max-width: $mobile-width-only) {
       left: 9.5%;
+      top: 5px;
     }
   }
 }
