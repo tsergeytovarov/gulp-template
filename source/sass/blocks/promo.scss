@@ -10,11 +10,11 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 150px;
+    margin-bottom: 140px;
     min-height: 150px;
   }
 
-  & h1 {
+  h1 {
     margin: 0 0 25px 0;
     width: 412px;
     font-weight: 700;
@@ -31,7 +31,7 @@
     }
   }
 
-  & p {
+  p {
     margin: 0;
     width: 375px;
     color: $white;

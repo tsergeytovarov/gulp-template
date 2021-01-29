@@ -79,7 +79,7 @@
   line-height: 32px;
   border: none;
 
-  & img {
+  img {
     border: none;
   }
 
@@ -88,17 +88,17 @@
     color: $main-acsent;
   }
 
-  & a {
+  a {
     padding: 10px;
   }
 
-  & a:focus {
+  a:focus {
     color: $main-acsent;
     outline-offset: 4px;
     outline: 2px solid $main-acsent;
   }
 
-  & a:active {
+  a:active {
     color: $main-acsent;
     outline-offset: 6px;
     outline: 2px solid $main-acsent;

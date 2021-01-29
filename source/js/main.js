@@ -1,30 +1,51 @@
 'use strict';
 
-// Удаляем прогрессивную верстку
 const mainHeader = document.querySelector('.main-header');
+const modalMenu = document.querySelector('.modal-menu');
 
 if (mainHeader) {
 
   const mainHeaderButton = mainHeader.querySelector('.main-header__button');
   const menuCompact = document.querySelector('.menu-compact');
   const menuCompactClose = menuCompact.querySelector('.menu-compact__close');
+  const modalMenuClose = modalMenu.querySelector('.modal-menu__close');
+  const menuItems = modalMenu.querySelectorAll('.modal-menu__item');
 
   const onClickMainHeaderButton = function () {
-    menuCompact.classList.remove('menu-compact--closed');
-    menuCompactClose.addEventListener('click', onClickMenuCompactClose);
+
+    const onEscapeModalMenu = (evt) => {
+      if (evt.key === 'Escape') {
+        onMenuClose();
+      }
+    };
+
+    const onClickMenuClose = function () {
+      onMenuClose();
+    };
+
+    const onMenuClose = function () {
+      modalMenu.classList.remove('modal-menu--show');
+      document.body.style.overflow = '';
+      modalMenuClose.removeEventListener('click', onClickMenuClose);
+      for (let i = 0; i < menuItems.length; i++) {
+        menuItems[i].removeEventListener('click', onMenuClose);
+      }
+
+      mainHeaderButton.addEventListener('click', onClickMainHeaderButton);
+    };
 
     mainHeaderButton.removeEventListener('click', onClickMainHeaderButton);
-    mainHeaderButton.classList.add('main-header__button--clicked');
+
+    modalMenu.classList.add('modal-menu--show');
+    document.body.style.overflow = 'hidden';
+
+    modalMenuClose.addEventListener('click', onClickMenuClose);
+    document.addEventListener('keydown', onEscapeModalMenu);
+
+    for (let i = 0; i < menuItems.length; i++) {
+      menuItems[i].addEventListener('click', onMenuClose);
+    }
   };
-
-  const onClickMenuCompactClose = function () {
-    menuCompact.classList.add('menu-compact--closed');
-    menuCompactClose.removeEventListener('click', onClickMenuCompactClose);
-
-    mainHeaderButton.addEventListener('click', onClickMainHeaderButton);
-    mainHeaderButton.classList.remove('main-header__button--clicked');
-  };
-
 
   const initSite = () => {
 
@@ -37,7 +58,7 @@ if (mainHeader) {
     mainHeaderButton.addEventListener('click', onClickMainHeaderButton);
   };
 
-  window.addEventListener(`load`, initSite);
+  window.addEventListener('load', initSite);
 
   window.main = {
     initSite

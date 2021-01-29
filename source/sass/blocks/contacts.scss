@@ -7,7 +7,7 @@
     padding-bottom: 53px;
   }
 
-  & h2 {
+  h2 {
     text-align: center;
     margin: 0 0 27px 0;
     padding-right: 9px;
@@ -29,7 +29,7 @@
     }
   }
 
-  & h3 {
+  h3 {
     text-align: center;
     margin: 0 0 41px 0;
     padding-right: 13px;
@@ -42,13 +42,36 @@
       margin-bottom: 20px;
       padding-right: 0;
 
-      & br {
+      br {
         display: none;
       }
     }
 
     @media (max-width: $mobile-width-only) {
       margin-bottom: 20px;
+    }
+  }
+
+  iframe {
+    margin-bottom: 32px;
+    margin-left: 17%;
+    height: 530px;
+    max-width: 957px;
+    width: 100%;
+
+    @media (max-width: $tablet-width-only) {
+      margin-bottom: 15px;
+      margin-left: 35px;
+      margin-right: 35px;
+      max-width: 698px;
+      height: 545px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 13px;
+      margin-left: 0;
+      margin-right: 0;
+      height: 250px;
     }
   }
 }
@@ -127,28 +150,5 @@
     @media (max-width: $mobile-width-only) {
       left: 9.5%;
     }
-  }
-}
-
-.contacts__frame {
-  margin-bottom: 32px;
-  margin-left: 17%;
-  height: 530px;
-  max-width: 957px;
-  width: 100%;
-
-  @media (max-width: $tablet-width-only) {
-    margin-bottom: 15px;
-    margin-left: 35px;
-    margin-right: 35px;
-    max-width: 698px;
-    height: 545px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    margin-bottom: 13px;
-    margin-left: 0;
-    margin-right: 0;
-    height: 250px;
   }
 }

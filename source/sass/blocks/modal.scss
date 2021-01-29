@@ -1,26 +1,28 @@
-.menu-compact {
-  position: relative;
+.modal-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   display: none;
+  background-color: $white;
 
-  @media (max-width: $tablet-width-only) {
+  &--show {
     display: block;
-    padding-top: 100px;
     width: 100%;
-  }
-
-  &--closed {
-    display: none;
+    height: 100%;
   }
 }
 
-.menu-compact__list {
-  margin-top: 0;
+.modal-menu__list {
+  margin-top: 100px;
   margin-bottom: 134px;
   padding: 0;
   list-style-type: none;
 }
 
-.menu-compact__item {
+.modal-menu__item {
   position: relative;
   margin-bottom: 30px;
   min-height: 60px;
@@ -70,7 +72,7 @@
   }
 }
 
-.menu-compact__close {
+.modal-menu__close {
   position: absolute;
   top: 0;
   right: 28px;
@@ -79,10 +81,6 @@
   background-color: transparent;
   border: 0;
   cursor: pointer;
-
-  &--no-js {
-    display: none;
-  }
 
   &::before,
   &::after {

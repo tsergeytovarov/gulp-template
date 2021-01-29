@@ -13,7 +13,7 @@
     padding-bottom: 146px;
   }
 
-  & h2 {
+  h2 {
     margin-top: 0;
     margin-bottom: 20px;
     padding-right: 8px;
@@ -34,7 +34,7 @@
     }
   }
 
-  & p {
+  p {
     margin-top: 0;
     margin-bottom: 20px;
     text-align: center;
@@ -121,11 +121,13 @@
     background-size: cover;
 
     @media (max-width: $tablet-width-only) {
+      top: -13px;
       width: 90px;
       height: 90px;
     }
 
     @media (max-width: $mobile-width-only) {
+      top: -62px;
       width: 65px;
       height: 65px;
     }
