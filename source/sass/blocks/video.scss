@@ -37,33 +37,24 @@
   p {
     margin-top: 0;
     margin-bottom: 20px;
+    padding-left: 33%;
+    padding-right: 33%;
     text-align: center;
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
     color: $white;
 
+    @media (max-width: $tablet-width-only) {
+      padding-left: 23%;
+      padding-right: 23%;
+    }
+
     @media (max-width: $mobile-width-only) {
       margin-left: 16px;
       margin-right: 16px;
-    }
-  }
-}
-
-.video__br {
-  @media (max-width: $tablet-width-only) {
-    display: none;
-  }
-
-  &--tablet {
-    display: none;
-
-    @media (max-width: $tablet-width-only) {
-      display: inline;
-    }
-
-    @media (max-width: $mobile-width-only) {
-      display: none;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
