@@ -75,6 +75,56 @@
     }
   }
 
+  p {
+    display: inline;
+    position: relative;
+    padding: 5px;
+    margin-left: 33.2%;
+    font-size: 16px;
+    line-height: 22px;
+    color: $black-05;
+
+    @media (max-width: $tablet-width-only) {
+      margin-left: 18.2%;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      display: block;
+      margin-left: 0;
+      margin-bottom: 9px;
+      padding-left: 48px;
+      text-align: center;
+    }
+
+    &:hover {
+      color: $main-acsent;
+    }
+
+    &:active {
+      color: $black;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -40px;
+      top: 5px;
+      width: 26px;
+      height: 20px;
+      background-image: url("../../img/post.svg");
+
+      @media (max-width: $tablet-width-only) {
+        left: -35px;
+        top: 8px;
+      }
+
+      @media (max-width: $mobile-width-only) {
+        left: 9.5%;
+        top: 5px;
+      }
+    }
+  }
+
   span {
     display: none;
 
@@ -84,15 +134,25 @@
   }
 }
 
-.contacts__email,
 .contacts__telephone {
   display: inline;
   position: relative;
+  margin-left: 112px;
   padding: 5px;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.4px;
   color: $black-05;
+
+  @media (max-width: $tablet-width-only) {
+    margin-left: 114px;
+  }
 
   @media (max-width: $mobile-width-only) {
     display: block;
+    margin-left: 0;
+    padding-left: 29px;
+    text-align: center;
   }
 
   &:hover {
@@ -101,24 +161,6 @@
 
   &:active {
     color: $black;
-  }
-}
-
-.contacts__telephone {
-  margin-left: 112px;
-  font-size: 16px;
-  line-height: 32px;
-  letter-spacing: 0.4px;
-
-  @media (max-width: $tablet-width-only) {
-    margin-left: 114px;
-    // letter-spacing: 0;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    margin-left: 0;
-    padding-left: 29px;
-    text-align: center;
   }
 
   &::after {
@@ -138,43 +180,6 @@
     @media (max-width: $mobile-width-only) {
       top: 6px;
       left: 18%;
-    }
-  }
-}
-
-.contacts__email {
-  margin-left: 33.2%;
-  font-size: 16px;
-  line-height: 22px;
-
-  @media (max-width: $tablet-width-only) {
-    margin-left: 18.2%;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    margin-left: 0;
-    margin-bottom: 9px;
-    padding-left: 48px;
-    text-align: center;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: -40px;
-    top: 5px;
-    width: 26px;
-    height: 20px;
-    background-image: url("../../img/post.svg");
-
-    @media (max-width: $tablet-width-only) {
-      left: -35px;
-      top: 8px;
-    }
-
-    @media (max-width: $mobile-width-only) {
-      left: 9.5%;
-      top: 5px;
     }
   }
 }
