@@ -1,5 +1,10 @@
 'use strict';
 
+const OVERFLOW = {
+  HIDDEN: 'hidden',
+  SHOW: ''
+};
+
 const mainHeader = document.querySelector('.main-header');
 const modalMenu = document.querySelector('.modal-menu');
 
@@ -25,7 +30,7 @@ if (mainHeader) {
 
     const onMenuClose = function () {
       modalMenu.classList.remove('modal-menu--show');
-      document.body.style.overflow = '';
+      document.body.style.overflow = OVERFLOW.SHOW;
       modalMenuClose.removeEventListener('click', onClickMenuClose);
       for (let i = 0; i < menuItems.length; i++) {
         menuItems[i].removeEventListener('click', onMenuClose);
@@ -37,7 +42,7 @@ if (mainHeader) {
     mainHeaderButton.removeEventListener('click', onClickMainHeaderButton);
 
     modalMenu.classList.add('modal-menu--show');
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = OVERFLOW.HIDDEN;
 
     modalMenuClose.addEventListener('click', onClickMenuClose);
     document.addEventListener('keydown', onEscapeModalMenu);
