@@ -14,7 +14,6 @@
 
     const mainHeaderButton = mainHeader.querySelector('.main-header__button');
     const menuCompact = document.querySelector('.menu-compact');
-    const menuCompactClose = menuCompact.querySelector('.menu-compact__close');
     const modalMenuClose = modalMenu.querySelector('.modal-menu__close');
     const menuItems = modalMenu.querySelectorAll('.modal-menu__item');
 
@@ -58,7 +57,6 @@
 
       if (mainHeaderButton.classList.contains('main-header__button--no-js')) {
         mainHeaderButton.classList.remove('main-header__button--no-js');
-        menuCompactClose.classList.remove('menu-compact__close--no-js');
         menuCompact.classList.add('menu-compact--closed');
       }
 
