@@ -1,71 +1,74 @@
 'use strict';
 
-const OVERFLOW = {
-  HIDDEN: 'hidden',
-  SHOW: ''
-};
+(function () {
 
-const mainHeader = document.querySelector('.main-header');
-const modalMenu = document.querySelector('.modal-menu');
+  const OVERFLOW = {
+    HIDDEN: 'hidden',
+    SHOW: ''
+  };
 
-if (mainHeader) {
+  const mainHeader = document.querySelector('.main-header');
+  const modalMenu = document.querySelector('.modal-menu');
 
-  const mainHeaderButton = mainHeader.querySelector('.main-header__button');
-  const menuCompact = document.querySelector('.menu-compact');
-  const menuCompactClose = menuCompact.querySelector('.menu-compact__close');
-  const modalMenuClose = modalMenu.querySelector('.modal-menu__close');
-  const menuItems = modalMenu.querySelectorAll('.modal-menu__item');
+  if (mainHeader) {
 
-  const onClickMainHeaderButton = function () {
+    const mainHeaderButton = mainHeader.querySelector('.main-header__button');
+    const menuCompact = document.querySelector('.menu-compact');
+    const menuCompactClose = menuCompact.querySelector('.menu-compact__close');
+    const modalMenuClose = modalMenu.querySelector('.modal-menu__close');
+    const menuItems = modalMenu.querySelectorAll('.modal-menu__item');
 
-    const onEscapeModalMenu = (evt) => {
-      if (evt.key === 'Escape') {
+    const onClickMainHeaderButton = function () {
+
+      const onEscapeModalMenu = (evt) => {
+        if (evt.key === 'Escape') {
+          onMenuClose();
+        }
+      };
+
+      const onClickMenuClose = function () {
         onMenuClose();
+      };
+
+      const onMenuClose = function () {
+        modalMenu.classList.remove('modal-menu--show');
+        document.body.style.overflow = OVERFLOW.SHOW;
+        modalMenuClose.removeEventListener('click', onClickMenuClose);
+        for (let i = 0; i < menuItems.length; i++) {
+          menuItems[i].removeEventListener('click', onMenuClose);
+        }
+
+        mainHeaderButton.addEventListener('click', onClickMainHeaderButton);
+      };
+
+      mainHeaderButton.removeEventListener('click', onClickMainHeaderButton);
+
+      modalMenu.classList.add('modal-menu--show');
+      document.body.style.overflow = OVERFLOW.HIDDEN;
+
+      modalMenuClose.addEventListener('click', onClickMenuClose);
+      document.addEventListener('keydown', onEscapeModalMenu);
+
+      for (let i = 0; i < menuItems.length; i++) {
+        menuItems[i].addEventListener('click', onMenuClose);
       }
     };
 
-    const onClickMenuClose = function () {
-      onMenuClose();
-    };
+    const initSite = () => {
 
-    const onMenuClose = function () {
-      modalMenu.classList.remove('modal-menu--show');
-      document.body.style.overflow = OVERFLOW.SHOW;
-      modalMenuClose.removeEventListener('click', onClickMenuClose);
-      for (let i = 0; i < menuItems.length; i++) {
-        menuItems[i].removeEventListener('click', onMenuClose);
+      if (mainHeaderButton.classList.contains('main-header__button--no-js')) {
+        mainHeaderButton.classList.remove('main-header__button--no-js');
+        menuCompactClose.classList.remove('menu-compact__close--no-js');
+        menuCompact.classList.add('menu-compact--closed');
       }
 
       mainHeaderButton.addEventListener('click', onClickMainHeaderButton);
     };
 
-    mainHeaderButton.removeEventListener('click', onClickMainHeaderButton);
+    window.addEventListener('load', initSite);
 
-    modalMenu.classList.add('modal-menu--show');
-    document.body.style.overflow = OVERFLOW.HIDDEN;
-
-    modalMenuClose.addEventListener('click', onClickMenuClose);
-    document.addEventListener('keydown', onEscapeModalMenu);
-
-    for (let i = 0; i < menuItems.length; i++) {
-      menuItems[i].addEventListener('click', onMenuClose);
-    }
-  };
-
-  const initSite = () => {
-
-    if (mainHeaderButton.classList.contains('main-header__button--no-js')) {
-      mainHeaderButton.classList.remove('main-header__button--no-js');
-      menuCompactClose.classList.remove('menu-compact__close--no-js');
-      menuCompact.classList.add('menu-compact--closed');
-    }
-
-    mainHeaderButton.addEventListener('click', onClickMainHeaderButton);
-  };
-
-  window.addEventListener('load', initSite);
-
-  window.main = {
-    initSite
-  };
-}
+    window.main = {
+      initSite
+    };
+  }
+})();
