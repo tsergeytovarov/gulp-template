@@ -2,11 +2,6 @@
 
 (function () {
 
-  const OVERFLOW = {
-    HIDDEN: 'hidden',
-    SHOW: ''
-  };
-
   const mainHeader = document.querySelector('.main-header');
   const modalMenu = document.querySelector('.modal-menu');
 
@@ -31,7 +26,7 @@
 
       const onMenuClose = function () {
         modalMenu.classList.remove('modal-menu--show');
-        document.body.style.overflow = OVERFLOW.SHOW;
+        document.body.classList.remove('modal');
         modalMenuClose.removeEventListener('click', onClickMenuClose);
         for (let i = 0; i < menuItems.length; i++) {
           menuItems[i].removeEventListener('click', onMenuClose);
@@ -43,7 +38,8 @@
       mainHeaderButton.removeEventListener('click', onClickMainHeaderButton);
 
       modalMenu.classList.add('modal-menu--show');
-      document.body.style.overflow = OVERFLOW.HIDDEN;
+      document.body.classList.add('modal');
+
 
       modalMenuClose.addEventListener('click', onClickMenuClose);
       document.addEventListener('keydown', onEscapeModalMenu);
