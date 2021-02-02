@@ -4,10 +4,10 @@ body {
   padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   overflow-x: hidden;
+}
 
-  &.modal {
-    overflow: hidden;
-  }
+.body--overflow-hidden {
+  overflow: hidden;
 }
 
 a {

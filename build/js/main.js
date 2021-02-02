@@ -26,7 +26,7 @@
 
       const onMenuClose = function () {
         modalMenu.classList.remove('modal-menu--show');
-        document.body.classList.remove('modal');
+        document.body.classList.remove('body--overflow-hidden');
         modalMenuClose.removeEventListener('click', onClickMenuClose);
         for (let i = 0; i < menuItems.length; i++) {
           menuItems[i].removeEventListener('click', onMenuClose);
@@ -38,7 +38,7 @@
       mainHeaderButton.removeEventListener('click', onClickMainHeaderButton);
 
       modalMenu.classList.add('modal-menu--show');
-      document.body.classList.add('modal');
+      document.body.classList.add('body--overflow-hidden');
 
 
       modalMenuClose.addEventListener('click', onClickMenuClose);
