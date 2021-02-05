@@ -1,7 +1,11 @@
 root: true
 
 env:
+  es6: true
   browser: true
 
 extends:
   "htmlacademy/es5"
+
+rules:
+  prefer-const: error

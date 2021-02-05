@@ -1,3 +1,16 @@
-h1 {
-  color: red;
-}
+@import "blocks/visually-hidden.scss";
+@import "normalize.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "base.scss";
+@import "blocks/menu-compact.scss";
+@import "blocks/container.scss";
+@import "blocks/wrap-promo-order.scss";
+@import "blocks/about-us.scss";
+@import "blocks/main-header.scss";
+@import "blocks/promo.scss";
+@import "blocks/order.scss";
+@import "blocks/variants.scss";
+@import "blocks/video.scss";
+@import "blocks/contacts.scss";
+@import "blocks/modal-menu.scss";

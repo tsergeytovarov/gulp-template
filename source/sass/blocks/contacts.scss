@@ -1,0 +1,185 @@
+.contacts {
+  padding-top: 151px;
+  padding-bottom: 98px;
+
+  @media (max-width: $tablet-width-only) {
+    padding-top: 66px;
+    padding-bottom: 53px;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0 0 27px 0;
+    padding-right: 9px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+    color: $grey-dark;
+
+    @media (max-width: $tablet-width-only) {
+      margin-bottom: 20px;
+      padding-left: 9px;
+      font-size: 24px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    margin: 0 0 41px 0;
+    padding-right: 13px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 31px;
+    color: $black-07;
+
+    @media (max-width: $tablet-width-only) {
+      margin-bottom: 20px;
+      padding-right: 0;
+
+      br {
+        display: none;
+      }
+    }
+
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 20px;
+    }
+  }
+
+  iframe {
+    margin-bottom: 32px;
+    margin-left: 17%;
+    height: 530px;
+    max-width: 957px;
+    width: 100%;
+
+    @media (max-width: $tablet-width-only) {
+      margin-bottom: 12px;
+      margin-left: 35px;
+      margin-right: 35px;
+      max-width: 698px;
+      height: 545px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 7px;
+      margin-left: 0;
+      margin-right: 0;
+      height: 250px;
+    }
+  }
+
+  p {
+    display: inline;
+    position: relative;
+    padding: 5px;
+    margin-left: 33.2%;
+    font-size: 16px;
+    line-height: 22px;
+    color: $black-05;
+
+    @media (max-width: $tablet-width-only) {
+      margin-left: 18.2%;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      display: block;
+      margin-left: 0;
+      margin-bottom: 9px;
+      padding-left: 48px;
+      text-align: center;
+    }
+
+    &:hover {
+      color: $main-acsent;
+    }
+
+    &:active {
+      color: $black;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -40px;
+      top: 5px;
+      width: 26px;
+      height: 20px;
+      background-image: url("../../img/post.svg");
+
+      @media (max-width: $tablet-width-only) {
+        left: -35px;
+        top: 8px;
+      }
+
+      @media (max-width: $mobile-width-only) {
+        left: 9.5%;
+        top: 5px;
+      }
+    }
+  }
+
+  span {
+    display: none;
+
+    @media (max-width: $tablet-width-only) {
+      display: inline;
+    }
+  }
+}
+
+.contacts__telephone {
+  display: inline;
+  position: relative;
+  margin-left: 112px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  color: $black-05;
+
+  @media (max-width: $tablet-width-only) {
+    margin-left: 114px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    margin-left: 0;
+    padding-left: 29px;
+    text-align: center;
+  }
+
+  &:hover {
+    color: $main-acsent;
+  }
+
+  &:active {
+    color: $black;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -34px;
+    top: 2px;
+    width: 22px;
+    height: 23px;
+    background-image: url("../../img/phone.svg");
+
+    @media (max-width: $tablet-width-only) {
+      top: 5px;
+      left: -31px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      top: 6px;
+      left: 18%;
+    }
+  }
+}

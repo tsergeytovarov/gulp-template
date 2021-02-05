@@ -1,13 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="HtmlAcademy, Accelerator, Site 'Bicycles'" />
+  <title>Велосипеды</title>
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
+
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <header class="main-header container container--tablet-mobile">
+    <a class="main-header__link">
+      <svg width="68" height="20" viewBox="0 0 68 20">
+        <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <nav class="container">
+      <ul class="main-header__nav">
+        <li class="main-header__part"><a href="#about-us" tabindex="0">О нас</a></li>
+        <li class="main-header__part"><a href="#bicycles" tabindex="0">Виды велосипедов</a></li>
+        <li class="main-header__part"><a href="#video" tabindex="0">Видео про велосипеды</a></li>
+        <li class="main-header__part"><a href="#contacts" tabindex="0">Контакты</a></li>
+      </ul>
+    </nav>
+    <button class="main-header__button main-header__button--no-js" type="button">
+      <span class="visually-hidden">Управление меню</span>
+    </button>
+  </header>
+  <main>
+    <div class="wrap-promo-order container">
+      <section class="promo">
+        <h1>Мы продаем велосипеды</h1>
+        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      </section>
+      <section class="menu-compact ">
+        <h2 class="visually-hidden">Меню для мобильной версии</h2>
+        <ul class="menu-compact__list">
+          <li class="menu-compact__item"><a href="#about-us">О нас</a></li>
+          <li class="menu-compact__item"><a href="#bicycles">Виды велосипедов</a></li>
+          <li class="menu-compact__item"><a href="#video">Видео про велосипеды</a></li>
+          <li class="menu-compact__item"><a href="#contacts">Контакты</a></li>
+        </ul>
+      </section>
+      <section class="order">
+        <h2 class="visually-hidden">Форма для подбора велосипеда</h2>
+        <form class="order__form" action="https://echo.htmlacademy.ru/courses" method="post">
+          <h3>Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
+          <div class="order__wrap">
+            <div class="order__name">
+              <label for="name" class="visually-hidden">Ваше имя</label>
+              <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required>
+            </div>
+            <div class="order__telephone">
+              <label for="phone" class="visually-hidden">Ваш номер телефона</label>
+              <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{5,10}"
+                required>
+            </div>
+          </div>
+          <div class="container container--submit">
+            <button class="order__submit" type="submit">Подобрать велосипед мечты</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <section class="about-us container">
+      <a name="about-us"></a>
+      <h2>Несколько фактов о нас</h2>
+      <ol class="about-us__list">
+        <li>Самый широкий выбор велосипедов!</li>
+        <li>Доставка велосипедов по всей России!</li>
+        <li>Большой выбор крутых аксессуаров!</li>
+        <li>Профессиональные консультации!</li>
+      </ol>
+    </section>
+    <section class="variants container container--variants">
+      <a name="bicycles"></a>
+      <h2>Виды велосипедов</h2>
+      <ul class="variants__list">
+        <li class="variants__item variants__item--ring">
+          <picture>
+            <!-- 1х: 341px; 2x: 682px -->
+            <source type="image/webp" media="(min-width: 1024px)"
+              srcset="img/andreas-haimerl_desktop@1x.webp 1x, img/andreas-haimerl_desktop@2x.webp 2x">
+            <!-- 1х: 270px; 2x: 540px -->
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/andreas-haimerl_tablet@1x.webp 1x, img/andreas-haimerl_tablet@2x.webp 2x">
+            <!-- 1х: 270px; 2x: 540px -->
+            <source type="image/webp"
+              srcset="img/andreas-haimerl_mobile@1x.webp 1x, img/andreas-haimerl_mobile@2x.webp 2x">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img src="img/andreas-haimerl_mobile@1x.png" srcset="img/andreas-haimerl_mobile@2x.png 2x" width="341"
+              height="503" alt="Велосипед около стены">
+          </picture>
+          <p>Дорожный велосипед</p>
+        </li>
+        <li class="variants__item variants__item--square">
+          <picture>
+            <!-- 1х: 341px; 2x: 682px -->
+            <source type="image/webp" media="(min-width: 1024px)"
+              srcset="img/eberhard-grossgasteiger_desktop@1x.webp 1x, img/eberhard-grossgasteiger_desktop@2x.webp 2x">
+            <!-- 1х: 270px; 2x: 540px -->
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/eberhard-grossgasteiger_tablet@1x.webp 1x, img/eberhard-grossgasteiger_tablet@2x.webp 2x">
+            <!-- 1х: 270px; 2x: 540px -->
+            <source type="image/webp"
+              srcset="img/eberhard-grossgasteiger_mobile@1x.webp 1x, img/eberhard-grossgasteiger_mobile@2x.webp 2x">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img src="img/eberhard-grossgasteiger_mobile@1x.png" srcset="img/eberhard-grossgasteiger_mobile@2x.png 2x"
+              width="341" height="566" alt="Велосипед на горной тропе">
+          </picture>
+          <p>Горный велосипед</p>
+        </li>
+        <li class="variants__item  variants__item--ring-little">
+          <picture>
+            <!-- 1х: 341px; 2x: 682px -->
+            <source type="image/webp" media="(min-width: 1024px)"
+              srcset="img/roger-goh_desktop@1x.webp 1x, img/roger-goh_desktop@2x.webp 2x">
+            <!-- 1х: 270px; 2x: 540px -->
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/roger-goh_tablet@1x.webp 1x, img/roger-goh_tablet@2x.webp 2x">
+            <!-- 1х: 270px; 2x: 540px -->
+            <source type="image/webp" srcset="img/roger-goh_mobile@1x.webp 1x, img/roger-goh_mobile@2x.webp 2x">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img src="img/roger-goh_mobile@1x.png" srcset="img/roger-goh_mobile@2x.png 2x" width="341" height="513"
+              alt="Велосипед около парадной">
+          </picture>
+          <p>Детский велосипед</p>
+        </li>
+      </ul>
+    </section>
+    <section class="video container container--video">
+      <a name="video"></a>
+      <div class="video__wrap">
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора
+          велосипеда для себя.</p>
+      </div>
+      <div class="video__player">
+        <picture>
+          <!-- 1х: 929px; 2x: 1858px -->
+          <source type="image/webp" media="(min-width: 1024px)"
+            srcset="img/josh-nuttall_desktop@1x.webp 1x, img/josh-nuttall_desktop@2x.webp 2x">
+          <!-- 1х: 503px; 2x: 1006px -->
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/josh-nuttall_tablet@1x.webp 1x, img/josh-nuttall_tablet@2x.webp 2x">
+          <!-- 1х: 288px; 2x: 576px -->
+          <source type="image/webp" srcset="img/josh-nuttall_mobile@1x.webp 1x, img/josh-nuttall_mobile@2x.webp 2x">
+          <!-- 1х: 288px; 2x: 576px -->
+          <img src="img/josh-nuttall_mobile@1x.png" srcset="img/josh-nuttall_mobile@2x.png 2x" width="929" height="522"
+            alt="Велосипед крупным планом">
+        </picture>
+        <button class="video__btn" type="button" aria-label="запустить видео">
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer container">
+    <section class="contacts">
+      <a name="contacts"></a>
+      <h2>Как нас найти?</h2>
+      <h3>Мы находимся по адресу: Санкт&#8209;Петербург, ул. Большая <br>Конюшенная, д. 19
+      </h3>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.320894616173568!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1611918967343!5m2!1sru!2sru"
+        allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, дом 19, Санкт-Петербург"></iframe>
+
+      <p>
+        <a href="mailto:puteshestviemechta@gmail.ru">
+          puteshestviemechta@gmail.ru
+        </a>
+      </p>
+      <a class="contacts__telephone" href="tel:+749978468446">
+        +7<span> </span> (499)-784-684-46
+      </a>
+    </section>
+  </footer>
+  <section class="modal-menu">
+    <h2 class="visually-hidden">Меню для мобильной версии</h2>
+    <button class="modal-menu__close" type="button" aria-label="закрыть"></button>
+    <ul class="modal-menu__list">
+      <li class="modal-menu__item"><a href="#about-us">О нас</a></li>
+      <li class="modal-menu__item"><a href="#bicycles">Виды велосипедов</a></li>
+      <li class="modal-menu__item"><a href="#video">Видео про велосипеды</a></li>
+      <li class="modal-menu__item"><a href="#contacts">Контакты</a></li>
+    </ul>
+  </section>
+  <script src="../js/main.js"></script>
 </body>
+
 </html>

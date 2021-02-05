@@ -1,0 +1,139 @@
+.video__wrap {
+  padding-top: 120px;
+  padding-bottom: 460px;
+  background-color: $video-background;
+
+  @media (max-width: $tablet-width-only) {
+    padding-top: 70px;
+    padding-bottom: 217px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 84px;
+    padding-bottom: 146px;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-right: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+    color: $white;
+
+    @media (max-width: $tablet-width-only) {
+      padding-right: 0;
+      font-size: 24px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      padding-right: 12px;
+    }
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-left: 33%;
+    padding-right: 33%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: $white;
+
+    @media (max-width: $tablet-width-only) {
+      padding-left: 23%;
+      padding-right: 23%;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      margin-left: 16px;
+      margin-right: 16px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.video__player {
+  position: relative;
+  margin-top: -424px;
+  margin-left: 17.8%;
+  width: 929px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-top: -196px;
+    margin-left: 17.3%;
+    width: 503px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: -111px;
+    margin-left: 15px;
+    margin-right: 18px;
+    width: auto;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.video__btn {
+  position: absolute;
+  top: 229px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  border: none;
+  width: 65px;
+  height: 65px;
+
+  @media (max-width: $tablet-width-only) {
+    top: 108px;
+    width: 95px;
+    height: 95px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 65px;
+    height: 65px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 65px;
+    background-image: url("../../img/icon-play.svg");
+    background-size: cover;
+
+    @media (max-width: $tablet-width-only) {
+      top: -13px;
+      width: 90px;
+      height: 90px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      top: -62px;
+      width: 65px;
+      height: 65px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

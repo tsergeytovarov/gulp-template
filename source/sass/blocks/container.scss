@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
+  min-width: 320px;
+
+  &--submit {
+    @media (max-width: $tablet-width-only) {
+      max-width: 321px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      max-width: 288px;
+      min-width: 288px;
+    }
+  }
+}
