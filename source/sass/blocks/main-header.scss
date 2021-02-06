@@ -60,6 +60,7 @@
 
 .main-header__nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: -390px;
   margin-bottom: 9px;
