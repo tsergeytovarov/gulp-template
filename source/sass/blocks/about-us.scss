@@ -34,14 +34,14 @@
 
 .about-us__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
-  margin-bottom: 152px;
+  margin-bottom: 0;
   list-style-type: none;
   counter-reset: num;
 
   @media (max-width: $tablet-width-only) {
-    flex-wrap: wrap;
     margin-bottom: -23px;
   }
 
@@ -52,6 +52,7 @@
 
   li {
     position: relative;
+    margin-bottom: 152px;
     width: 263px;
     text-align: center;
     font-weight: 400;
